@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/auth/login
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"staffId\": \"Sup002\",\r
+
+    \  \"password\": \"pass2\"\r
+
+    }"
+settings: {}
+order: 1000

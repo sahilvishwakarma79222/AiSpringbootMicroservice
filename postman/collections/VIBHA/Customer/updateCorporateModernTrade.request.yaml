@@ -1,0 +1,320 @@
+$kind: http-request
+url: http://192.168.1.221:8080/api/v2/customer/updateById/13
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"loginid\": \"cus11\",\r
+
+    \  \"password\": \"pass\",\r
+
+    \  \"email\": \"payal@gmail.com\",\r
+
+    \  \"pannumber\": \"ABCDE1239g\",\r
+
+    \  \"code\": \"CUST11\",\r
+
+    \  \"tradename\": \"Wholesaler Traders\",\r
+
+    \r
+
+    \  \"verticaltype\": { \r
+
+    \    \"id\": 1 \r
+
+    \    },\r
+
+    \r
+
+    \  \"staff\": { \r
+
+    \    \"id\": 1\r
+
+    \     },\r
+
+    \  \"cities\": { \r
+
+    \    \"id\": 10\r
+
+    \     },\r
+
+    \  \"states\": { \r
+
+    \    \"id\": 2 \r
+
+    \    },\r
+
+    \  \"countries\": { \r
+
+    \    \"id\": 3 \r
+
+    \    },\r
+
+    \r
+
+    \ \"corporatemoderntrade\":{\r
+
+    \r
+
+    \  \"id\":1,\r
+
+    \  \"companyname\": \"Neelam Industries Pvt Ltd\",\r
+
+    \  \"groupcompanyname\": \"Neelam Group\",\r
+
+    \  \"clientcategory\": \"Modern Trade\",\r
+
+    \  \"industrytype\": \"Manufacturing\",\r
+
+    \  \"subindustry\": \"Steel Goods\",\r
+
+    \  \"tannumber\": \"MUM12345C\",\r
+
+    \  \"cinumber\": \"U12345MH2023PTC123456\",\r
+
+    \  \"gstin\": \"27AAACN1234A1Z1\",\r
+
+    \  \"msmeregistrationno\": \"MSME-123-456\",\r
+
+    \  \"importexportcode\": \"IEC987654\",\r
+
+    \  \"yearofestablishment\": 2010,\r
+
+    \  \"constitutiontype\": \"Private Limited\",\r
+
+    \  \"listedcompany\": \"No\",\r
+
+    \  \"stockexchangename\": \"N/A\",\r
+
+    \  \"websiteurl\": \"https://neelamcorp.com\",\r
+
+    \  \"registeredofficeaddress\": \"123 Industrial Hub, Suite 400, Mumbai, Maharashtra\",\r
+
+    \  \"pincode\": 400001,\r
+
+    \  \"googlemaplocation\": \"19.0760, 72.8777\",\r
+
+    \  \"ownershiptype\": \"Owned\",\r
+
+    \  \"branchlocationname\": \"Pune Branch\",\r
+
+    \  \"branchaddress\": \"Plot 45, MIDC Chakan, Pune\",\r
+
+    \  \"branchgstin\": \"27AAACN1234A1Z2\",\r
+
+    \  \"branchcontactperson\": \"Rahul Sharma\",\r
+
+    \  \"branchcontactno\": \"9876543213\",\r
+
+    \  \"keydecisionmakername\": \"Amit Shah\",\r
+
+    \  \"designation\": \"CEO\",\r
+
+    \  \"department\": \"Management\",\r
+
+    \  \"mobilenumber\": \"9988776644\",\r
+
+    \  \"whatsappnumber\": \"9988776644\",\r
+
+    \  \"linkedinprofile\": \"://linkedin.com\",\r
+
+    \  \"purchaseheadname\": \"Suresh Raina\",\r
+
+    \  \"purchaseheademail\": \"suresh@neelamcorp.com\",\r
+
+    \  \"accountsheadname\": \"Pooja Hegde\",\r
+
+    \  \"financecontrollername\": \"Karan Johar\",\r
+
+    \  \"storemanagername\": \"Vijay Verma\",\r
+
+    \  \"dispatchinchargename\": \"Rajesh Khanna\",\r
+
+    \  \"contactpersonname\": \"Sunil Shetty\",\r
+
+    \  \"dateofbirth\": \"1985-06-15\",\r
+
+    \  \"anniversarydate\": \"2012-11-20\",\r
+
+    \  \"spousename\": \"Mana Shetty\",\r
+
+    \  \"childrenname\": \"Athiya, Ahan\",\r
+
+    \  \"hobbies\": \"Cricket, Travel\",\r
+
+    \  \"communicationmode\": \"Email/WhatsApp\",\r
+
+    \  \"importantnotes\": \"Requires delivery before 10 AM. Prefers bulk billing.\",\r
+
+    \  \"kycstatus\": \"Verified\",\r
+
+    \  \"verifiedby\": \"Admin_User\",\r
+
+    \  \"verificationdate\": \"2024-03-25\",\r
+
+    \  \"riskcategory\": \"Low Risk\",\r
+
+    \  \"bankname\": \"HDFC Bank\",\r
+
+    \  \"accountnumber\": 501002003004,\r
+
+    \  \"ifsccode\": \"HDFC0001234\",\r
+
+    \  \"branchname\": \"Fort Branch\",\r
+
+    \  \"accounttype\": \"Current\",\r
+
+    \  \"swiftcode\": \"HDFCINBB\",\r
+
+    \  \"roleaccess\": \"Admin\",\r
+
+    \  \"lastlogindate\": \"2024-03-30\",\r
+
+    \r
+
+    \  \"childcorporatemoderntrade\": {\r
+
+    \    \r
+
+    \    \"id\":1,\r
+
+    \    \"creditlimit\": 500000,\r
+
+    \    \"creditdays\": 30,\r
+
+    \    \"outstandingamount\": 120000,\r
+
+    \    \"overdueamount\": 0,\r
+
+    \    \"interestonoverdue\": 12,\r
+
+    \    \"insurancecovered\": \"Yes\",\r
+
+    \    \"insuranceagencyname\": \"ICICI Lombard\",\r
+
+    \    \"averagemonthlypurchase\": 200000,\r
+
+    \    \"highestbillingmonth\": \"December\",\r
+
+    \    \"paymenttrend\": \"Timely\",\r
+
+    \    \"businesstype\": \"Retailer\",\r
+
+    \    \"productcategories\": \"Utensils, Steel Sheets\",\r
+
+    \    \"monthlyconsumption\": \"5000 Units\",\r
+
+    \    \"keysupplier\": \"Tata Steel\",\r
+
+    \    \"competitors\": \"Steel King Ltd\",\r
+
+    \    \"preferredtransporter\": \"VRL Logistics\",\r
+
+    \    \"transportmode\": \"Road\",\r
+
+    \    \"deliveryterms\": \"FOB\",\r
+
+    \    \"dispatchlocation\": \"Warehouse A\",\r
+
+    \    \"unloadingfacility\": \"Available\",\r
+
+    \    \"workinghoursfordelivery\": \"09:00 - 18:00\",\r
+
+    \    \"monthlytarget\": 150000,\r
+
+    \    \"quarterlytarget\": 450000,\r
+
+    \    \"annualcommitment\": 1800000,\r
+
+    \    \"expectedgrowth\": 15,\r
+
+    \    \"productwisetarget\": \"Sheets: 100k, Coils: 50k\",\r
+
+    \    \"ratestructure\": \"Tier 1\",\r
+
+    \    \"discounttype\": \"Volume Based\",\r
+
+    \    \"specialpricingapproval\": \"Required\",\r
+
+    \    \"currencytype\": \"INR\",\r
+
+    \    \"discountforearlypayment\": 2,\r
+
+    \    \"validityperiod\": 365,\r
+
+    \    \"maxdiscountallowed\": 10,\r
+
+    \    \"conditions\": \"Payment within 7 days for discount\",\r
+
+    \    \"schemename\": \"Gold Partner Scheme\",\r
+
+    \    \"slabdetails\": \"Slab A: >1M, Slab B: >5M\",\r
+
+    \    \"productapplicability\": \"All Products\",\r
+
+    \    \"validfrom\": \"2024-01-01\",\r
+
+    \    \"validto\": \"2024-12-31\",\r
+
+    \    \"approvalauthority\": \"Sales Director\",\r
+
+    \    \"referencecompanyname\": \"ABC Corp\",\r
+
+    \    \"contactperson\": \"John Doe\",\r
+
+    \    \"contactnumber\": \"9000012340\",\r
+
+    \    \"relationshipduration\": \"5 Years\",\r
+
+    \    \"feedback\": \"Excellent buyer, consistent payments.\",\r
+
+    \    \"createdby\": \"System_Admin\",\r
+
+    \    \"checkedby\": \"Audit_Team\",\r
+
+    \    \"approvedby\": \"Finance_Head\",\r
+
+    \    \"approvaldate\": \"2024-01-05\",\r
+
+    \    \"approvalstatus\": \"Approved\",\r
+
+    \    \"status\": \"Active\",\r
+
+    \    \"reasonfordeactivation\": \"N/A\",\r
+
+    \    \"deactivatedby\": \"N/A\",\r
+
+    \    \"reactivationapproval\": \"N/A\",\r
+
+    \    \"internalnotes\": \"Highly strategic client for FY24.\",\r
+
+    \    \"risknotes\": \"No history of defaults.\",\r
+
+    \    \"followupnotes\": \"Meeting scheduled for next quarter review.\",\r
+
+    \    \"birthdayalerts\": \"Enabled\",\r
+
+    \    \"paymentduealerts\": \"Enabled\",\r
+
+    \    \"creditlimitalerts\": \"Enabled\"\r
+
+    \  }\r
+
+    \r
+
+    \r
+
+    \  }\r
+
+    \r
+
+    \r
+
+    \    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 12000

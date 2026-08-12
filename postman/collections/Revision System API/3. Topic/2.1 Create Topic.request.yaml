@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{baseUrl}}/topic/save"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    
+    {
+        "title": "Java Basics",
+        "notes": "Core Java Fundamentals",
+        "difficulty": "MEDIUM",
+        "completed": false,
+        "moduleId": 3,
+        "revisionPatternId": 1,
+        "link":"abc.notion.com"
+
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 1000

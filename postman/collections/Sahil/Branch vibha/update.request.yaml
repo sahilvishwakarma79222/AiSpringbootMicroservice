@@ -1,0 +1,64 @@
+$kind: http-request
+url: "{{vibhaBaseUrl}}/branch/updateById/2"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"branchname\": \"Main Branch\",\r
+
+    \  \"phoneno\": \"9876543210\",\r
+
+    \  \"gstno\": \"29ABCDE1234F1Z5\",\r
+
+    \  \"email\": \"branch@example.com\",\r
+
+    \  \"address1\": \"123, Business Street\",\r
+
+    \  \"address2\": \"Industrial Area\",\r
+
+    \  \"pincode\": 560001,\r
+
+    \  \"accountno\": 123456789012,\r
+
+    \  \"bankname\": \"State Bank of Example\",\r
+
+    \  \"bankbranchname\": \"Main Branch\",\r
+
+    \  \"ifsccode\": \"SBIN0001234\",\r
+
+    \  \r
+
+    \  \"countries\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \r
+
+    \  \"states\": {\r
+
+    \    \"id\": 1\r
+
+    \   \r
+
+    \  },\r
+
+    \  \r
+
+    \  \"cities\": {\r
+
+    \    \"id\": 1\r
+
+    \   \r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 5000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{baseUrl}}/staff/page"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 5000

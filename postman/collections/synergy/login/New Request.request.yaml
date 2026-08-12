@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://192.168.1.220:8081/api/auth/login
+method: POST
+body:
+  type: json
+  content: '{"emailOrUsername": "admin@admin.com", "password": "password"}'
+settings: {}
+order: 1000

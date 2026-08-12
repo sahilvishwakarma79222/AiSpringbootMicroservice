@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://192.168.1.159:8080/api/v2/secondaryorder/deleteById/10
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 6000

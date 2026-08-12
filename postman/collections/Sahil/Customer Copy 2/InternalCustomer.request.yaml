@@ -1,0 +1,166 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/customer/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"verticaltype\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"roles\": [\r
+
+    \        {\r
+
+    \            \"id\": 6\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"code\": \"98121\",\r
+
+    \    \"tradename\": \"ASV1 test 112\",\r
+
+    \    \"countries\": {\r
+
+    \        \"id\": 101\r
+
+    \    },\r
+
+    \    \"zone\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"states\": {\r
+
+    \        \"id\": 10\r
+
+    \    },\r
+
+    \    \"cities\": {\r
+
+    \        \"id\": 707\r
+
+    \    },\r
+
+    \    \"reporting\": \"NSM\",\r
+
+    \    \"reportto\": {\r
+
+    \        \"id\": 19,\r
+
+    \        \"staffname\": \"Vikas1 Mehta\"\r
+
+    \    },\r
+
+    \    \"gstnumber\": \"29ABCD1E111234F1Z8\",\r
+
+    \    \"pannumber\": \"AXV1PY31395H\",\r
+
+    \    \"username\": \"ghthg1hgh1@gmail.com\",\r
+
+    \    \"password\": \"password\",\r
+
+    \    \"fullname\": \"Amichand\",\r
+
+    \    \"phonenumber\": 9238171869,\r
+
+    \    \"email\": \"erp.lnv18145@gmail.com\",\r
+
+    \    \"otpbasedlogin\": \"Disable\",\r
+
+    \    \"customerinternaltrade\": {\r
+
+    \        \"legalentityname\": \"amit y\",\r
+
+    \        \"ownershiptype\": \"Proprietorship\",\r
+
+    \        \"category\": \"Blue\",\r
+
+    \        \"yearofestablishment\": 2012,\r
+
+    \        \"turnover\": 1000,\r
+
+    \        \"gstregistrationtype\": \"Regular\",\r
+
+    \        \"registeredaddress\": \"tt\",\r
+
+    \        \"territorycovered\": \"tt\",\r
+
+    \        \"warehouseaddress\": \"tt\",\r
+
+    \        \"pincode\": 421505,\r
+
+    \        \"deliveryradius\": 50,\r
+
+    \        \"primarysupplyplant\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"linkedwith\": \"NEELAM\",\r
+
+    \        \"linkedcustomer\": {\r
+
+    \            \"id\": 2\r
+
+    \        },\r
+
+    \        \"schemediscountper\": 10,\r
+
+    \        \"tradediscountper\": 10,\r
+
+    \        \"incentivepercent\": 10,\r
+
+    \        \"udyamnumber\": \"89\",\r
+
+    \        \"tdsapplicable\": \"No\",\r
+
+    \        \"tcsapplicable\": \"No\",\r
+
+    \        \"creditalllowed\": \"No\",\r
+
+    \        \"autocreditblock\": \"No\",\r
+
+    \        \"interestondelay\": 89,\r
+
+    \        \"warehousesize\": 89,\r
+
+    \        \"storagetypedummy\": [],\r
+
+    \        \"owndeliveryvehicle\": 89,\r
+
+    \        \"earlypaymentapplicable\": \"No\",\r
+
+    \        \"backlistflag\": \"No\",\r
+
+    \        \"deliveryaddress\": \"123\",\r
+
+    \        \"cinno\": \"1212121212\",\r
+
+    \        \"anniversarydate\": \"2026-08-05\",\r
+
+    \        \"familydetails\": [],\r
+
+    \        \"operationlcontacts\": [],\r
+
+    \        \"brandshandled\": [],\r
+
+    \        \"status\": \"Active\"\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 19000

@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{Neelamv2BaseUrl}}/grade/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \"gradecode\":\"Gr-B\",\r
+
+    \"gradename\":\"GradeB\",\r
+
+    \"status\":\"Active\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 1000

@@ -1,0 +1,208 @@
+$kind: http-request
+url: http://192.168.1.128:8080/api/v2/secondaryorder/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"orderdate\": \"2026-05-16\",\r
+
+    \    \"remarks\": \"remarks5\",\r
+
+    \    \"retailer\": {\r
+
+    \        \"id\": 17\r
+
+    \    },\r
+
+    \    \"shipto\": {\r
+
+    \        \"id\": 17\r
+
+    \    },\r
+
+    \    \"billto\": {\r
+
+    \        \"id\": 16\r
+
+    \    },\r
+
+    \    \"suppliedby\": {\r
+
+    \        \"id\": 7\r
+
+    \    },\r
+
+    \    \"pricelist\":{\r
+
+    \        \"id\":1\r
+
+    \    },\r
+
+    \r
+
+    \    \"billtocontactperson\":\"pqr1\",\r
+
+    \    \"billtocontactno\":\"9857546734\",\r
+
+    \    \"billtoemail\":\"pqr@gmail.com\",\r
+
+    \r
+
+    \    \"shiptocontactperson\":\"abc1\",\r
+
+    \    \"shiptocontactno\":\"8767764537\",\r
+
+    \    \"shiptoemail\":\"abc@gmail.com\",\r
+
+    \r
+
+    \    \"suppliedbycontactperson\":\"tyr1\",\r
+
+    \    \"suppliedbycontactno\":\"7869657743\",\r
+
+    \    \"suppliedbyemail\":\"tyr@gmail.com\",\r
+
+    \    \"sameasbillingaddress\":\"no\",\r
+
+    \r
+
+    \    \"secondaryorderitems\": [\r
+
+    \        {\r
+
+    \            \"productid\": {\r
+
+    \                \"id\": 1\r
+
+    \            },\r
+
+    \            \"uom\": \"PCS\",\r
+
+    \            \"cartoon\": 2,\r
+
+    \            \"primary\": 10,\r
+
+    \            \"alternative\": 5,\r
+
+    \            \"mode\": \"AUTO\",\r
+
+    \            \"rate\": 100.50,\r
+
+    \            \"rateuom\": \"PCS\",\r
+
+    \            \"gross\": 1005.00,\r
+
+    \            \"tradediscount\": 50.00,\r
+
+    \            \"schemediscount\": 20.00,\r
+
+    \            \"netamt\": 935.00,\r
+
+    \            \"gst\": 168.30,\r
+
+    \            \"total\": 1103.30,\r
+
+    \            \"conversion\": 123,\r
+
+    \            \"primaryuom\": \"uomp\",\r
+
+    \            \"alternateuom\": \"altername\",\r
+
+    \            \"sq\":34,\r
+
+    \            \"gstamount\":4.28\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+scripts:
+  - type: beforeRequest
+    code: "// Get the last 6 digits of the current timestamp\r
+
+      let ts = Date.now().toString().slice(-6);\r
+
+      \r
+
+      // Generate dynamic values\r
+
+      let orderid = \"1\" + ts;          \r
+
+      let orderdate = \"2026-05-07\";    \r
+
+      let remarks = \"remarks1\" + ts;  \r
+
+      let name = \"abc\" + ts;\r
+
+      let address = \"Address1\" + ts;\r
+
+      let city = \"Thane\" + ts;\r
+
+      let pincode = \"423564\" + ts;\r
+
+      let state = \"Maharashtra\" + ts;\r
+
+      let gst = \"57788\" + ts;\r
+
+      let pan = \"GFTRD5646K\" + ts;\r
+
+      let contactperson = \"pqr\" + ts;\r
+
+      let contactno = \"9675434252\" + ts;\r
+
+      let email = \"abc@gmail.com\" + ts;\r
+
+      \r
+
+      // Set as environment variables\r
+
+      pm.environment.set(\"orderid\", orderid);\r
+
+      pm.environment.set(\"orderdate\", orderdate);\r
+
+      pm.environment.set(\"remarks\", remarks);\r
+
+      pm.environment.set(\"name\", name);\r
+
+      pm.environment.set(\"address\", address);\r
+
+      pm.environment.set(\"city\", city);\r
+
+      pm.environment.set(\"pincode\", pincode);\r
+
+      pm.environment.set(\"state\", state);\r
+
+      pm.environment.set(\"gst\", gst);\r
+
+      pm.environment.set(\"pan\", pan);\r
+
+      pm.environment.set(\"contactperson\", contactperson);\r
+
+      pm.environment.set(\"contactno\", contactno);\r
+
+      pm.environment.set(\"email\", email);\r
+
+      \r
+
+      \r
+
+      \r
+
+      \r
+
+      \r
+
+      \r
+
+      \r
+
+      \r\n"
+    language: text/javascript
+settings: {}
+order: 2000

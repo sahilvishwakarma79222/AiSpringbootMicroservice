@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://192.168.1.12:8080/api/v2/pricelist/getproductbypricelist?pricelistId=1&productId=1
+method: GET
+queryParams:
+  pricelistId: "1"
+  productId: "1"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 8000

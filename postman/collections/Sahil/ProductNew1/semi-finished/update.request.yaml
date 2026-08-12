@@ -1,0 +1,156 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/productnew/updateById/56
+method: PUT
+body:
+  type: json
+  content: "{ \r
+
+    \    \"producttype\": \"Semi-Finished Goods\",\r
+
+    \    \"name\": \"productname-1111\",\r
+
+    \    \"code\": \"code00111\",\r
+
+    \    \"status\": \"INACTIVE\",\r
+
+    \    \"uomprimary\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"uomsecondary\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"conversion\": 6256.92,\r
+
+    \    \"thickness\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"hsn\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"hsndescription\": \"amit test\",\r
+
+    \    \"igst\": 35,\r
+
+    \    \"cgst\": 17.5,\r
+
+    \    \"sgst\": 17.5,\r
+
+    \    \"category\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"subcategory\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"group\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"subgroup\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"valuation\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"createddate\": \"2026-04-29\",\r
+
+    \    \"createdtime\": \"10:29:27.565\",\r
+
+    \    \"createdby\": 1,\r
+
+    \    \"createbyname\": \"sujata\",\r
+
+    \    \"role\": \"ADMIN\",\r
+
+    \    \"uomprimary_label\": \"uomname-01\",\r
+
+    \    \"uomsecondary_label\": \"uomname-01\",\r
+
+    \    \"gauge_label\": \"gauge-01\",\r
+
+    \    \"thickness_label\": \"20\",\r
+
+    \    \"grade_label\": \"pqr\",\r
+
+    \    \"valuation_label\": \"valuationmethodname-2\",\r
+
+    \    \"hsn_label\": \"5555\",\r
+
+    \    \"category_label\": \"test A \",\r
+
+    \    \"subcategory_label\": \"Spoons\",\r
+
+    \    \"group_label\": \"abc\",\r
+
+    \    \"subgroup_label\": \"subgroupname-2\",\r
+
+    \    \"semifinisheddetails\": {\r
+
+    \       \"id\":20,\r
+
+    \        \"businessusage\": \"TRADING\",\r
+
+    \        \"capacityml\": 24,\r
+
+    \        \"weight\": 60,\r
+
+    \        \"gauge\": {\r
+
+    \            \"id\": 2\r
+
+    \        },\r
+
+    \        \"lwhproduct\": \"lwh(cm)product-6\",\r
+
+    \        \"grade\": {\r
+
+    \            \"id\": 2\r
+
+    \        },\r
+
+    \        \"diameter\": 108,\r
+
+    \        \"standardprocesstime\": 192,\r
+
+    \        \"materialcost\": 204,\r
+
+    \        \"tradingpurchasecost\": 228,\r
+
+    \        \"tradingsellingrate\": 240,\r
+
+    \        \"grossmargin\": 252\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 3000

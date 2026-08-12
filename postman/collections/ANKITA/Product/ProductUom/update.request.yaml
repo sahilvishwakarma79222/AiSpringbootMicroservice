@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/uom/updateById/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"uomcode\" : \"Kg\",\r
+
+    \t\"uomname\" : \"KoilGram\",\r
+
+    \t\"description\" : \"Weight is Gram\",\r
+
+    \t\"uomtype\" : \"Weight\",\r
+
+    \t\"status\" : \"true\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 2000

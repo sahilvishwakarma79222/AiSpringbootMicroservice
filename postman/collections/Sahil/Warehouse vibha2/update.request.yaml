@@ -1,0 +1,28 @@
+$kind: http-request
+url: "{{vibhaBaseUrl}}/warehouse/updateById/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"warehousename\":\"warehouse2\",\r
+
+    \    \"location\":\"Mumbai\",\r
+
+    \    \"type\":\"Secondary\",\r
+
+    \    \r
+
+    \    \"branch\":{\r
+
+    \        \"id\":2\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 3000

@@ -1,0 +1,38 @@
+$kind: http-request
+url: "{{baseUrl}}/study-module/page?pageNumber=0&pageSize=5&field=id&direction=asc&status=ARCHIEVED"
+method: GET
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+queryParams:
+  - key: pageNumber
+    value: "0"
+  - key: pageSize
+    value: "5"
+  - key: field
+    value: id
+  - key: direction
+    value: asc
+  - key: search
+    value: java
+    disabled: true
+  - key: status
+    value: ARCHIEVED
+body:
+  type: text
+  content: |-
+    {
+        "name": "java Programming",
+        "description": "This module covers basics of java",
+        "createdAt": "2026-06-10T10:30:00"
+        ,
+        "staffId": 1
+        // ,
+        // "topicIds": [101, 102, 103]
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 9000

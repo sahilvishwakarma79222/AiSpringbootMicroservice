@@ -1,0 +1,35 @@
+$kind: http-request
+description: |-
+  This is a GET request and it is used to "get" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).
+
+  A successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data.
+url: http://192.168.1.143:8080/api/v1/add
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: name
+      value: Anuj
+    - type: text
+      key: phonenumber
+      value: "9987654565"
+    - type: text
+      key: employeeid
+      value: "101"
+    - type: text
+      key: emailid
+      value: anuj12@gmail.com
+    - type: file
+      key: image
+      src: /C:/Users/LNV 118/Desktop/Employee image1.jpg
+auth:
+  type: noauth
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+    language: text/javascript
+order: 1000

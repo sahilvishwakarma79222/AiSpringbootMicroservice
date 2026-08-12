@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{sahilbaseurlNeelamv2}}ledger-group/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"ledgertitle\": \"ledgertitle\",\r
+
+    \  \"ledgernature\": \"ledger nature\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 1000

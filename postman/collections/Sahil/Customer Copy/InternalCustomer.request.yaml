@@ -1,0 +1,396 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/customer/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"username\": \"newcus20test\",\r
+
+    \  \"password\": \"pass\",\r
+
+    \  \"fullname\": \"newcus20test\",\r
+
+    \  \"phonenumber\": \"98725932596\",\r
+
+    \  \"email\": \"newcus20test@gmail.com\",\r
+
+    \  \"gstnumber\": \"27ABCDF1234F597\",\r
+
+    \  \"pannumber\": \"ABCDE1236G\",\r
+
+    \  \"otpbasedlogin\": \"YES\",\r
+
+    \  \"parententity\": \"Neelam Group\",\r
+
+    \  \"neelamentity\": \"Neelam Foods\",\r
+
+    \  \"code\": \"CUSTNEW20\",\r
+
+    \   \"tradename\": \"Wholesaler Traders\",\r
+
+    \  \"roles\": [\r
+
+    \    {\r
+
+    \         \"id\": 7\r
+
+    \         }\r
+
+    \ \r
+
+    \  ],\r
+
+    \r
+
+    \  \"verticaltype\": { \r
+
+    \    \"id\": 1 \r
+
+    \    },\r
+
+    \r
+
+    \  \"staff\": { \r
+
+    \    \"id\": 1\r
+
+    \     },\r
+
+    \  \"cities\": { \r
+
+    \    \"id\": 706\r
+
+    \     },\r
+
+    \  \"states\": { \r
+
+    \    \"id\": 10\r
+
+    \    },\r
+
+    \  \"zone\": { \r
+
+    \    \"id\": 3 \r
+
+    \    },\r
+
+    \r
+
+    \  \"customerinternaltrade\": {\r
+
+    \    \"linkedwith\": \"Company\",\r
+
+    \r
+
+    //    \"linkedcustomer\": {\r
+
+    //         \"id\": 1\r
+
+    //    }, \r
+
+    \    \"legalentityname\": \"Rajesh Traders Pvt Ltd\",\r
+
+    \    \"ownershiptype\": \"Private\",\r
+
+    \    \"category\": \"A\",\r
+
+    \    \"yearofestablishment\": 2010,\r
+
+    \    \"turnover\": 5000000,\r
+
+    \    \"gstregistrationtype\": \"Regular\",\r
+
+    \r
+
+    \    \"registeredaddress\": \"Mumbai HQ Address\",\r
+
+    \    \"warehouseaddress\": \"Bhiwandi Warehouse\",\r
+
+    \    \"pincode\": 400001,\r
+
+    \    \"territorycovered\": \"Mumbai Region\",\r
+
+    \    \"deliveryradius\": 50,\r
+
+    \r
+
+    \    \"primarysupplyplant\": {\r
+
+    \         \"id\": 1\r
+
+    \         },\r
+
+    \r
+
+    \    \"udyamnumber\": \"UDYAM-MH-01-0000001\",\r
+
+    \    \"tdsapplicable\": \"YES\",\r
+
+    \    \"tcsapplicable\": \"NO\",\r
+
+    \r
+
+    \    \"creditalllowed\": \"YES\",\r
+
+    \    \"securitydeposit\": 100000,\r
+
+    \    \"interestondelay\": 2.5,\r
+
+    \    \"autocreditblock\": \"NO\",\r
+
+    \r
+
+    \    \"chequedetails\": [\r
+
+    \      {\r
+
+    \        \"chequenumber\": \"000123\",\r
+
+    \        \"bankname\": \"kotak\",\r
+
+    \        \"chequedate\":\"2025-01-20\",\r
+
+    \        \"amount\": 50000.0\r
+
+    \      }\r
+
+    \    ],\r
+
+    \r
+
+    \    \"warehousesize\": 2000,\r
+
+    \    \"storagetypedummy\": [\r
+
+    \        \"Cold Storage\",\r
+
+    \        \"Storage\"\r
+
+    \    ],\r
+
+    \    \"rackingavailable\": \"YES\",\r
+
+    \    \"owndeliveryvehicle\": \"YES\",\r
+
+    \    \"billingsoftware\": \"Tally\",\r
+
+    \    \"dailydispatchcapacity\": 500,\r
+
+    \    \"reconcilationcycle\": \"Monthly\",\r
+
+    \    \"replacementpolicy\": \"Standard\",\r
+
+    \    \"replacementmonth\": \"3\",\r
+
+    \    \"returnvalidity\": \"15 Days\",\r
+
+    \r
+
+    \    \"modeoftransport\": \"Road\",\r
+
+    \    \"transportname\": \"ABC Logistics\",\r
+
+    \    \"destination\": \"Mumbai\",\r
+
+    \r
+
+    \    \"boxitemtarget\": 1000,\r
+
+    \    \"kgitemtarget\": 5000,\r
+
+    \    \"corporatetarget\": 200000,\r
+
+    \r
+
+    \    \"earlypaymentapplicable\": \"YES\",\r
+
+    \r
+
+    \    \"backlistflag\": \"NO\",\r
+
+    \    \"stdcode\": \"022\",\r
+
+    \    \"telephonenumber\": \"23456789\",\r
+
+    \    \"headofficeaddress\": \"Mumbai HO\",\r
+
+    \    \"deliveryaddress\": \"Mumbai Delivery\",\r
+
+    \    \"cinno\": \"U12345MH2020PTC123456\",\r
+
+    \r
+
+    \    \"dateofbirth\": \"1985-05-10\",\r
+
+    \    \"anniversarydate\": \"2010-06-15\",\r
+
+    \    \"maritalstatus\": \"Married\",\r
+
+    \    \"spousename\": \"Sunita Kumar\",\r
+
+    \    \"aadharnumber\": 123456789012,\r
+
+    \    \"homeaddress\": \"Mumbai Residence\",\r
+
+    \    \"height\": 170,\r
+
+    \    \"weight\": 70,\r
+
+    \    \"shirtsize\": \"L\",\r
+
+    \    \"pantsize\": 32,\r
+
+    \r
+
+    \    \"familydetails\": [\r
+
+    \      {\r
+
+    \        \"relation\": \"Spouse1\",\r
+
+    \        \"name\": \"Jane Doe\",\r
+
+    \        \"dateofbirth\": \"2025-04-19\",\r
+
+    \        \"anniversary\": \"2020-01-10\",\r
+
+    \        \"phonenumber\": \"5266452328\",\r
+
+    \        \"email\": \"JaneDoe@gmail.com\"\r
+
+    \      }\r
+
+    \    ],\r
+
+    \r
+
+    \    \"operationlcontacts\": [\r
+
+    \      {\r
+
+    \        \"designation\":\"Manager1\",\r
+
+    \        \"name\": \"sanvi\",\r
+
+    \        \"phonenumber\": \"5266452320\",\r
+
+    \        \"email\": \"Sanvi@gmail.com\"\r
+
+    \      }\r
+
+    \    ],\r
+
+    \r
+
+    \    \"brandshandled\": [\r
+
+    \      {\r
+
+    \        \"brand\":\"abc1\",\r
+
+    \        \"product\":\"steelglass\",\r
+
+    \        \"status\":\"yes\",\r
+
+    \        \"turnover\":35,\r
+
+    \        \"sincedate\":\"2020-01-10\",\r
+
+    \        \"market\":\"yty\",\r
+
+    \        \"customer\":\"trt\"\r
+
+    \      }\r
+
+    \    ],\r
+
+    \r
+
+    \ \"customerwarehousewiseminmax\": [\r
+
+    \      {\r
+
+    \        \"primaryminqty\":12,\r
+
+    \        \"altminqty\":5,\r
+
+    \        \"primarymaxqty\":12,\r
+
+    \        \"altmaxqty\":5,\r
+
+    \        \"primaryreorder\":8,\r
+
+    \        \"altreorder\":0,\r
+
+    \r
+
+    \        \"warehouse\":{\r
+
+    \            \"id\":1\r
+
+    \        }\r
+
+    \      }\r
+
+    \    ],\r
+
+    \    \"bankersreference\": \"HDFC Bank\",\r
+
+    \    \"tradersreference\": \"XYZ Traders\",\r
+
+    \    \"associationreference\": \"Trade Association\",\r
+
+    \    \"otherreference\": \"NA\",\r
+
+    \r
+
+    \    \"annualturnovercommitment\": 6000000,\r
+
+    \    \"stockvaluecommitment\": 1000000,\r
+
+    \    \"securityrepositcommitment\": 200000,\r
+
+    \r
+
+    \    \"saleteamapproved\": \"YES\",\r
+
+    \    \"financeteamapproved\": \"YES\",\r
+
+    \    \"activationdate\": \"2024-01-01\",\r
+
+    \    \"dectivationdate\": \"2025-01-02\",\r
+
+    \    \"status\": \"ACTIVE\",\r
+
+    \r
+
+    \    \"creditlimit\":2,\r
+
+    \    \"creditdays\":6,\r
+
+    \    \"earlypaymentdays\":5,\r
+
+    \    \"earlypaymentdiscountper\":43,\r
+
+    \    \"tradediscountper\":5,\r
+
+    \    \"schemediscountper\":2,\r
+
+    \    \"incentivepercent\":6,\r
+
+    \    \"balcklistreason\":\"pqr\"\r
+
+    \r
+
+    \r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 19000

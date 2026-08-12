@@ -1,0 +1,48 @@
+$kind: http-request
+url: "{{sahilNeelamV2BaseUrl}}uom/save"
+method: POST
+body:
+  type: json
+  content: "// {\r
+
+    //   \"uomcode\" : \"Kg\",\r
+
+    // \t\"uomname\" : \"KoilGram\",\r
+
+    // \t\"description\" : \"Weight is Gram\",\r
+
+    // \t\"uomtype\" : \"Weight\",\r
+
+    // \t\"status\" : \"true\"\r
+
+    // }\r
+
+    {\r
+
+    \  \"uomcode\": \"{{uomcode}}\",\r
+
+    \  \"uomname\": \"{{uomname}}\",\r
+
+    \  \"description\": \"Weight is Gram\",\r
+
+    \  \"uomtype\": \"Weight\",\r
+
+    \  \"status\": \"true\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+scripts:
+  - type: beforeRequest
+    code: "let ts = Date.now().toString().slice(-5);\r
+
+      \r
+
+      pm.environment.set(\"uomcode\", \"KG\" + ts);\r
+
+      pm.environment.set(\"uomname\", \"Kilogram_\" + ts);"
+    language: text/javascript
+settings: {}
+order: 8000

@@ -1,0 +1,112 @@
+$kind: http-request
+url: http://192.168.1.128:8080/api/v2/productnew/updateById/6
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"producttype\": \"Packing Material\",\r
+
+    \    \"name\": \"rty\",\r
+
+    \    \"code\": \"54\",\r
+
+    \    \"status\": \"ACTIVE\",\r
+
+    \    \"uomprimary\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"uomsecondary\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"conversion\": \"99999\",\r
+
+    \    \"thickness\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"valuation\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"hsn\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"hsndescription\": \"hyt\",\r
+
+    \    \"igst\": \"10\",\r
+
+    \    \"cgst\": \"5.00\",\r
+
+    \    \"sgst\": \"5.00\",\r
+
+    \    \"category\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"subcategory\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"group\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"subgroup\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"packingmaterialdetails\": {\r
+
+    \        \"id\":1,\r
+
+    \        \"packagingtype\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"length\": 45,\r
+
+    \        \"height\": 45,\r
+
+    \        \"width\": 45,\r
+
+    \        \"color\": \"BROWN\",\r
+
+    \        \"printingrequired\": false,\r
+
+    \        \"reorderlevel\": 42\r
+
+    \    },\r
+
+    \    \"cost\": 54\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 3000

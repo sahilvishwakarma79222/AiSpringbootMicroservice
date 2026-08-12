@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/study-module/getById/1"
+method: GET
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+        "name": "Introduction to Programming",
+        "description": "This module covers basics of programming",
+        "createdAt": "2026-06-10T10:30:00"
+        // ,
+        // "staffId": 1001,
+        // "topicIds": [101, 102, 103]
+    }
+auth:
+  type: noauth
+settings: {}
+order: 2000

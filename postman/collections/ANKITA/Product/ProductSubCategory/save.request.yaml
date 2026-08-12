@@ -1,0 +1,28 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/Productsubcategory/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"productcategory\":{\r
+
+    \      \"id\": 1\r
+
+    \    },\r
+
+    \t \"code\":\"pl-005\",\r
+
+    \t \"name\":\"Spoons\",\r
+
+    \t  \"description\":\"All types of Spoon\",\r
+
+    \t  \"status\":\"true\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 1000

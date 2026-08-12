@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/brand/page?pageNumber=0&pageSize=10&field=id&direction=asc
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+  - key: pageSize
+    value: "10"
+  - key: field
+    value: id
+  - key: direction
+    value: asc
+  - key: search
+    value: hp1
+    disabled: true
+body:
+  type: json
+  content: "{\r\n    \"brandname\":\"hp1\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 4000

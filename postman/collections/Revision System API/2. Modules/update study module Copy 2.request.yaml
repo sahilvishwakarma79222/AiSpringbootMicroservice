@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/study-module/updateStatus/10?status=ACTIVE"
+method: PATCH
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+queryParams:
+  status: ACTIVE
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 7000

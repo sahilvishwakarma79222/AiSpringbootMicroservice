@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{Neelamv2BaseUrl}}/brand/page?pageNumber=0&pageSize=10&field=id&direction=asc"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+  - key: pageSize
+    value: "10"
+  - key: field
+    value: id
+  - key: direction
+    value: asc
+  - key: search
+    value: brand1
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 4000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{Neelamv2BaseUrl}}/auth/login"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"staffId\": \"STF001\",\r
+
+    \  \"password\": \"pass\"\r
+
+    }"
+settings: {}
+order: 2000

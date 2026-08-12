@@ -1,0 +1,188 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/productnew/updateById/6
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"productType\": \"FINISHED\",\r
+
+    \    \"name\": \"Coca-ColaUpdate Soft Drink\",\r
+
+    \    \"eancode\": \"Update ean-0987\",\r
+
+    \    \"code\": \"Update COLA-511ML\",\r
+
+    \    \"status\": \"ACTIVE\",\r
+
+    \    \"uomprimary\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"uomsecondary\": {\r
+
+    \        \"id\": 4\r
+
+    \    },\r
+
+    \    \"conversion\": 1.0,\r
+
+    \    \"thickness\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"hsn\": {\r
+
+    \        \"id\": 6\r
+
+    \    },\r
+
+    \    \"hsndescription\": \"Update Soft Drink Beverage\",\r
+
+    \    \"igst\": 12.00,\r
+
+    \    \"cgst\": 6.00,\r
+
+    \    \"sgst\": 6.00,\r
+
+    \    \"category\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"subcategory\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"group\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"subgroup\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"brand\": {\r
+
+    \        \"id\": 24\r
+
+    \    },\r
+
+    \    \"cost\": 35.00,\r
+
+    \    \"valuation\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"notes\": \"Update notes\",\r
+
+    \    \"finishedDetails\": {\r
+
+    \        \"id\":1,\r
+
+    \        // \"productNew1\": {\r
+
+    \        //     \"id\": 1\r
+
+    \        // },\r
+
+    \        \"shortname\": \"Update Coke 500ml\",\r
+
+    \        \"eancode\": \"EAN-0987\",\r
+
+    \        \"productbarcodeapplicable\": true,\r
+
+    \        \"setbarcodeapplicable\": true,\r
+
+    \        \"mastercartonbarcodeapplicable\": true,\r
+
+    \        \"weddingsetbarcodelabel\": false,\r
+
+    \        \"catalogueapplicable\": true,\r
+
+    \        \"batchapplicable\": true,\r
+
+    \        \"bisapplicable\": true,\r
+
+    \        \"standardqtyperbox\": 24,\r
+
+    \        \"reportinguom\": \"Update PCS\",\r
+
+    \        \"packagingtype\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"capacityml\": 500.00,\r
+
+    \        \"innerdiameter\": 60.00,\r
+
+    \        \"outerdiameter\": 65.00,\r
+
+    \        \"weight\": 20.00,\r
+
+    \        \"gauge\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"lwhproduct\": \"10x5x5\",\r
+
+    \        \"lwhmastercarton\": \"40x30x25\",\r
+
+    \        \"grade\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"form\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"finishtype\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"mrp\": 50.00,\r
+
+    \        \"dlp\": 45.00,\r
+
+    \        \"standardcost\": 30.00,\r
+
+    \        \"cessvaluationtype\": \"Update NONE\",\r
+
+    \        \"productiontype\": \"IN-HOUSE\",\r
+
+    \        \"timeforprocurement\": 5,\r
+
+    \        \"typeofsupply\": \"Update GOODS\"\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 4000

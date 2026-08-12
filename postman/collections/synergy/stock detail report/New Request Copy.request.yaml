@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://192.168.1.220:8081/api/stockreport/stockreportwithdate?pid=30&fromdate=2026-04-27&todate=2026-05-01&wid=1&bid=1
+method: GET
+queryParams:
+  pid: "30"
+  fromdate: 2026-04-27
+  todate: 2026-05-01
+  wid: "1"
+  bid: "1"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 2000

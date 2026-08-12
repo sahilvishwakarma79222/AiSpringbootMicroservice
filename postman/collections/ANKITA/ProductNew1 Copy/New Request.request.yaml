@@ -1,0 +1,8 @@
+$kind: http-request
+url: ""
+method: GET
+body:
+  type: json
+  content: '{"producttype":"Finished Goods","name":"335435","code":"3654566","status":"ACTIVE","uomprimary":{"id":1},"uomsecondary":{"id":1},"conversion":"766","hsn":{"id":2},"hsndescription":"ert","igst":"","cgst":"9.00","sgst":"9.00","valuation":{"id":2},"thickness":{"id":2},"category":{"id":3},"subcategory":{"id":3},"group":{"id":3},"subgroup":{"id":3},"finisheddetails":{"shortname":"435436","brand":{"id":2},"packagingtype":{"id":1},"eancode":"7678624387643876","standardqtyperbox":"8766","reportinguom":"Primary","capacityml":"750_ML","innerdiameter":"14_CM","outerdiameter":"14_CM","weight":"7686","gauge":{"id":2},"lwhproduct":"7676","lwhmastercarton":"56","grade":{"id":2},"form":{"id":1},"finishtype":{"id":1},"mrp":"656","dlp":"65454","standardcost":"765765","cessvaluationtype":"","productiontype":"ASSEMBLY","timeforprocurement":"876876","verticaltypes":[{"id":5},{"id":4}],"country":{"id":101},"zone":{"id":4},"state":{"id":11},"deliverydays":"87676","shippingcharges":"765","productbarcodeapplicable":false,"setbarcodeapplicable":false,"mastercartonbarcodeapplicable":false,"weddingsetbarcodelabel":false,"catalogueapplicable":false,"batchapplicable":false,"bisapplicable":false,"typeofsupply":"CAPITAL_GOODS"}}'
+settings: {}
+order: 7000

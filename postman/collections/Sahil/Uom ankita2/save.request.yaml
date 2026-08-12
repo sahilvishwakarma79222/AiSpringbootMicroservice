@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/uom/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"uomcode\" : \"test5\",\r
+
+    \t\"uomname\" : \"test5\",\r
+
+    \t\"description\" : \"Pcs \",\r
+
+    \t\"uomtype\" : \"Pcs\",\r
+
+    \t\"status\" : \"true\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

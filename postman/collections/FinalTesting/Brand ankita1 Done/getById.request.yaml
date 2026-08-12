@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{sahilbaseurlNeelamv2}}brand/getById/1"
+method: GET
+body:
+  type: json
+  content: "{\r\n    \"brandname\":\"hp1\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 3000

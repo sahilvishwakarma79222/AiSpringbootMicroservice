@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://66.116.234.202:8080/neelam/api/v2/brand/page?pageNumber=0&pageSize=15&field=id&direction=desc&search=
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "15"
+  field: id
+  direction: desc
+  search: ""
+body:
+  type: json
+  content: "{\r\n    \"brandname\":\"hp1\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 5000

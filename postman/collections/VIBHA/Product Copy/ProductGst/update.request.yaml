@@ -1,0 +1,38 @@
+$kind: http-request
+url: http://192.168.1.30:8080/api/v2/gst/updateById/3
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"gstcode\" : \"10\",\r
+
+    \t\"gst\" :\"11\",\r
+
+    \    \"gsttype\": \"CGST\",\r
+
+    \t\"description\":\"GSt for Goods And Service\",\r
+
+    \    \"igst\":\"23\",\r
+
+    \    \"cgst\":\"11.05\",\r
+
+    \    \"sgst\":\"11.05\",\r
+
+    \    \"utgst\":\"20\",\r
+
+    \    \"effectivefrom\":\"2026-07-30\",\r
+
+    \    \"effectiveto\":\"2026-12-31\",\r
+
+    \    \"status\":true\r
+
+    \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 2000

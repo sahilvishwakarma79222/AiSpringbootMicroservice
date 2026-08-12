@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/productcategory/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"categoryname\" : \"Abd\"\r
+
+    \   \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 1000

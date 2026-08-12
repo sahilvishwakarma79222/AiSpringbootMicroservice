@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{sahilbaseurlNeelamv2}}brand/save"
+method: POST
+body:
+  type: json
+  content: "{\r\n    \"brandname\":\"test\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{sahilbaseurlNeelamv2}}brand/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"brandname\": \"{{brandname}}\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+scripts:
+  - type: beforeRequest
+    code: "let ts = Date.now().toString().slice(-6);\r
+
+      \r
+
+      pm.environment.set(\"brandname\", \"hp\" + ts);"
+    language: text/javascript
+settings: {}
+order: 2000

@@ -1,0 +1,26 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/ledger/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Online Ledger238\",\r
+
+    \  \"ledgergroup\": 3,\r
+
+    \  \"verticaltype\":1,\r
+
+    \  \"openingbalance\": 15000.00,\r
+
+    \  \"drcr\": \"DR\",\r
+
+    \  \"openingbalancedate\": \"2026-02-27\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

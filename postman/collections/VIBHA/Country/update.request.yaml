@@ -1,0 +1,28 @@
+$kind: http-request
+url: http://192.168.1.14:8080/api/v2/country/updateById/249
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"countrycode\":\"123\",\r
+
+    \    \"countryname\":\"India\",\r
+
+    \    \"currencycode\":\"INR\",\r
+
+    \    \"currencysymbol\":\"$\",\r
+
+    \    \"phonecode\":\"9865464141\",\r
+
+    \    \"timezone\":\"IST\",\r
+
+    \    \"activestatus\":\"True\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 3000

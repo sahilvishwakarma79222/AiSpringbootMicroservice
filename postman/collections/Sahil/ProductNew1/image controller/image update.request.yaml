@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/productimage/updateImageByProductImageId/37
+method: PUT
+body:
+  type: formdata
+  content:
+    - type: file
+      key: image
+      src: /C:/Users/LNV/Pictures/neelam/product/images (1).jpg
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 2000

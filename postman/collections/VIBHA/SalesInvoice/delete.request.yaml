@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://192.168.1.18:8080/api/v2/salesinvoice/deleteById/2
+method: DELETE
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 4000

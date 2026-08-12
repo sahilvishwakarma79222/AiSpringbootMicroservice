@@ -1,0 +1,186 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/supplier/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"suppliername\": \"Anshika\",\r
+
+    \  \"email\": \"anshika123@gmail.com\",\r
+
+    \  \"password\": \"pass2\",\r
+
+    //   \"roles\": [\r
+
+    //     {\r
+
+    //       \"id\": 1\r
+
+    //     }\r
+
+    //   ],\r
+
+    \  \"suppliercode\": \"SUP-2024-001\",\r
+
+    \  \"gstnumber\": \"22AAAAA0000A1Z5\",\r
+
+    \  \"pannumber\": \"ABCDE1234F\",\r
+
+    \  \"msmestatus\": \"Registered\",\r
+
+    \  \"suppliertype\": \"Manufacturer\",\r
+
+    \  \"materialcategory\": \"Raw Material\",\r
+
+    \  \"status\": \"Active\",\r
+
+    \  \"billingpartyname\": \"Global Manufacturing HQ\",\r
+
+    \  \"billingaddress\": \"123 Business Park, Sector 5\",\r
+
+    \  \"billingpincode\": \"400001\",\r
+
+    \  \"shippingpartyname\": \"Global Logistics Hub\",\r
+
+    \  \"shippingaddress\": \"Warehouse 4, Industrial Area Phase II\",\r
+
+    \  \"shippingpincode\": \"400002\",\r
+
+    \  \"ownername\": \"John Doe\",\r
+
+    \  \"ownermobile\": \"9876543210\",\r
+
+    \  \"owneremail\": \"john.doe@globalmfg.com\",\r
+
+    \  \"dispatchcontactperson\": \"Jane Smith\",\r
+
+    \  \"dispatchmobile\": \"9876543211\",\r
+
+    \  \"dispatchemail\": \"dispatch@globalmfg.com\",\r
+
+    \  \"accountcontactperson\": \"Robert Brown\",\r
+
+    \  \"accountmobile\": \"9876543212\",\r
+
+    \  \"accountemailid\": \"accounts@globalmfg.com\",\r
+
+    \  \"transportbasis\": \"Ex-Works\",\r
+
+    \  \"preferredtransportername\": \"Swift Logistics\",\r
+
+    \  \"deliverydays\": \"3-5 Days\",\r
+
+    \  \"gstapplicable\": \"Yes\",\r
+
+    \  \"tdsapplicable\": \"Yes\",\r
+
+    \  \"tcsapplicable\": \"No\",\r
+
+    \  \"creditdays\": \"30\",\r
+
+    \  \"creditlimit\":\"50000\",\r
+
+    \  \"paymentterms\":\"30\",\r
+
+    \  \"bankname\":\"HDFC bank\",\r
+
+    \  \"accountnumber\":\"50100234574734\",\r
+
+    \  \"accounttype\":\"current\",\r
+
+    \  \"ifsccode\":\"HDFC1000435\",\r
+
+    \  \"branchname\":\"Kalyan East\",\r
+
+    \  \"upiid\":\"abc15242@hdfcbank\",\r
+
+    \  \"portalaccess\":\"Enable\",\r
+
+    \  \"allowedmodule\":\"Purchase Module\",\r
+
+    \  \"portalusername\":\"abcsupplier\",\r
+
+    \  \"sendlogincredentialsto\":\"supplier123@gmail.com\",\r
+
+    \  \"vendorauditrequired\":\"yes\",\r
+
+    \  \"lastauditdate\":\"2026-03-20\",\r
+
+    \t \"nextauditdate\":\"2026-03-24\",\r
+
+    \      \"auditfrequency\":\"Yearly\",\r
+
+    \     \"blacklistflag\":\"yes\",\r
+
+    \t \"reasonforblacklist\":\"Poor quality material\",\r
+
+    \t \"blacklistdate\":\"2026-03-10\",\r
+
+    \t \"ontimedelivery\":\"2\",\r
+
+    \t \"qualityrejection\":\"5\",\r
+
+    \t \"vendorrating\":\"C-Average\",\r
+
+    \t \"performanceremarks\":\"Consistent quality\",\r
+
+    \     \"notes\":\"Special payment terms\",\r
+
+    \  \"states\": {\r
+
+    \     \"id\": 1\r
+
+    \  },\r
+
+    \  \"cities\": { \r
+
+    \    \"id\": 2\r
+
+    \    },\r
+
+    \  \"billingstates\": { \r
+
+    \    \"id\": 10\r
+
+    \  },\r
+
+    \  \"billingcities\": {\r
+
+    \     \"id\": 50 \r
+
+    \  },\r
+
+    \  \"billingcountries\": { \r
+
+    \    \"id\": 1\r
+
+    \   },\r
+
+    \  \"shippingcity\": { \r
+
+    \    \"id\": 51 \r
+
+    \  },\r
+
+    \  \"shippingstate\": { \r
+
+    \    \"id\": 10\r
+
+    \  },\r
+
+    \  \"shippingcountries\": { \r
+
+    \    \"id\": 1\r
+
+    \     }\r
+
+    \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 1000

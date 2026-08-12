@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{Neelamv2BaseUrl}}/ledger-group/getById/11"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \  \"ledgertitle\": \"Cash Account\",\r
+
+    \  \"ledgernature\": \"Assets\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 3000

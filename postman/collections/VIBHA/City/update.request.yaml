@@ -1,0 +1,40 @@
+$kind: http-request
+url: http://192.168.1.14:8080/api/v2/city/updateById/48316
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"cityname\":\"aaa\",\r
+
+    \    \"area\":\"andheri\",\r
+
+    \    \"pincode\":\"4201501\",\r
+
+    \    \"district\":\"thane\",\r
+
+    \    \"latitude\":2.96,\r
+
+    \    \"longitude\":5.89,\r
+
+    \    \"description\":\"rywteuw\",\r
+
+    \    \"activestatus\":\"True\",\r
+
+    \r
+
+    \    \"states\":{\r
+
+    \        \"id\":1\r
+
+    \    }\r
+
+    \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 3000

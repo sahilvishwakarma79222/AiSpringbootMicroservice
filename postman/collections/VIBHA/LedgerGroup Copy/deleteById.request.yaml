@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/ledger-group/deleteById/12
+method: DELETE
+body:
+  type: json
+  content: "{\r
+
+    \  \"ledgertitle\": \"Bank Account\",\r
+
+    \  \"ledgernature\": \"Assets\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 4000

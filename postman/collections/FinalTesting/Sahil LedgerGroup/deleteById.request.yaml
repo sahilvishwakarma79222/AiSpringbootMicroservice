@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{Neelamv2BaseUrl}}/ledger-group/deleteById/12"
+method: DELETE
+body:
+  type: json
+  content: "{\r
+
+    \  \"ledgertitle\": \"Bank Account\",\r
+
+    \  \"ledgernature\": \"Assets\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{neelamtoken}}"
+settings: {}
+order: 4000

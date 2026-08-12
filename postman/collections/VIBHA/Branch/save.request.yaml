@@ -1,0 +1,54 @@
+$kind: http-request
+url: http://66.116.234.202:8080/api/v2/branch/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"branchname\": \"Branch001\",\r
+
+    \    \"phoneno\": \"7463922634\",\r
+
+    \    \"gstno\": \"516535469824521\",\r
+
+    \    \"email\": \"Branch123@gmail.com\",\r
+
+    \    \"address1\": \"Addressline1\",\r
+
+    \    \"address2\": \"Addressline2\",\r
+
+    \    \"pincode\": \"654809\",\r
+
+    \    \"accountno\": \"1010011100006786\",\r
+
+    \    \"bankname\": \"SBI\",\r
+
+    \    \"bankbranchname\": \"Badlapur\",\r
+
+    \    \"ifsccode\": \"SBIN0000001\",\r
+
+    \    \"countries\": {\r
+
+    \        \"id\": 101\r
+
+    \    },\r
+
+    \    \"states\": {\r
+
+    \        \"id\": 7\r
+
+    \    },\r
+
+    \    \"cities\": {\r
+
+    \        \"id\": 603\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 1000

@@ -1,0 +1,30 @@
+$kind: http-request
+url: http://192.168.1.128:8080/api/v2/verticaltype/page?pageNumber=0&pageSize=5&field=id&direction=asc
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+  - key: pageSize
+    value: "5"
+  - key: field
+    value: id
+  - key: direction
+    value: asc
+  - key: search
+    value: Manufacturing
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \  \"ledgertitle\": \"Cash Account\",\r
+
+    \  \"ledgernature\": \"Assets\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 4000

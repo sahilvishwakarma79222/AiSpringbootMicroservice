@@ -1,0 +1,9 @@
+$kind: http-request
+url: "http://192.168.1.220:8081/api/openingstock/page/0/5/desc/id/ "
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 1000

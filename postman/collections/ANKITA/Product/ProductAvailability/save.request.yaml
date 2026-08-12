@@ -1,0 +1,58 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/productAvailability/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"country\": {\r
+
+    \    \"id\": 8\r
+
+    \  },\r
+
+    \  \"productNew1\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \  \"zone\": {\r
+
+    \    \"id\": 8\r
+
+    \  },\r
+
+    \  \"states\":[\r
+
+    \    {\r
+
+    \        \"id\":21\r
+
+    \    },\r
+
+    \    {\r
+
+    \        \"id\":26\r
+
+    \    }\r
+
+    \  ],\r
+
+    \  \"deliverydays\": \"95\",\r
+
+    \  \"shippingcharges\": \"100.00\",\r
+
+    \  \"productavalability\": false,\r
+
+    \  \"serviceavailable\": true,\r
+
+    \  \"notes\": \"Express shipping available for this zone.\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 1000

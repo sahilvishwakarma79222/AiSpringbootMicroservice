@@ -1,0 +1,98 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/rawmaterial/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"materialname\": \"Steel Sheet\",\r
+
+    \  \"materialcode\": \"SS-003\",\r
+
+    \  \"status\": \"false\",\r
+
+    \  \"width\": \"1200\",\r
+
+    \  \"weight\": \"500\",\r
+
+    \  \"purchasecost\": \"1500\",\r
+
+    \  \"minimumstocklevel\": \"50\",\r
+
+    \  \"maximumstocklevel\": \"500\",\r
+
+    \  \"reorderinglevel\": \"100\",\r
+
+    \  \r
+
+    \  \"category\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"group\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"primaryuom\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"secondaryuom\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"valuationmethod\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \  \"steelgrade\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \  \"thickness\": {\r
+
+    \    \"id\": 3\r
+
+    \  },\r
+
+    \  \"gauge\": {\r
+
+    \    \"id\": 4\r
+
+    \  },\r
+
+    \  \"hsncode\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"producttype\":{\r
+
+    \    \"id\":1\r
+
+    \  }\r
+
+    \r
+
+    \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 1000

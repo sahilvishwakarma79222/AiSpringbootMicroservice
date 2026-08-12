@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/productAvailability/page?pageNumber=1&pageSize=10&field=id&direction=asc &search=50
+method: GET
+queryParams:
+  pageNumber: "1"
+  pageSize: "10"
+  field: id
+  direction: "asc "
+  search: "50"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 5000

@@ -1,0 +1,18 @@
+$kind: http-request
+name: New Request
+url: http://192.168.1.220:8081/api/stockreport/page/stocksummaryreport?pageNumber=0&pageSize=10&field=productid&direction=asc&warehouseid=1&checkdate=2026-04-03&productName=
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "10"
+  field: productid
+  direction: asc
+  warehouseid: "1"
+  checkdate: 2026-04-03
+  productName: ""
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 3000

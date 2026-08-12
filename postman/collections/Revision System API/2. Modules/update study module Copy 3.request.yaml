@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v1/study-module/updateStatus/10?status=ARCHIVED
+method: PATCH
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+queryParams:
+  status: ARCHIVED
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 8000

@@ -1,0 +1,204 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/customer/updateById/12
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\": \"customer123_updated\",\r
+
+    \    \"password\": \"12345678\",\r
+
+    \    \"fullname\": \"cust UPDATED\",\r
+
+    \    \"phonenumber\": \"9999999999\",\r
+
+    \    \"email\": \"customer123_updated@gmail.com\",\r
+
+    \    \"gstnumber\": null,\r
+
+    \    \"pannumber\": null,\r
+
+    \    \"otpbasedlogin\": null,\r
+
+    \    \"parententity\": null,\r
+
+    \    \"neelamentity\": null,\r
+
+    \    \"code\": \"999\",\r
+
+    \    \"tradename\": \"abc UPDATED\",\r
+
+    \    \"roles\": [],\r
+
+    \    \"verticaltype\": {\r
+
+    \        \"id\": 8\r
+
+    \    },\r
+
+    \    \"reportto\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"reporting\": \"NEELAM UPDATED\",\r
+
+    \    \"cities\": {\r
+
+    \        \"id\": 1845\r
+
+    \    },\r
+
+    \    \"states\": {\r
+
+    \        \"id\": 19\r
+
+    \    },\r
+
+    \    \"zone\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"countries\": {\r
+
+    \        \"id\": 101\r
+
+    \    },\r
+
+    \r
+
+    \    \"exportmoderntrade\": {\r
+
+    \        \"id\": 3,\r
+
+    \        \"importername\": \"UPDATED IMPORTER\",\r
+
+    \        \"clienttype\": \"UPDATED TYPE\",\r
+
+    \        \"languagepreference\": \"UPDATED LANG\",\r
+
+    \        \"region\": \"UPDATED REGION\",\r
+
+    \        \"timezone\": \"UPDATED TIMEZONE\",\r
+
+    \r
+
+    \        \"clientcountries\": {\r
+
+    \            \"id\": 101\r
+
+    \        },\r
+
+    \r
+
+    \        \"registrationnumber\": \"UPDATED REG\",\r
+
+    \        \"taxid\": \"UPDATED TAX\",\r
+
+    \        \"importercode\": \"UPDATED CODE\",\r
+
+    \        \"businesslicenseno\": \"UPDATED LICENSE\",\r
+
+    \        \"yearofestablishment\": 2020,\r
+
+    \        \"natureofbusiness\": \"UPDATED BUSINESS\",\r
+
+    \r
+
+    \        \"officeaddress\": \"UPDATED OFFICE\",\r
+
+    \        \"postalcode\": 111111,\r
+
+    \        \"deliveryaddress\": \"UPDATED DELIVERY\",\r
+
+    \        \"portofdelivery\": \"UPDATED PORT\",\r
+
+    \        \"contactperson\": \"UPDATED PERSON\",\r
+
+    \r
+
+    \        \"primarycontactname\": \"UPDATED CONTACT\",\r
+
+    \        \"designation\": \"UPDATED DESIGNATION\",\r
+
+    \        \"phoneno\": \"8888888888\",\r
+
+    \        \"whatsappno\": \"7777777777\",\r
+
+    \r
+
+    \        \"bankname\": \"UPDATED BANK\",\r
+
+    \        \"accountnumber\": 123456,\r
+
+    \        \"accountholder\": \"UPDATED HOLDER\",\r
+
+    \r
+
+    \        \"paymentterm\": \"UPDATED TERM\",\r
+
+    \        \"creditdays\": 30,\r
+
+    \        \"currency\": \"USD\",\r
+
+    \r
+
+    \        \"incoterms\": \"FOB\",\r
+
+    \        \"portofloading\": \"MUMBAI\",\r
+
+    \r
+
+    \        \"productcategories\": \"UPDATED CATEGORY\",\r
+
+    \        \"hscode\": \"9999\",\r
+
+    \r
+
+    \        \"childexportmoderntrade\": {\r
+
+    \            \"id\": 2,\r
+
+    \            \"invoiceformat\": \"UPDATED INVOICE\",\r
+
+    \            \"packinglistformat\": \"UPDATED PACKING\",\r
+
+    \            \"certificateoforiginreq\": \"UPDATED CERT\",\r
+
+    \r
+
+    \            \"freightforwardername\": \"UPDATED FORWARDER\",\r
+
+    \            \"customhouseagent\": \"UPDATED AGENT\",\r
+
+    \r
+
+    \            \"insurancerequired\": \"YES\",\r
+
+    \            \"insurancetype\": \"FULL\",\r
+
+    \r
+
+    \            \"creditlimit\": 999999,\r
+
+    \            \"riskcategory\": \"LOW\",\r
+
+    \r
+
+    \            \"internalnotes\": \"UPDATED NOTES\"\r
+
+    \        }\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 3000

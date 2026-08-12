@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{Neelamv2BaseUrl}}uom/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"uomcode\" : \"test7\",\r
+
+    \t\"uomname\" : \"test7\",\r
+
+    \t\"description\" : \"Pcs \",\r
+
+    \t\"uomtype\" : \"Pcs\",\r
+
+    \t\"status\" : \"true\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 1000

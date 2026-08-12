@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://192.168.1.15:8080/api/v2/pricelistassignment/moderncustomerofpricelistassignment/page?pageNumber=0&pageSize=20&field=id&direction=asc&search=&tradetype=Modern&verticaltype=4&platform=4&assignmentscope=Customer Assignment
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "20"
+  field: id
+  direction: asc
+  search: ""
+  tradetype: Modern
+  verticaltype: "4"
+  platform: "4"
+  assignmentscope: Customer Assignment
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 5000

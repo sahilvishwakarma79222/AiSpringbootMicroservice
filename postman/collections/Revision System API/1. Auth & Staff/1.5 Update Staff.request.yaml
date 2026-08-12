@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/staff/1"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "username": "teststudent_updated",
+      "email": "test_updated@test.com"
+    }
+settings: {}
+order: 7000

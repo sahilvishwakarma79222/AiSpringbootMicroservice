@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/salesorder/allocate
+method: POST
+queryParams:
+  - key: productId
+    value: null
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"productId\": 1,\r
+
+    \    \"issueQty\": 120,\r
+
+    \    \"salesOrderItemIds\": [3,4]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 10000

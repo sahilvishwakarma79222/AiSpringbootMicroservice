@@ -1,0 +1,36 @@
+$kind: http-request
+url: "{{sahilNeelamV2BaseUrl}}uom/updateById/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \r
+
+    \  \"uomcode\": \"{{uomcode}}\",\r
+
+    \  \"uomname\": \"{{uomname}}\",\r
+
+    \  \"description\": \"Updated Weight\",\r
+
+    \  \"uomtype\": \"Weight\",\r
+
+    \  \"status\": \"true\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+scripts:
+  - type: beforeRequest
+    code: "let n = Date.now().toString().slice(-5);\r
+
+      \r
+
+      pm.environment.set(\"uomcode\", \"UPD\" + n);\r
+
+      pm.environment.set(\"uomname\", \"Updated_\" + n);"
+    language: text/javascript
+settings: {}
+order: 7000

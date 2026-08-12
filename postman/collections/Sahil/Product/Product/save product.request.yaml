@@ -1,0 +1,198 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/product/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"producttype\": \"Finished Goods\",\r
+
+    \    \"name\": \"productname-01\",\r
+
+    \    \"code\": \"item/skucode-01\",\r
+
+    \    \"conversion\": \"conversion-01\",\r
+
+    \    \"hsndescription\": \"amit test\",\r
+
+    \    \"igst\": \"35\",\r
+
+    \    \"cgst\": \"17.50\",\r
+
+    \    \"sgst\": \"17.50\",\r
+
+    \    \"brand\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"status\": \"INACTIVE\",\r
+
+    \    \"uomprimary\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"uomsecondary\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"thickness\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"valuation\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"hsn\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"category\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"subcategory\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"group\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"subgroup\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"vertical\": {\r
+
+    \        \"id\": 4\r
+
+    \    },\r
+
+    \    \"country\": {\r
+
+    \        \"id\": 101\r
+
+    \    },\r
+
+    \    \"zone\": {\r
+
+    \        \"id\": 70\r
+
+    \    },\r
+
+    \    \"state\": {\r
+
+    \        \"id\": 4124\r
+
+    \    },\r
+
+    \    \"finisheddetails\": {\r
+
+    \        \"shortname\": \"shortname-01\",\r
+
+    \        \"productpackagingtype\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"eancode\": \"barcodenumber-01\",\r
+
+    \        \"standardqtyperbox\": 12,\r
+
+    \        \"reportinguom\": \"Alternate\",\r
+
+    \        \"capacityml\": 24,\r
+
+    \        \"innerdiameter\": 36,\r
+
+    \        \"outerdiameter\": 48,\r
+
+    \        \"weight\": 60,\r
+
+    \        \"gauge\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"lwhproduct\": \"product-01\",\r
+
+    \        \"lwhmastercarton\": \"lwh(cm)mastercarton-7\",\r
+
+    \        \"grade\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"form\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"finishtype\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"mrp\": 120,\r
+
+    \        \"dlp\": 132,\r
+
+    \        \"standardcost\": 144,\r
+
+    \        \"cessvaluationtype\": \"Not Applicable\",\r
+
+    \        \"productiontype\": \"TRADING\",\r
+
+    \        \"timeforprocurement\": 156,\r
+
+    \        \"typeofsupply\": \"SERVICES\",\r
+
+    \        \"productbarcodeapplicable\": true,\r
+
+    \        \"setbarcodeapplicable\": true,\r
+
+    \        \"mastercartonbarcodeapplicable\": true,\r
+
+    \        \"weddingsetbarcodelabel\": true,\r
+
+    \        \"catalogueapplicable\": true,\r
+
+    \        \"batchapplicable\": true,\r
+
+    \        \"bisapplicable\": true\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

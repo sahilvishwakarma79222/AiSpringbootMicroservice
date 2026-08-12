@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8080/api/staff/username/rahul.kumar
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+settings: {}
+order: 5000

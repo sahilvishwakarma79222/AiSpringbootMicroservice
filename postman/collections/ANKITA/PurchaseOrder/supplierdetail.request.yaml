@@ -1,0 +1,152 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/purchaseorder/supplierdetail/page?pageNumber=0&pageSize=10&field=id&direction=asc&search=
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "10"
+  field: id
+  direction: asc
+  search: ""
+body:
+  type: text
+  content: "{\r
+
+    \  \"date\": \"2026-06-13\",\r
+
+    \  \"contactname\": \"John Doe\",\r
+
+    \  \"vouchertype\": \"Purchase Order\",\r
+
+    \  \"voucherno\": \"PO-1001\",\r
+
+    \  \"termsofpayment\": \"Net 30 Days\",\r
+
+    \  \"refernceno\": \"REF-2026-001\",\r
+
+    \  \"referencedate\": \"2026-06-10\",\r
+
+    \  \"otherreference\": \"Vendor Ref 123\",\r
+
+    \  \"dispatchthrough\": \"Courier\",\r
+
+    \  \"destination\": \"Mumbai\",\r
+
+    \  \"termsofdelivery\": \"Delivered at Site\",\r
+
+    \  \"declaration\": \"Goods once sold will not be taken back.\",\r
+
+    \  \"status\": \"PENDING\",\r
+
+    \  \"address\": \"123 Business Park, Mumbai\",\r
+
+    \  \"remarks\": \"Urgent delivery required\",\r
+
+    \  \"taxtype\": \"GST\",\r
+
+    \r
+
+    \  \"purchaseorderitems\": [\r
+
+    \    {\r
+
+    \      \"productid\": {\r
+
+    \        \"id\": 1\r
+
+    \      },\r
+
+    \      \"mode\": \"AUTO\",\r
+
+    \      \"rate\": 100.00,\r
+
+    \      \"rateuom\": \"PCS\",\r
+
+    \      \"gross\": 1000.00,\r
+
+    \      \"tradediscount\": 50.00,\r
+
+    \      \"schemediscount\": 25.00,\r
+
+    \      \"primary\": 10.00,\r
+
+    \      \"alternative\": 1.00,\r
+
+    \      \"uom\": \"PCS\",\r
+
+    \      \"gst\": 18.00\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"productid\": {\r
+
+    \        \"id\": 4\r
+
+    \      },\r
+
+    \      \"mode\": \"MANUAL\",\r
+
+    \      \"rate\": 250.00,\r
+
+    \      \"rateuom\": \"BOX\",\r
+
+    \      \"gross\": 1250.00,\r
+
+    \      \"tradediscount\": 100.00,\r
+
+    \      \"schemediscount\": 50.00,\r
+
+    \      \"primary\": 5.00,\r
+
+    \      \"alternative\": 0.00,\r
+
+    \      \"uom\": \"BOX\",\r
+
+    \      \"gst\": 12.00\r
+
+    \    }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"branch\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"warehouse\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \r
+
+    \  \"supplier\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \  \"billto\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \  \"shipto\": {\r
+
+    \    \"id\": 1\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 9000

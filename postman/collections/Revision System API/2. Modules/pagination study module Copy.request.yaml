@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{baseUrl}}/study-module/page"
+method: GET
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+        "name": "java Programming",
+        "description": "This module covers basics of java",
+        "createdAt": "2026-06-10T10:30:00"
+        ,
+        "staffId": 1
+        // ,
+        // "topicIds": [101, 102, 103]
+    }
+auth:
+  type: noauth
+settings: {}
+order: 10000

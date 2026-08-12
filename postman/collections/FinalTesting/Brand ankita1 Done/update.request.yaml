@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Neelamv2BaseUrl}}brand/updateById/1"
+method: PUT
+body:
+  type: json
+  content: "{\r\n    \"brandname\":\"hp1\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 2000

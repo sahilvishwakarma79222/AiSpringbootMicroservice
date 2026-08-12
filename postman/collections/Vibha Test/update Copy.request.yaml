@@ -1,0 +1,36 @@
+$kind: http-request
+url: http://192.168.1.128:8080/api/v2/warehouse/updateById/7
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"warehousename\":\"{{warehousename}}\",\r
+
+    \    \"location\":\"{{location}}\",\r
+
+    \    \"type\":\"{{type}}\",\r
+
+    \    \r
+
+    \    \"branch\":{\r
+
+    \        \"id\":2\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+scripts:
+  - type: beforeRequest
+    code: "pm.environment.set(\"warehousename\", \"warehouseUpd\" + Date.now());\r
+
+      pm.environment.set(\"location\", \"AmbernathUpd\" + Date.now());\r
+
+      pm.environment.set(\"type\", \"Secondary\" + Date.now());\r\n"
+    language: text/javascript
+settings: {}
+order: 3000

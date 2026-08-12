@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{baseUrl}}/revision-pattern-step/save-bulk"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    [
+        {"sequenceNo": 1, "dayOffset": 0, "patternId": 2},
+        {"sequenceNo": 2, "dayOffset": 1, "patternId": 2},
+        {"sequenceNo": 3, "dayOffset": 3, "patternId": 2},
+        {"sequenceNo": 4, "dayOffset": 7, "patternId": 2},
+        {"sequenceNo": 5, "dayOffset": 15, "patternId": 2}
+    ]
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 2000

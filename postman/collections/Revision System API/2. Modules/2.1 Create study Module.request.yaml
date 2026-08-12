@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{baseUrl}}/study-module/save"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+        "name": "Java Mastery",
+        "description": "Complete Java Preparation"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 1000

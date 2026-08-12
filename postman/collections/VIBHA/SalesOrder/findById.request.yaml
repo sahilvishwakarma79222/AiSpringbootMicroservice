@@ -1,0 +1,112 @@
+$kind: http-request
+url: http://192.168.1.128:8080/api/v2/salesorder/getById/1
+method: GET
+body:
+  type: text
+  content: "{\r
+
+    \  \"id\": 1,\r
+
+    \  \"salesorderid\": 1001,\r
+
+    \  \"salesorderdate\": \"2026-06-19\",\r
+
+    \r
+
+    \  \"branch\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \r
+
+    \  \"warehouse\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \r
+
+    \  \"customer\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \r
+
+    \  \"primaryorderid\": 5001,\r
+
+    \  \"modeofpayment\": \"Credit\",\r
+
+    \  \"buyerorderno\": 123456,\r
+
+    \  \"otherreference\": \"REF-001\",\r
+
+    \  \"freightterms\": \"FOB\",\r
+
+    \  \"deliverymode\": \"Air\",\r
+
+    \r
+
+    \  \"dispatchthrough\": \"DHL\",\r
+
+    \  \"destination\": \"Mumbai\",\r
+
+    \  \"agent\": \"ABC Logistics\",\r
+
+    \  \"billoflading\": \"BL123456\",\r
+
+    \  \"dispatchdate\": \"2026-06-20\",\r
+
+    \r
+
+    \  \"placeofreceiptbyshipper\": \"Mumbai Warehouse\",\r
+
+    \  \"flightno\": \"AI203\",\r
+
+    \  \"portofloading\": \"JNPT\",\r
+
+    \  \"portofdischarge\": \"Dubai Port\",\r
+
+    \  \"countryto\": \"UAE\",\r
+
+    \  \"shippingbillno\": \"SB789456\",\r
+
+    \  \"shippingbilldate\": \"2026-06-19\",\r
+
+    \  \"portcode\": \"INNSA1\",\r
+
+    \r
+
+    \  \"billto\": {\r
+
+    \    \"id\": 24\r
+
+    \  },\r
+
+    \r
+
+    \  \"shipto\": {\r
+
+    \    \"id\": 25\r
+
+    \  },\r
+
+    \r
+
+    \  \"suppliedby\": {\r
+
+    \    \"id\": 2\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 2000

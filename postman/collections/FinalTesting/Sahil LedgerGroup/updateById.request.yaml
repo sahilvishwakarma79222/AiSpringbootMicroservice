@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{Neelamv2BaseUrl}}/ledger-group/updateById/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"ledgertitle\": \"update title\",\r
+
+    \  \"ledgernature\": \"update ledger nature\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{neelamtoken}}"
+settings: {}
+order: 2000

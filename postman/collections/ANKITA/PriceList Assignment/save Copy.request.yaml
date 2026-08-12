@@ -1,0 +1,34 @@
+$kind: http-request
+url: http://192.168.1.167:8080/api/v2/pricelistassignment/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"partytype\": \"CUSTOMER\",\r
+
+    \    \"tradetype\": \"Internal\",\r
+
+    \    \"pricelist\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"effectivedate\": \"2026-06-18\",\r
+
+    \    \"referenceid\": [\r
+
+    \        7\r
+
+    \    ],\r
+
+    \    \"assignmentscope\": \"CUSTOMER\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 1000

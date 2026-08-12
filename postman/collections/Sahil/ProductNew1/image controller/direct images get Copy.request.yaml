@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://192.168.1.220:8081/output/productimages/fd3d06d3-fa1c-4118-897c-caa071c8773f.jpg
+method: GET
+auth:
+  type: noauth
+settings: {}
+order: 6000

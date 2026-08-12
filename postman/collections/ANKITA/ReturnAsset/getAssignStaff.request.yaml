@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://192.168.1.185:8080/api/v2/returnasset/getAssignedAsset?staffId=1
+method: GET
+queryParams:
+  staffId: "1"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 6000

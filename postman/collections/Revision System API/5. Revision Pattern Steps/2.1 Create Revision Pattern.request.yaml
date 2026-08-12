@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{baseUrl}}/revision-pattern-step/save"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+        "sequenceNo": 1,
+        "dayOffset": 0,
+        "patternId": 3
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 1000

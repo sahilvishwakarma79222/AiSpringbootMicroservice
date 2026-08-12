@@ -1,0 +1,314 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/customer/updateById/25
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\": \"amit shah\",\r
+
+    \    \"password\": \"pass\",\r
+
+    \    \"fullname\": \"shah Sharma\",\r
+
+    \    \"phonenumber\": \"9897865523\",\r
+
+    \    \"email\": \"shah@gmail.com\",\r
+
+    \    \"gstnumber\": null,\r
+
+    \    \"pannumber\": null,\r
+
+    \    \"otpbasedlogin\": null,\r
+
+    \    \"parententity\": null,\r
+
+    \    \"neelamentity\": null,\r
+
+    \    \"code\": \"shah1234\",\r
+
+    \    \"tradename\": \"abc\",\r
+
+    \    \"roles\": [],\r
+
+    \    \"verticaltype\": {\r
+
+    \        \"id\": 8\r
+
+    \    },\r
+
+    \    \"reportto\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"reporting\": \"NEELAM\",\r
+
+    \    \"cities\": {\r
+
+    \        \"id\": 1845\r
+
+    \    },\r
+
+    \    \"states\": {\r
+
+    \        \"id\": 19\r
+
+    \    },\r
+
+    \    \"zone\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"countries\": {\r
+
+    \        \"id\": 101\r
+
+    \    },\r
+
+    \    \"customerinternaltrade\": null,\r
+
+    \    \"individualcustomermoderntrade\": null,\r
+
+    \    \"corporatemoderntrade\": null,\r
+
+    \    \"qemmoderntrade\": null,\r
+
+    \    \"createddate\": \"2026-05-02\",\r
+
+    \    \"createdtime\": \"08:31:33.525\",\r
+
+    \    \"createdby\": null,\r
+
+    \    \"createbyname\": \"admin\",\r
+
+    \    \"role\": \"ADMIN\",\r
+
+    \    \"updateddate\": null,\r
+
+    \    \"updatedtime\": null,\r
+
+    \    \"updatedby\": 0,\r
+
+    \    \"updatedbyname\": null,\r
+
+    \    \"updatedrole\": null,\r
+
+    \    \"verticaltype_label\": \"Export-Modern Trade\",\r
+
+    \    \"countries_label\": \"India\",\r
+
+    \    \"Reporting_manger_NEELAM_label\": \"neelam\",\r
+
+    \    \"zone_label\": \"Southern Region\",\r
+
+    \    \"states_label\": \"Kerala\",\r
+
+    \    \"cities_label\": \"Adur\",\r
+
+    \    \"clientcountries_label\": \"India\",\r
+
+    \    \"exportmoderntrade\": {\r
+
+    \        \"id\":10,\r
+
+    \        \"importername\": \"update\",\r
+
+    \        \"clienttype\": \"update\",\r
+
+    \        \"languagepreference\": \"update\",\r
+
+    \        \"region\": \"update\",\r
+
+    \        \"timezone\": \"update\",\r
+
+    \        \"clientcountries\": {\r
+
+    \            \"id\": 101\r
+
+    \        },\r
+
+    \        \"registrationnumber\": \"update\",\r
+
+    \        \"taxid\": \"update\",\r
+
+    \        \"importercode\": \"update\",\r
+
+    \        \"businesslicenseno\": \"update\",\r
+
+    \        \"yearofestablishment\": 76565,\r
+
+    \        \"natureofbusiness\": \"update\",\r
+
+    \        \"officeaddress\": \"update\",\r
+
+    \        \"postalcode\": 657653,\r
+
+    \        \"deliveryaddress\": \"update\",\r
+
+    \        \"portofdelivery\": \"ggggcffcxfx\",\r
+
+    \        \"contactperson\": \"safhdxs\",\r
+
+    \        \"primarycontactname\": \"xfdxfxg\",\r
+
+    \        \"designation\": \"xaddf\",\r
+
+    \        \"phoneno\": \"hfdnhgcgxs\",\r
+
+    \        \"whatsappno\": \"cxfcgxfdx\",\r
+
+    \        \"purchaseheadname\": \"afccgc\",\r
+
+    \        \"purchaseheademail\": \"example123@gmail.com\",\r
+
+    \        \"financemanagername\": \"gydfytdstrdsa\",\r
+
+    \        \"financemanageremail\": \"example123@gmail.com\",\r
+
+    \        \"logisticscoordinator\": \"gdffdcsv\",\r
+
+    \        \"bankname\": \" ysfdas\",\r
+
+    \        \"accountnumber\": 7675,\r
+
+    \        \"accountholder\": \"zgfchgf\",\r
+
+    \        \"swiftcode\": \"asdgchfc\",\r
+
+    \        \"bankaddress\": \"gxqfdxgx\",\r
+
+    \        \"iban\": \"xfdxsfdxctsa\",\r
+
+    \        \"paymentterm\": \"yfytfcc\",\r
+
+    \        \"creditdays\": 652343,\r
+
+    \        \"currency\": \"vxcfcxs\",\r
+
+    \        \"paymentmode\": \"cshgfchd\",\r
+
+    \        \"incoterms\": \"scfctd\",\r
+
+    \        \"portofloading\": \"xhyf\",\r
+
+    \        \"portofdischarge\": \"zdsgggfcf\",\r
+
+    \        \"finaldestination\": \"xfgdxgdhtf\",\r
+
+    \        \"shipmentmode\": \"sfjygyd\",\r
+
+    \        \"productcategories\": \"uftvmhfc\",\r
+
+    \        \"hscode\": \"hgdvtfv\",\r
+
+    \        \"annualpurchasevolume\": \"evdfcf\",\r
+
+    \        \"packagingrequirement\": \"gdvhgvt\",\r
+
+    \        \"labelingrequirement\": \"fdygvd\",\r
+
+    \        \"qualitystandards\": \"fdccd\",\r
+
+    \        \"roleaccess\": \"fdcgdytf\",\r
+
+    \        \"lastlogindate\": \"2026-05-14\",\r
+
+    \        \"childexportmoderntrade\": {\r
+
+    \            \"id\":10,\r
+
+    \            \"invoiceformat\": \"update\",\r
+
+    \            \"packinglistformat\": \"update\",\r
+
+    \            \"certificateoforiginreq\": \"update\",\r
+
+    \            \"inspectioncertificate\": \"update\",\r
+
+    \            \"thirdpartyagency\": \"update\",\r
+
+    \            \"documentationinstructions\": \"update\",\r
+
+    \            \"freightforwardername\": \"update\",\r
+
+    \            \"customhouseagent\": \"update\",\r
+
+    \            \"shippingline\": \"update\",\r
+
+    \            \"containertype\": \"wffd\",\r
+
+    \            \"stuffinglocation\": \"update\",\r
+
+    \            \"insurancerequired\": \"update\",\r
+
+    \            \"insurancetype\": \"update\",\r
+
+    \            \"insurancecompany\": \"update\",\r
+
+    \            \"currencyexposurelimit\": \"cgavgv\",\r
+
+    \            \"exchangeratetype\": \"yfxyf\",\r
+
+    \            \"hedgingrequired\": \"wcdtfcgfc\",\r
+
+    \            \"compliancestatus\": \"Active\",\r
+
+    \            \"creditlimit\": 65265,\r
+
+    \            \"riskcategory\": \"fhdsgv\",\r
+
+    \            \"paymenthistory\": \"dctc\",\r
+
+    \            \"outstandingamount\": 37246,\r
+
+    \            \"monthlyexporttarget\": 635753,\r
+
+    \            \"annualcommitment\": 562452,\r
+
+    \            \"productwisetarget\": \"dhgvgd\",\r
+
+    \            \"countrywisetarget\": \"dcdwfcytd\",\r
+
+    \            \"createdby\": null,\r
+
+    \            \"checkedby\": \"abc\",\r
+
+    \            \"approvedby\": \"abc\",\r
+
+    \            \"status\": \"Active\",\r
+
+    \            \"approvaldate\": \"2026-05-06\",\r
+
+    \            \"activationstatus\": \"Active\",\r
+
+    \            \"blockreason\": \"hfhfdd\",\r
+
+    \            \"reactivationapproval\": \"kjhgxd\",\r
+
+    \            \"internalnotes\": \"okk\",\r
+
+    \            \"specialinstructions\": \"okk\",\r
+
+    \            \"risknotes\": \"okk\",\r
+
+    \            \"lcexpiryalert\": \"hvxhgcfcs\",\r
+
+    \            \"shipmentdelayalert\": \"jnkjdftds\",\r
+
+    \            \"paymentduealert\": \"dxdct\"\r
+
+    \        }\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 16000

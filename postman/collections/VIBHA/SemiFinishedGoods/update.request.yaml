@@ -1,0 +1,120 @@
+$kind: http-request
+url: http://192.168.1.14:8080/api/v2/semifinishedGoods/updateById/4
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"componentname\": \"Steel Industrial\",\r
+
+    \  \"componentcode\": 1002024,\r
+
+    \  \"businessusage\": \"Manufacturing\",\r
+
+    \  \"status\": \"Active\",\r
+
+    \  \"category\": { \r
+
+    \       \"id\": 1 \r
+
+    \       },\r
+
+    \  \"subcategory\": { \r
+
+    \        \"id\": 1\r
+
+    \       },\r
+
+    \  \"group\": { \r
+
+    \        \"id\": 1 \r
+
+    \        },\r
+
+    \  \"primaryuom\": { \r
+
+    \        \"id\": 1 \r
+
+    \        },\r
+
+    \  \"secondaryuom\": { \r
+
+    \        \"id\": 1\r
+
+    \        },\r
+
+    \  \"valuationmethod\": { \r
+
+    \        \"id\": 1 \r
+
+    \        },\r
+
+    \  \"grade\": { \r
+
+    \        \"id\": 1\r
+
+    \         },\r
+
+    \  \"gauge\": { \r
+
+    \        \"id\": 1\r
+
+    \         },\r
+
+    \  \"thickness\": { \r
+
+    \        \"id\": 1 \r
+
+    \        },\r
+
+    \  \"wipconsumptionname\": \"Raw Steel Rod\",\r
+
+    \  \"diameter\": 15.5,\r
+
+    \  \"weight\": 0.25,\r
+
+    \  \"capacity\": 500.0,\r
+
+    \  \"lwhproduct\": \"10x5x5\",\r
+
+    \  \"standardprocesstime\": 120,\r
+
+    \  \"materialcost\": 45.50,\r
+
+    \  \"wipcost\": 12.00,\r
+
+    \  \"tradingpurchasecost\": 60.00,\r
+
+    \  \"tradingsellingrate\": 85.00,\r
+
+    \  \"grossmargin\": 25.00,\r
+
+    \  \"minimumstocklevel\": 100,\r
+
+    \  \"maximumstocklevel\": 5000,\r
+
+    \  \"reorderinglevel\": 500,\r
+
+    \  \"hsn\": { \r
+
+    \       \"id\": 1 \r
+
+    \       },\r
+
+    \  \"hsndescription\": \"Iron and Steel Bolts\",\r
+
+    \  \"igst\": 18.0,\r
+
+    \  \"cgst\": 9.0,\r
+
+    \  \"sgst\": 9.0,\r
+
+    \  \"note\": \"Standard high-tensile bolt for engine assembly.\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 3000

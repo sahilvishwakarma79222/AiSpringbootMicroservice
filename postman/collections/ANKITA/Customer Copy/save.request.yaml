@@ -1,0 +1,358 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/customer/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\": \"System8\",\r
+
+    \    \"password\": \"\",\r
+
+    \    \"fullname\": \"Cutomer3\",\r
+
+    \    \"phonenumber\": \"867564903\",\r
+
+    \    \"email\": \"personal@gmail.com\",\r
+
+    \    \"gstnumber\": \"123457\",\r
+
+    \    \"pannumber\": \"996543\",\r
+
+    \    \"otpbasedlogin\": \"Disable\",\r
+
+    \    \"parententity\": null,\r
+
+    \    \"neelamentity\": null,\r
+
+    \    \"code\": \"123\",\r
+
+    \    \"tradename\": \"Trade01\",\r
+
+    \    \"roles\": [\r
+
+    \        {\r
+
+    \            \"id\": 5\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"verticaltype\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"reportto\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"reporting\": \"NEELAM\",\r
+
+    \    \"cities\": {\r
+
+    \        \"id\": 594\r
+
+    \    },\r
+
+    \    \"states\": {\r
+
+    \        \"id\": 6\r
+
+    \    },\r
+
+    \    \"zone\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"countries\": {\r
+
+    \        \"id\": 101\r
+
+    \    },\r
+
+    \    \"individualcustomermoderntrade\": null,\r
+
+    \    \"corporatemoderntrade\": null,\r
+
+    \    \"exportmoderntrade\": null,\r
+
+    \    \"qemmoderntrade\": null,\r
+
+    \    \"createddate\": \"2026-05-01\",\r
+
+    \    \"createdtime\": \"14:59:08.132\",\r
+
+    \    \"createdby\": 1,\r
+
+    \    \"createbyname\": \"admin\",\r
+
+    \    \"role\": \"ADMIN\",\r
+
+    \    \"updateddate\": null,\r
+
+    \    \"updatedtime\": null,\r
+
+    \    \"updatedby\": 0,\r
+
+    \    \"updatedbyname\": null,\r
+
+    \    \"updatedrole\": null,\r
+
+    \    \"storagetype\": \"Dry\",\r
+
+    \    \"homeaddress\": null,\r
+
+    \    \"height\": null,\r
+
+    \    \"weight\": null,\r
+
+    \    \"shirtsize\": null,\r
+
+    \    \"pantsize\": null,\r
+
+    \    \"customerwarehousewiseminmax\": [],\r
+
+    \    \"verticaltype_label\": \"Dealer-Internal Trade\",\r
+
+    \    \"countries_label\": \"India\",\r
+
+    \    \"zone_label\": \"Northern Region\",\r
+
+    \    \"states_label\": \"Chandigarh\",\r
+
+    \    \"cities_label\": \"Chandigarh\",\r
+
+    \    \"Reporting_manger_NEELAM_label\": \"neelam\",\r
+
+    \    \"primarysupplyplant_label\": \"warehouse1\",\r
+
+    \    \"customerinternaltrade\": {\r
+
+    \        \"legalentityname\": \"Stockist1\",\r
+
+    \        \"ownershiptype\": \"Proprietorship\",\r
+
+    \        \"category\": \"Blue\",\r
+
+    \        \"yearofestablishment\": 2002,\r
+
+    \        \"turnover\": 99,\r
+
+    \        \"gstregistrationtype\": \"Composition\",\r
+
+    \        \"registeredaddress\": \"Address1\",\r
+
+    \        \"territorycovered\": \"bhy\",\r
+
+    \        \"warehouseaddress\": \"Warehouse Address1\",\r
+
+    \        \"pincode\": 421740,\r
+
+    \        \"deliveryradius\": 45,\r
+
+    \        \"primarysupplyplant\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"schemediscountper\": 10,\r
+
+    \        \"tradediscountper\": 10,\r
+
+    \        \"incentivepercent\": 10,\r
+
+    \        \"udyamnumber\": \"4578\",\r
+
+    \        \"tdsapplicable\": \"Yes\",\r
+
+    \        \"tcsapplicable\": \"Yes\",\r
+
+    \        \"creditalllowed\": \"No\",\r
+
+    \        \"autocreditblock\": \"Yes\",\r
+
+    \        \"chequedetails\": [\r
+
+    \            {\r
+
+    \                \"id\": 2,\r
+
+    \                \"chequenumber\": \"345567890\",\r
+
+    \                \"bankname\": \"HDFC\",\r
+
+    \                \"chequedate\": \"2026-05-01\",\r
+
+    \                \"amount\": 10000\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"warehousesize\": 10,\r
+
+    \        \"storagetypedummy\": [\r
+
+    \            \"Dry\"\r
+
+    \        ],\r
+
+    \        \"rackingavailable\": \"Yes\",\r
+
+    \        \"owndeliveryvehicle\": \"10\",\r
+
+    \        \"billingsoftware\": \"vgt\",\r
+
+    \        \"dailydispatchcapacity\": 10,\r
+
+    \        \"reconcilationcycle\": \"Monthly\",\r
+
+    \        \"replacementpolicy\": \"Yes\",\r
+
+    \        \"replacementmonth\": \"December\",\r
+
+    \        \"returnvalidity\": \"bgt\",\r
+
+    \        \"modeoftransport\": \"Courier\",\r
+
+    \        \"transportname\": \"bgt\",\r
+
+    \        \"destination\": \"nhy\",\r
+
+    \        \"boxitemtarget\": 45,\r
+
+    \        \"kgitemtarget\": 56,\r
+
+    \        \"corporatetarget\": 6,\r
+
+    \        \"earlypaymentapplicable\": \"No\",\r
+
+    \        \"backlistflag\": \"No\",\r
+
+    \        \"balcklistreason\": \"ny\",\r
+
+    \        \"stdcode\": \"91\",\r
+
+    \        \"telephonenumber\": \"45678953\",\r
+
+    \        \"headofficeaddress\": \"Address1\",\r
+
+    \        \"deliveryaddress\": \"Address2\",\r
+
+    \        \"cinno\": \"45689\",\r
+
+    \        \"dateofbirth\": \"2026-04-30\",\r
+
+    \        \"anniversarydate\": null,\r
+
+    \        \"maritalstatus\": \"Single\",\r
+
+    \        \"spousename\": null,\r
+
+    \        \"aadharnumber\": 7686568454,\r
+
+    \        \"familydetails\": [\r
+
+    \            {\r
+
+    \                \"id\": 2,\r
+
+    \                \"relation\": \"yty\",\r
+
+    \                \"name\": \"pqr\",\r
+
+    \                \"dateofbirth\": \"2026-04-27\",\r
+
+    \                \"anniversary\": null,\r
+
+    \                \"phonenumber\": \"9867554732\",\r
+
+    \                \"email\": \"email\"\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"operationlcontacts\": [\r
+
+    \            {\r
+
+    \                \"id\": 2,\r
+
+    \                \"designation\": \"rty\",\r
+
+    \                \"name\": \"bgt\",\r
+
+    \                \"phonenumber\": \"5678478942\",\r
+
+    \                \"email\": \"email1\"\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"brandshandled\": [\r
+
+    \            {\r
+
+    \                \"id\": 2,\r
+
+    \                \"brand\": \"bgt\",\r
+
+    \                \"product\": \"muj\",\r
+
+    \                \"status\": \"ouiy\",\r
+
+    \                \"turnover\": 23,\r
+
+    \                \"sincedate\": null,\r
+
+    \                \"market\": \"hyt\",\r
+
+    \                \"customer\": null\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"bankersreference\": \"byt\",\r
+
+    \        \"tradersreference\": \"nhy\",\r
+
+    \        \"associationreference\": \"mjubh\",\r
+
+    \        \"otherreference\": \"jhy\",\r
+
+    \        \"annualturnovercommitment\": 45,\r
+
+    \        \"stockvaluecommitment\": 56,\r
+
+    \        \"securityrepositcommitment\": 76,\r
+
+    \        \"saleteamapproved\": \"Pending\",\r
+
+    \        \"financeteamapproved\": \"Pending\",\r
+
+    \        \"activationdate\": \"2026-05-01\",\r
+
+    \        \"dectivationdate\": \"2026-05-01\",\r
+
+    \        \"status\": \"Active\"\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 3000

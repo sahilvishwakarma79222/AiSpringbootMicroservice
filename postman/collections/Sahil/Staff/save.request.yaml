@@ -1,0 +1,40 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"staffId\": \"STF1001\",\r
+
+    \  \"staffName\": \"sahil Sharma\",\r
+
+    \  \"password\": \"pass\",\r
+
+    \  \"email\": \"sahil@gmail.com\",\r
+
+    \  \"pfNo\": \"PF56789\",\r
+
+    \  \"phoneNo\": \"9876543210\",\r
+
+    \  \"address\": \"Mumbai, Maharashtra\",\r
+
+    \  \"gender\": \"Male\",\r
+
+    \  \"dateOfBirth\": \"1998-05-14\",\r
+
+    \  \"dateOfJoining\": \"2023-01-10\",\r
+
+    \  \"roles\": [\r
+
+    \    {\r
+
+    \      \"id\": 1\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+settings: {}
+order: 1000

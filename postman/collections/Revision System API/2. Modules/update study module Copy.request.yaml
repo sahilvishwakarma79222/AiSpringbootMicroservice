@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{baseUrl}}/study-module/updateById/3"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+        "name": "java",
+        "description": "This module covers basics of java",
+        "createdAt": "2026-06-10T10:30:00"
+        ,
+        "staffId": 2,
+        "status":"ARCHIVED"
+
+        // ,
+        // "topicIds": [101, 102, 103]
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 6000

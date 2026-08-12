@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{baseUrl}}/staff/getById/2"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+settings: {}
+order: 6000

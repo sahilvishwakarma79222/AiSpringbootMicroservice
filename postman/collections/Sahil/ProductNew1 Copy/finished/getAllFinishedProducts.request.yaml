@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/productnew/getAllFinishedProducts/page?pageNumber=0&pageSize=15&field=id&direction=desc&search=
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "15"
+  field: id
+  direction: desc
+  search: ""
+settings: {}
+order: 7000

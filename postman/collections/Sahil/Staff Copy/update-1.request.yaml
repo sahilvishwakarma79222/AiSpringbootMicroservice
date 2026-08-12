@@ -1,0 +1,239 @@
+$kind: http-request
+name: update
+url: http://192.168.1.220:8080/api/v2/staff/updateById/5
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": \"5\",\r
+
+    \    \"username\": \"dfs\",\r
+
+    \    \"staffname\": \"NSM West South\",\r
+
+    \    \"email\": \"sd\",\r
+
+    \    \"phoneno\": null,\r
+
+    \    \"gender\": \"Male\",\r
+
+    \    \"dateofbirth\": \"2026-04-25\",\r
+
+    \    \"dateofjoining\": \"2026-04-25\",\r
+
+    \    \"reporting\": \"NEELAM\",\r
+
+    \    \"pfno\": \"pfnumber-18\",\r
+
+    \    \"roles\": [\r
+
+    \        {\r
+
+    \            \"id\": 8\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"department\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"reportsto\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"mobilenumber\": null,\r
+
+    \    \"workemailid\": null,\r
+
+    \    \"permanentaddress\": null,\r
+
+    \    \"currentcities\": null,\r
+
+    \    \"location\": null,\r
+
+    \    \"zoneids\": [\r
+
+    \        {\r
+
+    \            \"id\": 2\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": 70\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"stateids\": [],\r
+
+    \    \"cityids\": [],\r
+
+    \    \"addressstates_label\": \"Andaman and Nicobar Islands\",\r
+
+    \    \"addresscities_label\": \"Bombuflat\",\r
+
+    \    \"department_label\": \"Sales\",\r
+
+    \    \"roles_label\": \"NSM\",\r
+
+    \    \"Reporting_manger_NEELAM_label\": \"neelam\",\r
+
+    \    \"staffdetails\": {\r
+
+    \        \"code\": \"employeecode-2\",\r
+
+    \        \"displayname\": \"displayname-3\",\r
+
+    \        \"bloodgroup\": \"A+\",\r
+
+    \        \"maritalstatus\": null,\r
+
+    \        \"anniversarydate\": \"2026-04-25\",\r
+
+    \        \"nationality\": \"nationality-4\",\r
+
+    \        \"alternatemobile\": \"8765453423\",\r
+
+    \        \"personalemail\": \"personalemail-6\",\r
+
+    \        \"emergencycontactperson\": \"emergencycontactperson-7\",\r
+
+    \        \"emergencycontactno\": \"emergencycontactnumber-8\",\r
+
+    \        \"address\": null,\r
+
+    \        \"address2\": \"addressline2-10\",\r
+
+    \        \"addressstates\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"addresscities\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"pincode\": 12,\r
+
+    \        \"currentaddress\": \"currentaddressline-11\",\r
+
+    \        \"currentstates\": null,\r
+
+    \        \"currentpincode\": 24,\r
+
+    \        \"employeetype\": \"Permanent\",\r
+
+    \        \"worklocation\": \"worklocation-13\",\r
+
+    \        \"shifttiming\": null,\r
+
+    \        \"employmentstatus\": null,\r
+
+    \        \"assignedterritory\": \"assignedterritory-14\",\r
+
+    \        \"routeplan\": \"routeplan-15\",\r
+
+    \        \"dailytarget\": 36,\r
+
+    \        \"reportingtime\": \"15:52:00\",\r
+
+    \        \"travelallowance\": 48,\r
+
+    \        \"bankname\": \"bankname-16\",\r
+
+    \        \"accountnumber\": 60,\r
+
+    \        \"ifsccode\": \"ifsccode-17\",\r
+
+    \        \"uannumber\": \"uannumber-19\",\r
+
+    \        \"esicnumber\": \"esicnumber-20\",\r
+
+    \        \"ctc\": 72,\r
+
+    \        \"basicsalary\": 84,\r
+
+    \        \"hra\": 96,\r
+
+    \        \"allowances\": 108,\r
+
+    \        \"attendancetype\": null,\r
+
+    \        \"annualleaves\": 120,\r
+
+    \        \"sickleaves\": 132,\r
+
+    \        \"weeklyoff\": null,\r
+
+    \        \"holidaycalendar\": null,\r
+
+    \        \"monthlytarget\": 144,\r
+
+    \        \"performancerating\": null,\r
+
+    \        \"incentiveeligibility\": null,\r
+
+    \        \"appraisalcycle\": null,\r
+
+    \        \"kpimetrics\": \"kpimetrics-21\",\r
+
+    \        \"roleaccess\": null,\r
+
+    \        \"claimallowed\": null,\r
+
+    \        \"expenselimit\": 156,\r
+
+    \        \"approvalauthority\": \"approvalauthority-25\",\r
+
+    \        \"reimbursementcycle\": null,\r
+
+    \        \"createdby\": \"createdby-26\",\r
+
+    \        \"checkedby\": \"checkedby-27\",\r
+
+    \        \"approvedby\": \"approvedby-28\",\r
+
+    \        \"approvalstatus\": null,\r
+
+    \        \"finalstatus\": null,\r
+
+    \        \"exitdate\": \"2026-04-25\",\r
+
+    \        \"exitreason\": \"exitreason-29\",\r
+
+    \        \"internalnotes\": \"internalnotes-30\",\r
+
+    \        \"hrremarks\": \"hrremarks-31\",\r
+
+    \        \"risknotes\": \"risknotes-32\",\r
+
+    \        \"zoneids\": [\r
+
+    \            2,\r
+
+    \            70\r
+
+    \        ]\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 12000

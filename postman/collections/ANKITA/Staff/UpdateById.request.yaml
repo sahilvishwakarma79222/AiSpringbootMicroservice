@@ -1,0 +1,176 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/staff/updateById/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"code\": \"29826\",\r
+
+    \  \"fullName\": \"gdijhghhb\",\r
+
+    \  \"displayName\": \"John\",\r
+
+    \  \"dateOfBirth\": \"1990-05-15\",\r
+
+    \  \"bloodGroup\": \"O+\",\r
+
+    \  \"gender\": \"Male\",\r
+
+    \  \"martialStatus\": \"Single\",\r
+
+    \  \"anniversarydate\": null,\r
+
+    \  \"nationality\": \"Indian\",\r
+
+    \r
+
+    \  \"mobileNumber\": \"9876543210\",\r
+
+    \  \"alternateNumber\": \"9876543211\",\r
+
+    \  \"workEmailId\": \"john.doe@company.com\",\r
+
+    \  \"personalEmail\": \"john.personal@email.com\",\r
+
+    \  \"emergencyContactPerson\": \"Jane Doe\",\r
+
+    \  \"emergencyContactNumber\": \"9123456789\",\r
+
+    \r
+
+    \  \"permanentaddressLine1\": \"123 Main Street\",\r
+
+    \  \"addressLine2\": \"Apartment 4B\",\r
+
+    \  \"city\": { \r
+
+    \    \"id\": 10\r
+
+    \    },\r
+
+    \  \"state\": { \r
+
+    \    \"id\": 5\r
+
+    \    },\r
+
+    \  \"pincode\": \"400001\",\r
+
+    \r
+
+    \  \"department\": \"Engineering\",\r
+
+    \  \"designation\": \"Software Engineer\",\r
+
+    \  \"employeeType\": \"Full-Time\",\r
+
+    \  \"dateOfJoining\": \"2023-01-10\",\r
+
+    \  \"reportingManager\": \"Alice Smith\",\r
+
+    \  \"workLocation\": \"Hedge Office\",\r
+
+    \  \"shiftTiming\": \"9 AM - 6 PM\",\r
+
+    \  \"employmentStatus\": \"Active\",\r
+
+    \r
+
+    \  \"bankName\": \"HDFC Bank\",\r
+
+    \  \"accountNumber\": \"1234567890\",\r
+
+    \  \"ifscNumber\": \"HDFC0001234\",\r
+
+    \  \"uanNumber\": \"100987654321\",\r
+
+    \  \"pfNumber\": \"MH/BAN/12345/678\",\r
+
+    \  \"esicNumber\": \"31-00-123456-000-1234\",\r
+
+    \  \"ctc\": 800000,\r
+
+    \  \"basicSalary\": 400000,\r
+
+    \  \"hra\": 160000,\r
+
+    \  \"allowancess\": \"Medical, LTA\",\r
+
+    \r
+
+    \  \"attendanceType\": \"Biometric\",\r
+
+    \  \"leavebalanceAnnualleave\": 15,\r
+
+    \  \"sickleaves\": 10,\r
+
+    \  \"weeklyOff\": \"Sunday\",\r
+
+    \  \"holidayCalendar\": \"Standard 2024\",\r
+
+    \r
+
+    \  \"monthlyTarget\": \"Complete Sprint Tasks\",\r
+
+    \  \"performanceRating\": \"A\",\r
+
+    \  \"appraisalCycle\": \"Annual\",\r
+
+    \r
+
+    \  \"password\": \"Asha\",\r
+
+    \  \"email\": \"john.doe@company.com\",\r
+
+    \  \"username\": \"Asha\",\r
+
+    \  \"phoneNo\": \"9876543210\",\r
+
+    \  \"roles\": [\r
+
+    \    {\r
+
+    \         \"id\": 1\r
+
+    \    }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"monthlyExpenseLimit\": 5000,\r
+
+    \  \"apporvalAuthority\": \"Finance Head\",\r
+
+    \  \"reimbursementCycle\": \"Monthly\",\r
+
+    \r
+
+    \  \"createdBy\": \"Admin\",\r
+
+    \  \"checkedBy\": \"HR Manager\",\r
+
+    \  \"approvedBy\": \"Director\",\r
+
+    \  \"approvalStatus\": \"Approved\",\r
+
+    \r
+
+    \  \"exitManagement\": \"N/A\",\r
+
+    \  \"exitReason\": null,\r
+
+    \  \"fullAndFinalstatus\": \"Pending\",\r
+
+    \r
+
+    \  \"internalNotes\": \"Top performer\",\r
+
+    \  \"hrremarks\": \"All documents verified\",\r
+
+    \  \"riskNotes\": \"None\"\r
+
+    }\r\n"
+settings: {}
+order: 4000

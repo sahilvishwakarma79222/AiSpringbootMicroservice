@@ -1,0 +1,338 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/customer/updateById/26
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"username\": \"corporateuser update\",\r
+
+    \  \"password\": \"pass\",\r
+
+    \  \"fullname\": \"Corporate update Customer\",\r
+
+    \  \"phonenumber\": \"9897865524\",\r
+
+    \  \"email\": \"corporateupdate@gmail.com\",\r
+
+    \  \"code\": \"CORP001update\",\r
+
+    \r
+
+    \  \"verticaltype\": {\r
+
+    \    \"id\": 7\r
+
+    \  },\r
+
+    \  \"cities\": {\r
+
+    \    \"id\": 1845\r
+
+    \  },\r
+
+    \  \"states\": {\r
+
+    \    \"id\": 19\r
+
+    \  },\r
+
+    \  \"countries\": {\r
+
+    \    \"id\": 101\r
+
+    \  },\r
+
+    \  \"zone\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \r
+
+    \  \"corporatemoderntrade\": {\r
+
+    \    \"id\":2,\r
+
+    \    \"companyname\": \"ABCupdate Industries Pvt Ltd\",\r
+
+    \    \"groupcompanyname\": \"ABCupdate Group\",\r
+
+    \    \"clientcategory\": \"updatePremium\",\r
+
+    \    \"industrytype\": \"updateManufacturing\",\r
+
+    \    \"subindustry\": \"updateSteel\",\r
+
+    \    \"tannumber\": \"updateTAN12345\",\r
+
+    \    \"cinumber\": \"updateCIN123456789\",\r
+
+    \    \"gstin\": \"27ABCDE1234F1Z5\",\r
+
+    \    \"msmeregistrationno\": \"updateMSME12345\",\r
+
+    \    \"importexportcode\": \"updateIEC123456\",\r
+
+    \    \"yearofestablishment\": 2010,\r
+
+    \    \"constitutiontype\": \"updatePrivate Limited\",\r
+
+    \    \"listedcompany\": \"updateNo\",\r
+
+    \    \"stockexchangename\": \"\",\r
+
+    \    \"websiteurl\": \"updatehttps://abcindustries.com\",\r
+
+    \r
+
+    \    \"registeredofficeaddress\": \"updateMumbai Head Office\",\r
+
+    \    \"pincode\": 400001,\r
+
+    \    \"googlemaplocation\": \"Mumbai\",\r
+
+    \    \"ownershiptype\": \"Owned\",\r
+
+    \    \"branchlocationname\": \"Pune Branch\",\r
+
+    \    \"branchaddress\": \"Pune Office\",\r
+
+    \    \"branchgstin\": \"27ABCDE1234F2Z6\",\r
+
+    \    \"branchcontactperson\": \"Rahul\",\r
+
+    \    \"branchcontactno\": \"9876543210\",\r
+
+    \r
+
+    \    \"keydecisionmakername\": \"updateAmit Sharma\",\r
+
+    \    \"designation\": \"updateDirector\",\r
+
+    \    \"department\": \"Purchase\",\r
+
+    \    \"mobilenumber\": \"9999999999\",\r
+
+    \    \"whatsappnumber\": \"9999999999\",\r
+
+    \    \"linkedinprofile\": \"updatelinkedin.com/amit\",\r
+
+    \    \"purchaseheadname\": \"updateRakesh\",\r
+
+    \    \"purchaseheademail\": \"purchase@abc.com\",\r
+
+    \    \"accountsheadname\": \"updateSuresh\",\r
+
+    \    \"financecontrollername\": \"Mahesh\",\r
+
+    \    \"storemanagername\": \"Rohan\",\r
+
+    \    \"dispatchinchargename\": \"Vijay\",\r
+
+    \r
+
+    \    \"contactpersonname\": \"Ajay\",\r
+
+    \    \"dateofbirth\": \"1988-05-10\",\r
+
+    \    \"anniversarydate\": \"2015-02-20\",\r
+
+    \    \"spousename\": \"Neha\",\r
+
+    \    \"childrenname\": \"Aryan\",\r
+
+    \    \"hobbies\": \"Reading\",\r
+
+    \    \"communicationmode\": \"Email\",\r
+
+    \    \"importantnotes\": \"Priority Client\",\r
+
+    \r
+
+    \    \"kycstatus\": \"Verified\",\r
+
+    \    \"verifiedby\": \"Admin\",\r
+
+    \    \"verificationdate\": \"2026-07-28\",\r
+
+    \    \"riskcategory\": \"Low\",\r
+
+    \r
+
+    \    \"bankname\": \"HDFC Bank\",\r
+
+    \    \"accountnumber\": 1234567890,\r
+
+    \    \"ifsccode\": \"HDFC0000123\",\r
+
+    \    \"branchname\": \"Mumbai\",\r
+
+    \    \"accounttype\": \"Current\",\r
+
+    \    \"swiftcode\": \"HDFCINBB\",\r
+
+    \r
+
+    \    \"roleaccess\": \"Corporate\",\r
+
+    \    \"lastlogindate\": \"2026-07-28\",\r
+
+    \r
+
+    \    \"childcorporatemoderntrade\": {\r
+
+    \      \"id\":2,\r
+
+    \      \"creditlimit\": 500000,\r
+
+    \      \"creditdays\": 45,\r
+
+    \      \"outstandingamount\": 100000,\r
+
+    \      \"overdueamount\": 10000,\r
+
+    \      \"interestonoverdue\": 2,\r
+
+    \      \"insurancecovered\": \"Yes\",\r
+
+    \      \"insuranceagencyname\": \"updateICICI Lombard\",\r
+
+    \      \"averagemonthlypurchase\": 750000,\r
+
+    \      \"highestbillingmonth\": \"updateMarch\",\r
+
+    \      \"paymenttrend\": \"updateExcellent\",\r
+
+    \r
+
+    \      \"businesstype\": \"updateB2B\",\r
+
+    \      \"productcategories\": \"updateSteel Pipes\",\r
+
+    \      \"monthlyconsumption\": \"update500 Ton\",\r
+
+    \      \"keysupplier\": \"updateXYZ Ltd\",\r
+
+    \      \"competitors\": \"updatePQR Ltd\",\r
+
+    \r
+
+    \      \"preferredtransporter\": \"updateVRL\",\r
+
+    \      \"transportmode\": \"updateRoad\",\r
+
+    \      \"deliveryterms\": \"updateFOB\",\r
+
+    \      \"dispatchlocation\": \"updateMumbai\",\r
+
+    \      \"unloadingfacility\": \"updateAvailable\",\r
+
+    \      \"workinghoursfordelivery\": \"update9AM-6PM\",\r
+
+    \r
+
+    \      \"monthlytarget\": 1000000,\r
+
+    \      \"quarterlytarget\": 3000000,\r
+
+    \      \"annualcommitment\": 12000000,\r
+
+    \      \"expectedgrowth\": 20,\r
+
+    \      \"productwisetarget\": \"updateSteel Pipe\",\r
+
+    \r
+
+    \      \"ratestructure\": \"updateStandard\",\r
+
+    \      \"discounttype\": \"updateFlat\",\r
+
+    \      \"specialpricingapproval\": \"updateRequired\",\r
+
+    \      \"currencytype\": \"INR\",\r
+
+    \r
+
+    \      \"discountforearlypayment\": 5,\r
+
+    \      \"validityperiod\": 30,\r
+
+    \      \"maxdiscountallowed\": 10,\r
+
+    \      \"conditions\": \"updateAdvance Payment\",\r
+
+    \r
+
+    \      \"schemename\": \"updateCorporate Gold\",\r
+
+    \      \"slabdetails\": \"Above 10 Lakhs\",\r
+
+    \      \"productapplicability\": \"All Products\",\r
+
+    \      \"validfrom\": \"2026-07-01\",\r
+
+    \      \"validto\": \"2027-06-30\",\r
+
+    \      \"approvalauthority\": \"updateDirector\",\r
+
+    \r
+
+    \      \"referencecompanyname\": \"XYZ Industries\",\r
+
+    \      \"contactperson\": \"Karan\",\r
+
+    \      \"contactnumber\": \"8888888888\",\r
+
+    \      \"relationshipduration\": \"5 Years\",\r
+
+    \      \"feedback\": \"Excellent\",\r
+
+    \r
+
+    \      \"checkedby\": \"Admin\",\r
+
+    \      \"approvedby\": \"updateDirector\",\r
+
+    \      \"approvaldate\": \"2026-07-28\",\r
+
+    \      \"approvalstatus\": \"Approved\",\r
+
+    \r
+
+    \      \"status\": \"Active\",\r
+
+    \      \"reasonfordeactivation\": \"\",\r
+
+    \      \"deactivatedby\": \"\",\r
+
+    \      \"reactivationapproval\": \"NA\",\r
+
+    \r
+
+    \      \"internalnotes\": \"Corporate Client\",\r
+
+    \      \"risknotes\": \"Low Risk\",\r
+
+    \      \"followupnotes\": \"Quarterly Visit\",\r
+
+    \r
+
+    \      \"birthdayalerts\": \"Yes\",\r
+
+    \      \"paymentduealerts\": \"Yes\",\r
+
+    \      \"creditlimitalerts\": \"Yes\"\r
+
+    \    }\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 13000

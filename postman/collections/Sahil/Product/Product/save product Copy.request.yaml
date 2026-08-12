@@ -1,0 +1,166 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/product/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"productType\": \"Finished\",\r
+
+    \    \"productName\": \"123\",\r
+
+    \    \"shortName\": \"123\",\r
+
+    \    \"itemcode\": \"213312\",\r
+
+    \    \"brandName\": {\r
+
+    \        \"id\": 24\r
+
+    \    },\r
+
+    \    \"eanCode\": \"1231234\",\r
+
+    \    \"productBarcodeApplicable\": \"Yes\",\r
+
+    \    \"setBarcodeApplicable\": \"Yes\",\r
+
+    \    \"masterCartonBarcodeApplicable\": \"Yes\",\r
+
+    \    \"weddingSetBarcodeApplicable\": \"Yes\",\r
+
+    \    \"catalogueApplicable\": \"Yes\",\r
+
+    \    \"batchApplicable\": \"Yes\",\r
+
+    \    \"bisApplicable\": \"Yes\",\r
+
+    \    // \"uomPrimary\": {\r
+
+    \    //     \"id\": 2\r
+
+    \    // },\r
+
+    \    // \"uomSecondary\": {\r
+
+    \    //     \"id\": 2\r
+
+    \    // },\r
+
+    \    \"standardQtyPerBox\": 12,\r
+
+    \    \"conversion\": \"1\",\r
+
+    \    \"gstReportingUOM\": \"Primary\",\r
+
+    \    \"innerDia\": 12,\r
+
+    \    \"outerDia\": 123,\r
+
+    \    \"weight\": 123,\r
+
+    \    // \"gauge\": {\r
+
+    \    //     \"id\": 1\r
+
+    \    // },\r
+
+    \    // \"thickness\": {\r
+
+    \    //     \"id\": 1\r
+
+    \    // },\r
+
+    \    \"lwhProduct\": \"123\",\r
+
+    \    \"lwhMasterCarton\": \"123\",\r
+
+    \    \"capacity\": 123,\r
+
+    \    // \"grade\": {\r
+
+    \    //     \"id\": 1\r
+
+    \    // },\r
+
+    \    // \"form\": {\r
+
+    \    //     \"id\": 1\r
+
+    \    // },\r
+
+    \    // \"finishType\": {\r
+
+    \    //     \"id\": 3\r
+
+    \    // },\r
+
+    \    \"mrp\": 123,\r
+
+    \    \"dlp\": 123,\r
+
+    \    \"standardCost\": 123,\r
+
+    \    \"cessValuationType\": \"Applicable\",\r
+
+    \    // \"valuationMethod\": {\r
+
+    \    //     \"id\": 7\r
+
+    \    // },\r
+
+    \    // \"productionType\": \"Inhouse\",\r
+
+    \    \"procurementTime\": 123,\r
+
+    \    // \"hsnCode\": {\r
+
+    \    //     \"id\": 6\r
+
+    \    // },\r
+
+    \    \"hsnDescription\": \"123\",\r
+
+    \    \"igst\": 12,\r
+
+    \    \"cgst\": 12,\r
+
+    \    \"sgst\": 12,\r
+
+    \    \"typeOfSupply\": \"Goods\",\r
+
+    \    // \"category\": {\r
+
+    \    //     \"id\": 1\r
+
+    \    // },\r
+
+    \    // \"subCategory\": {\r
+
+    \    //     \"id\": 1\r
+
+    \    // },\r
+
+    \    // \"grouping\": {\r
+
+    \    //     \"id\": 1\r
+
+    \    // },\r
+
+    \    // \"vertical\": {\r
+
+    \    //     \"id\": 6\r
+
+    \    // },\r
+
+    \    // \"zone\": \"North\",\r
+
+    \    \"status\": \"Active\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 2000

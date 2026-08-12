@@ -1,0 +1,38 @@
+$kind: http-request
+url: http://192.168.1.188:8080/api/v2/asset/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \     \"assetname\": \"test1234\",\r
+
+    \t \"serialno\":\"1804594545\",\r
+
+    \t \"remarks\":\"Asset filled\",\r
+
+    \t \"invoiceno\":\"653442488549\",\r
+
+    \t \"insuranceprovider\":\"Pqrs\",\r
+
+    \t \"policyno\":\"589019759\",\r
+
+    \t \"mrp\":\"15000\",\r
+
+    \t \"warrantytill\":\"2026-03-04\",\r
+
+    \t \"invoicedate\":\"2026-03-02\",\r
+
+    \t \"ipnstart\":\"2026-03-02\",\r
+
+    \t \"ipnend\":\"2026-06-01\"\r
+
+    \    \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 1000

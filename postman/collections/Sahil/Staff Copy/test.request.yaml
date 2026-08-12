@@ -1,0 +1,480 @@
+$kind: http-request
+url: ""
+method: POST
+body:
+  type: json
+  content: "// {\r
+
+    //     \"id\": \"16\",\r
+
+    //     \"username\": \"vibha\",\r
+
+    //     \"staffname\": \"vibha\",\r
+
+    //     \"email\": \"vibha@gmail.com\",\r
+
+    //     \"phoneno\": \"+91-9872343210\",\r
+
+    //     \"gender\": \"Male\",\r
+
+    //     \"dateofbirth\": \"1992-05-15\",\r
+
+    //     \"dateofjoining\": \"2023-01-10\",\r
+
+    //     \"reporting\": \"NSM\",\r
+
+    //     \"pfno\": \"PF/2023/8847\",\r
+
+    //     \"staffrolename\": \"RSM\",\r
+
+    //     \"department\": {\r
+
+    //         \"id\": 1\r
+
+    //     },\r
+
+    //     \"reportsto\": {\r
+
+    //         \"id\": 1\r
+
+    //     },\r
+
+    //     \"mobilenumber\": \"9876543211\",\r
+
+    //     \"workemailid\": \"vibha@gmail.com\",\r
+
+    //     \"permanentaddress\": \"permanentAddress\",\r
+
+    //     \"location\": \"Mumbai North\",\r
+
+    //     \"createdby\": \"Admin_User\",\r
+
+    //     \"zoneids\": [\r
+
+    //         {\r
+
+    //             \"id\": 1,\r
+
+    //             \"zonename\": \"Northern Region\"\r
+
+    //         }\r
+
+    //     ],\r
+
+    //     \"stateids\": [\r
+
+    //         {\r
+
+    //             \"id\": 1,\r
+
+    //             \"statename\": \"Andaman and Nicobar Islands\"\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"id\": 2,\r
+
+    //             \"statename\": \"Andhra Pradesh\"\r
+
+    //         }\r
+
+    //     ],\r
+
+    //     \"cityids\": [\r
+
+    //         {\r
+
+    //             \"id\": 2,\r
+
+    //             \"cityname\": \"Garacharma\"\r
+
+    //         }\r
+
+    //     ],\r
+
+    //     \"addresscountry_label\": \"Afghanistan\",\r
+
+    //     \"addressstates_label\": \"Andaman and Nicobar Islands\",\r
+
+    //     \"addresscities_label\": \"Bombuflat\",\r
+
+    //     \"currentcountry_label\": \"Afghanistan\",\r
+
+    //     \"currentstates_label\": \"Andaman and Nicobar Islands\",\r
+
+    //     \"currentcities_label\": \"Bombuflat\",\r
+
+    //     \"department_label\": \"Sales\",\r
+
+    //     \"zone_single_label\": \"Northern Region\",\r
+
+    //     \"Reporting_manger_NSM_label\": \"sujata\",\r
+
+    //     \"staffdetails\": {\r
+
+    //         \"code\": \"sujata-01\",\r
+
+    //         \"displayname\": \"sujata sdk\",\r
+
+    //         \"bloodgroup\": \"O+\",\r
+
+    //         \"maritalstatus\": \"Single\",\r
+
+    //         \"anniversarydate\": \"2018-11-20\",\r
+
+    //         \"nationality\": \"Indian\",\r
+
+    //         \"alternatemobile\": \"9123456789\",\r
+
+    //         \"personalemail\": \"sujata@gmail.com\",\r
+
+    //         \"emergencycontactperson\": \"Amit Doe\",\r
+
+    //         \"emergencycontactno\": \"9988776655\",\r
+
+    //         \"address\": \"123 Main St, Apartment 4B\",\r
+
+    //         \"address2\": \"address\",\r
+
+    //         \"addresscountry\": {\r
+
+    //             \"id\": 1\r
+
+    //         },\r
+
+    //         \"addressstates\": {\r
+
+    //             \"id\": 42\r
+
+    //         },\r
+
+    //         \"addresscities\": {\r
+
+    //             \"id\": 5910\r
+
+    //         },\r
+
+    //         \"pincode\": 400001,\r
+
+    //         \"currentaddress\": \"123 Main St, Apartment 4B\",\r
+
+    //         \"currentcountry\": {\r
+
+    //             \"id\": 1\r
+
+    //         },\r
+
+    //         \"currentstates\": {\r
+
+    //             \"id\": 42\r
+
+    //         },\r
+
+    //         \"currentcities\": {\r
+
+    //             \"id\": 5909\r
+
+    //         },\r
+
+    //         \"currentpincode\": 400001,\r
+
+    //         \"employeetype\": \"Permanent\",\r
+
+    //         \"worklocation\": \"Head Office\",\r
+
+    //         \"shifttiming\": \"9AM-6PM\",\r
+
+    //         \"employmentstatus\": \"Active\",\r
+
+    //         \"assignedterritory\": \"West Zone\",\r
+
+    //         \"routeplan\": \"Route_A_Mumbai\",\r
+
+    //         \"dailytarget\": 5000,\r
+
+    //         \"reportingtime\": \"09:15:00\",\r
+
+    //         \"travelallowance\": 200,\r
+
+    //         \"bankname\": \"HDFC Bank\",\r
+
+    //         \"accountnumber\": 50100012345678,\r
+
+    //         \"ifsccode\": \"HDFC0001234\",\r
+
+    //         \"uannumber\": \"100122334455\",\r
+
+    //         \"esicnumber\": \"31001234560011001\",\r
+
+    //         \"ctc\": 850000,\r
+
+    //         \"basicsalary\": 35000,\r
+
+    //         \"hra\": 14000,\r
+
+    //         \"allowances\": 5000,\r
+
+    //         \"attendancetype\": \"Biometric\",\r
+
+    //         \"annualleaves\": 21,\r
+
+    //         \"sickleaves\": 7,\r
+
+    //         \"weeklyoff\": \"Sunday\",\r
+
+    //         \"holidaycalendar\": \"India\",\r
+
+    //         \"monthlytarget\": 150000,\r
+
+    //         \"performancerating\": \"3\",\r
+
+    //         \"incentiveeligibility\": \"Yes\",\r
+
+    //         \"appraisalcycle\": \"Quarterly\",\r
+
+    //         \"kpimetrics\": \"Sales Conversion, Client Retention\",\r
+
+    //         \"roleaccess\": \"Manager\",\r
+
+    //         \"claimallowed\": \"Yes\",\r
+
+    //         \"expenselimit\": 15000,\r
+
+    //         \"approvalauthority\": \"Department Head\",\r
+
+    //         \"reimbursementcycle\": \"Monthly\",\r
+
+    //         \"checkedby\": \"HR_Manager_1\",\r
+
+    //         \"approvedby\": \"Director_Sales\",\r
+
+    //         \"approvalstatus\": \"Approved\",\r
+
+    //         \"finalstatus\": \"Active\",\r
+
+    //         \"exitdate\": \"2026-04-28\",\r
+
+    //         \"exitreason\": \"reason\",\r
+
+    //         \"internalnotes\": \"High potential candidate for promotion.\",\r
+
+    //         \"hrremarks\": \"All documents verified.\",\r
+
+    //         \"risknotes\": \"Very Risky\",\r
+
+    //         \"zoneids\": [\r
+
+    //             1\r
+
+    //         ],\r
+
+    //         \"stateids\": [\r
+
+    //             {\r
+
+    //                 \"id\": 1\r
+
+    //             },\r
+
+    //             {\r
+
+    //                 \"id\": 2\r
+
+    //             }\r
+
+    //         ]\r
+
+    //     }\r
+
+    // }\r
+
+    \r
+
+    \r
+
+    {\r
+
+    \  \"staffname\": \"ASE East\",\r
+
+    \  \"dateofbirth\": \"2026-04-28\",\r
+
+    \  \"dateofjoining\": \"2026-04-28\",\r
+
+    \  \"pfno\": \"pfnumber-18\",\r
+
+    \  \"email\": \"ase@east\",\r
+
+    \  \"username\": \"ase@east\",\r
+
+    \  \"password\": \"password-24\",\r
+
+    \  \"gender\": \"Female\",\r
+
+    \  \"department\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"staffrolename\": \"ASE\",\r
+
+    \  \"reporting\": \"ASM\",\r
+
+    \  \"staffdetails\": {\r
+
+    \    \"code\": \"employeecode-2\",\r
+
+    \    \"displayname\": \"displayname-3\",\r
+
+    \    \"bloodgroup\": \"A+\",\r
+
+    \    \"anniversarydate\": \"2026-04-28\",\r
+
+    \    \"nationality\": \"nationality-4\",\r
+
+    \    \"mobilenumber\": \"8765453423\",\r
+
+    \    \"alternatemobile\": \"8765453423\",\r
+
+    \    \"workemailid\": \"workemailid-5@e\",\r
+
+    \    \"personalemail\": \"personalemail-6@e\",\r
+
+    \    \"emergencycontactperson\": \"emergencycontactperson-7\",\r
+
+    \    \"emergencycontactno\": \"6666666666\",\r
+
+    \    \"address\": \"permanentaddressline1-9\",\r
+
+    \    \"address2\": \"addressline2-10\",\r
+
+    \    \"addresscountry\": {\r
+
+    \      \"id\": 101\r
+
+    \    },\r
+
+    \    \"addressstates\": {\r
+
+    \      \"id\": 34\r
+
+    \    },\r
+
+    \    \"addresscities\": {\r
+
+    \      \"id\": 3540\r
+
+    \    },\r
+
+    \    \"pincode\": 12,\r
+
+    \    \"currentaddress\": \"currentaddressline-11\",\r
+
+    \    \"currentcountry\": {\r
+
+    \      \"id\": 101\r
+
+    \    },\r
+
+    \    \"currentstates\": {\r
+
+    \      \"id\": 34\r
+
+    \    },\r
+
+    \    \"currentcities\": {\r
+
+    \      \"id\": 3540\r
+
+    \    },\r
+
+    \    \"currentpincode\": 24,\r
+
+    \    \"city\": [\r
+
+    \      3543\r
+
+    \    ],\r
+
+    \    \"employeetype\": \"Permanent\",\r
+
+    \    \"worklocation\": \"worklocation-13\",\r
+
+    \    \"assignedterritory\": \"assignedterritory-14\",\r
+
+    \    \"routeplan\": \"routeplan-15\",\r
+
+    \    \"dailytarget\": 36,\r
+
+    \    \"reportingtime\": \"18:00\",\r
+
+    \    \"travelallowance\": 48,\r
+
+    \    \"bankname\": \"bankname-16\",\r
+
+    \    \"accountnumber\": 60,\r
+
+    \    \"ifsccode\": \"ifsccode-17\",\r
+
+    \    \"uannumber\": \"uannumber-19\",\r
+
+    \    \"esicnumber\": \"esicnumber-20\",\r
+
+    \    \"ctc\": 72,\r
+
+    \    \"basicsalary\": 84,\r
+
+    \    \"hra\": 96,\r
+
+    \    \"allowances\": 108,\r
+
+    \    \"annualleaves\": 120,\r
+
+    \    \"sickleaves\": 132,\r
+
+    \    \"monthlytarget\": 144,\r
+
+    \    \"kpimetrics\": \"kpimetrics-21\",\r
+
+    \    \"expenselimit\": 156,\r
+
+    \    \"approvalauthority\": \"approvalauthority-25\",\r
+
+    \    \"checkedby\": \"checkedby-26\",\r
+
+    \    \"approvedby\": \"approvedby-27\",\r
+
+    \    \"exitdate\": \"2026-04-28\",\r
+
+    \    \"exitreason\": \"exitreason-28\",\r
+
+    \    \"internalnotes\": \"internalnotes-29\",\r
+
+    \    \"hrremarks\": \"hrremarks-30\",\r
+
+    \    \"risknotes\": \"risknotes-31\",\r
+
+    \    \"zoneids\": [\r
+
+    \      3\r
+
+    \    ],\r
+
+    \    \"stateids\": [\r
+
+    \      34\r
+
+    \    ]\r
+
+    \  },\r
+
+    \  \"reportsto\": {\r
+
+    \    \"id\": 23\r
+
+    \  }\r
+
+    }"
+settings: {}
+order: 16000

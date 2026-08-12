@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/productCategory/page?pageNumber=0&pageSize=10&field=id&direction=asc&search=qqq
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "10"
+  field: id
+  direction: asc
+  search: qqq
+body:
+  type: json
+  content: "{\r\n    \"brandname\":\"hp1\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 5000

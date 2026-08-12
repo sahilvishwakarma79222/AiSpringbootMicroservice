@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/revision-pattern/getById/1"
+method: GET
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+        "name": "Spaced Repetition update",
+        "description": "Review after update 1 day, 3 days, 7 days, 21 days"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 4000

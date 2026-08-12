@@ -1,0 +1,318 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/customer/updateById/16
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \   \r
+
+    \    \"username\": \"new1\",\r
+
+    \    \"password\": \"\",\r
+
+    \    \"fullname\": null,\r
+
+    \    \"phonenumber\": null,\r
+
+    \    \"email\": \"abc1@gmail.com\",\r
+
+    \    \"gstnumber\": null,\r
+
+    \    \"pannumber\": \"HGY58345\",\r
+
+    \    \"otpbasedlogin\": null,\r
+
+    \    \"parententity\": null,\r
+
+    \    \"neelamentity\": null,\r
+
+    \    \"code\": \"345\",\r
+
+    \    \"tradename\": \"bgtf\",\r
+
+    \    \"roles\": [],\r
+
+    \    \"verticaltype\": {\r
+
+    \        \"id\": 5\r
+
+    \    },\r
+
+    \    \"reportto\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"reporting\": \"NEELAM\",\r
+
+    \    \"cities\": {\r
+
+    \        \"id\": 305\r
+
+    \    },\r
+
+    \    \"states\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"zone\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"countries\": {\r
+
+    \        \"id\": 101\r
+
+    \    },\r
+
+    \    \"customerinternaltrade\": null,\r
+
+    \    \"individualcustomermoderntrade\": null,\r
+
+    \    \"corporatemoderntrade\": null,\r
+
+    \    \"exportmoderntrade\": null,\r
+
+    \    \"createddate\": \"2026-05-04\",\r
+
+    \    \"createdtime\": \"12:31:20.14\",\r
+
+    \    \"createdby\": null,\r
+
+    \    \"createbyname\": \"admin\",\r
+
+    \    \"role\": \"ADMIN\",\r
+
+    \    \"updateddate\": null,\r
+
+    \    \"updatedtime\": null,\r
+
+    \    \"updatedby\": 0,\r
+
+    \    \"updatedbyname\": null,\r
+
+    \    \"updatedrole\": null,\r
+
+    \    \"verticaltype_label\": \"Q-commerce-Modern Trade\",\r
+
+    \    \"platformname_label\": \"q com platform\",\r
+
+    \    \"countries_label\": \"India\",\r
+
+    \    \"zone_label\": \"Eastern Region\",\r
+
+    \    \"states_label\": \"Arunachal Pradesh\",\r
+
+    \    \"cities_label\": \"Itanagar\",\r
+
+    \    \"Reporting_manger_NEELAM_label\": \"neelam\",\r
+
+    \    \"qemmoderntrade\": {\r
+
+    \        \"id\":6,\r
+
+    \        \"platformname\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"entityname\": \"dvrgr\",\r
+
+    \        \"gstin\": \"6757786\",\r
+
+    \        \"cinnumber\": \"788987\",\r
+
+    \        \"msme\": \"8769\",\r
+
+    \        \"website\": \"bb\",\r
+
+    \        \"officeddress\": \"bgbg\",\r
+
+    \        \"chainname\": \"fgg\",\r
+
+    \        \"storecode\": \"35\",\r
+
+    \        \"storename\": \"bdb\",\r
+
+    \        \"storetype\": \"rgr\",\r
+
+    \        \"location\": \"rfgr\",\r
+
+    \        \"area\": \"bbg\",\r
+
+    \        \"openingdate\": \"2026-05-04\",\r
+
+    \        \"storemanager\": \"rgr\",\r
+
+    \        \"contactnumber\": \"876345367\",\r
+
+    \        \"buyername\": \"eghtr\",\r
+
+    \        \"designation\": \"tth\",\r
+
+    \        \"category\": \"grgr\",\r
+
+    \        \"mobile\": \"8967534560\",\r
+
+    \        \"listingstatus\": \"fefge\",\r
+
+    \        \"listingdate\": \"2026-05-04\",\r
+
+    \        \"listingfees\": 3000,\r
+
+    \        \"skuapprovedcount\": 343,\r
+
+    \        \"skurejectedcount\": 15,\r
+
+    \        \"categoryapproval\": \"rgr\",\r
+
+    \        \"skucode\": \"455\",\r
+
+    \        \"skuname\": \"35\",\r
+
+    \        \"productlistingcategory\": \"7uyj\",\r
+
+    \        \"mrp\": 2000,\r
+
+    \        \"sellingprice\": 2200,\r
+
+    \        \"barcode\": \"gtr\",\r
+
+    \        \"shelflife\": \"t\",\r
+
+    \        \"packagingtype\": \"Type1\",\r
+
+    \        \"margin\": 10,\r
+
+    \        \"tradediscount\": 15,\r
+
+    \        \"cashdiscount\": 3,\r
+
+    \        \"schemediscount\": 3,\r
+
+    \        \"commerciallistingfees\": 3,\r
+
+    \        \"slottingfees\": 3,\r
+
+    \        \"shelfrent\": 3,\r
+
+    \        \"backendmargin\": 3,\r
+
+    \        \"monthlyscheme\": \"g\",\r
+
+    \        \"festivalscheme\": \"fef\",\r
+
+    \        \"buyxgety\": \"ee\",\r
+
+    \        \"displayscheme\": \"frd\",\r
+
+    \        \"visibilitycharges\": null,\r
+
+    \        \"monthlytarget\": 100,\r
+
+    \        \"quarterlytarget\": 100,\r
+
+    \        \"businessplan\": 67,\r
+
+    \        \"storewisetarget\": \"ki\",\r
+
+    \        \"ordertype\": \"kik\",\r
+
+    \        \"orderfrequency\": \"nuu\",\r
+
+    \        \"minorderqty\": 50,\r
+
+    \        \"leadtime\": 43,\r
+
+    \        \"childqemmoderntrade\": {\r
+
+    \            \"id\":6,\r
+
+    \            \"supplytype\": \"cdc\",\r
+
+    \            \"centerdetails\": \"ded\",\r
+
+    \            \"deliveryschedule\": \"cdc\",\r
+
+    \            \"transporter\": \"cdc\",\r
+
+    \            \"unloadingcondition\": \"cdc\",\r
+
+    \            \"billingtype\": \"dee\",\r
+
+    \            \"paymentterms\": \"efefef\",\r
+
+    \            \"paymentmode\": \"fd\",\r
+
+    \            \"notesystem\": \"rr\",\r
+
+    \            \"damageclaims\": \"fdef\",\r
+
+    \            \"expiryclaims\": \"fefe\",\r
+
+    \            \"ratedifference\": \"fef\",\r
+
+    \            \"shortsupply\": \"fef\",\r
+
+    \            \"debitnoteadj\": \"ffe\",\r
+
+    \            \"creditlimit\": 100,\r
+
+    \            \"outstandingamount\": 50,\r
+
+    \            \"overduedays\": 34,\r
+
+    \            \"interestpolicy\": \"rfvr\",\r
+
+    \            \"gondolaplacement\": \"vfvf\",\r
+
+    \            \"endcapdisplay\": \"vff\",\r
+
+    \            \"promotionalstand\": \"vff\",\r
+
+    \            \"brandingspace\": \"vfv\",\r
+
+    \            \"merchandiserassigned\": \"vff\",\r
+
+    \            \"visitfrequency\": \"rvr\",\r
+
+    \            \"planogramcompliance\": \"rgr\",\r
+
+    \            \"shelfshare\": 20,\r
+
+    \            \"status\": \"vrv\",\r
+
+    \            \"blockreason\": \"rfr\",\r
+
+    \            \"reactivationapproval\": \"fef\",\r
+
+    \            \"checkedby\": \"efe\",\r
+
+    \            \"approvedby\": \"rfr\",\r
+
+    \            \"approvalstatus\": \"fef\",\r
+
+    \            \"internalnotes\": \"fef\",\r
+
+    \            \"risknotes\": \"fef\",\r
+
+    \            \"specialinstructions\": \"fef\"\r
+
+    \        }\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

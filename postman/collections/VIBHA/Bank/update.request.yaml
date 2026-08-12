@@ -1,0 +1,44 @@
+$kind: http-request
+url: http://192.168.1.128:8080/api/v2/bank/updateById/4
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"id\": 1,\r
+
+    \  \"accounttype\": \"SAVINGS\",\r
+
+    \  \"accountname\": \"John Doe\",\r
+
+    \  \"bankname\": \"HDFC Bank\",\r
+
+    \  \"currency\": \"INR\",\r
+
+    \  \"accountnumber\": \"123456789012\",\r
+
+    \  \"accountcode\": \"HDFC001\",\r
+
+    \  \"balancetype\": \"CURRENT\",\r
+
+    \  \"description\": \"Primary savings account\",\r
+
+    \  \"balance\": 50000.75,\r
+
+    \  \"branchname\": \"Mumbai Main Branch\",\r
+
+    \  \"bankidentificationcode\": \"HDFCINBB\",\r
+
+    \  \"ledger\": {\r
+
+    \    \"id\": 3\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 4000

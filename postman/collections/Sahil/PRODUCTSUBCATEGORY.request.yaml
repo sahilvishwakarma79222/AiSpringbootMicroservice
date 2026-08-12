@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/productsubcategory/page/withCategoryId?pageNumber=0&pageSize=10&field=id&direction=asc&search=&categoryId=1
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "10"
+  field: id
+  direction: asc
+  search: ""
+  categoryId: "1"
+settings: {}
+order: 39000

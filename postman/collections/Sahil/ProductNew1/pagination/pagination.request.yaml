@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/productnew/page?pageNumber=0&pageSize=10&field=id&direction=desc&search=SEM1I-FINISHED
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "10"
+  field: id
+  direction: desc
+  search: SEM1I-FINISHED
+body:
+  type: text
+  content: "{\r
+
+    \  \"staffId\": \"STF001\",\r
+
+    \  \"password\": \"pass\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

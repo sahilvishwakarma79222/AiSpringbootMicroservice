@@ -1,0 +1,44 @@
+$kind: http-request
+url: http://192.168.1.30:8080/api/v2/ledgergroup/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"ledgertitle\": \"TTTT\",\r
+
+    \  \"ledgernature\": \"EEEE\",\r
+
+    \  \"ledgergroupcode\": \"GRP1\",\r
+
+    \  \"parentgroup\":\"Current Assets\",\r
+
+    \  \"accounttype\":\"Asset\",\r
+
+    \  \"scheduleclassification\":\"Trade receivable\",\r
+
+    \  \"gstapplicable\":\"Yes\",\r
+
+    \  \"tdsapplicable\":\"Yes\",\r
+
+    \  \"tcsapplicable\":\"Yes\",\r
+
+    \  \"costcenterapplicable\":\"No\",\r
+
+    \  \"budgetcontrolapplicable\":\"No\",\r
+
+    \  \"remarks\":\"qqqq\",\r
+
+    \  \"status\":true\r
+
+    \r
+
+    \  \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 1000

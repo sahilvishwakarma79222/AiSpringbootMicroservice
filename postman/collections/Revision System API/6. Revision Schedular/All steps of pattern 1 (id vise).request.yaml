@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/revisionsScheduler?status=today"
+method: GET
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+queryParams:
+  status: today
+body:
+  type: formdata
+  content: []
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 4000

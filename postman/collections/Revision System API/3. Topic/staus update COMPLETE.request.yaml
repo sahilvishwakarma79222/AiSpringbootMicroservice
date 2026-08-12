@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{baseUrl}}/topic/3/complete"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+        "title": "Introduction to Java update",
+        "notes": "This topic update covers basics of Java programming including JVM, JRE, and JDK.",
+        "difficulty": "MEDIUM",
+        "completed": false,
+        "moduleId": 1
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 3000

@@ -1,0 +1,15 @@
+$kind: http-request
+name: 1.2 Login (Get Token) Copy
+url: "{{baseUrl}}/auth/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "staffId": "sahil",
+      "password": "pass"
+    }
+settings: {}
+order: 4000

@@ -1,0 +1,23 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/product-finish-type/page?pageNumber=0&pageSize=10&field=id&direction=asc&groupId=3
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+  - key: pageSize
+    value: "10"
+  - key: field
+    value: id
+  - key: direction
+    value: asc
+  - key: search
+    value: Steel
+    disabled: true
+  - key: groupId
+    value: "3"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 5000

@@ -1,0 +1,159 @@
+$kind: http-request
+name: New Request
+url: http://192.168.1.16:8081/api/auth/user/signup
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"staffName\": \"Rahul Sharma\",\r
+
+    \  \"doj\": \"2024-01-15\",\r
+
+    \  \"address\": \"123 Main Road, Mumbai\",\r
+
+    \  \"mobileNumber\": \"9876543210\",\r
+
+    \  \"email\": \"ankita2123gmail.com\",\r
+
+    \  \"gender\": \"Male\",\r
+
+    \  \"salary\": \"50000\",\r
+
+    \  \"area\": \"Andheri\",\r
+
+    \  \"dateOfBirth\": \"1995-05-10\",\r
+
+    \  \"bloodGroup\": \"O+\",\r
+
+    \  \"fatherName\": \"Ramesh Sharma\",\r
+
+    \  \"spouseName\": \"\",\r
+
+    \  \"bankDetail\": \"Savings Account\",\r
+
+    \  \"accountNumber\": \"123456789012\",\r
+
+    \  \"ifscCode\": \"HDFC0001234\",\r
+
+    \  \"bankName\": \"HDFC Bank\",\r
+
+    \  \"branchName\": \"Andheri West\",\r
+
+    \  \"panNumber\": \"ABCDE1234F\",\r
+
+    \  \"aadharNumber\": \"123456789012\",\r
+
+    \  \"dateOfAnniversary\": \"\",\r
+
+    \  \"location\": \"Mumbai\",\r
+
+    \  \"password\": \"ankita2123\",\r
+
+    \  \"passwordDecrypted\": \"ankita2123\",\r
+
+    \  \"zoneId\": 1,\r
+
+    \  \"aseId\": 2,\r
+
+    \  \"asmId\": 3,\r
+
+    \  \"rsmId\": 4,\r
+
+    \  \"nsmId\": 5,\r
+
+    \  \"stateZoneId\": 1,\r
+
+    \  \"roleId\": 2,\r
+
+    \  \"emailLoginStatus\": \"ACTIVE\",\r
+
+    \  \"createddate\": \"2026-06-16\",\r
+
+    \  \"createdtime\": \"10:30:00\",\r
+
+    \  \"salesexpwithincity\": 2,\r
+
+    \  \"salesexpoutsidecity\": 1,\r
+
+    \  \"salesexpdaytrip\": 50,\r
+
+    \r
+
+    \  \"roles\": [\r
+
+    \    {\r
+
+    \      \"id\": 2,\r
+
+    \      \"name\": \"ROLE_STAFF\"\r
+
+    \    }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"branch\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \r
+
+    \  \"statezones\": [\r
+
+    \    {\r
+
+    \      \"id\": 1,\r
+
+    \      \"name\": \"Maharashtra Zone\"\r
+
+    \    }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"zones\": [\r
+
+    \    {\r
+
+    \      \"id\": 1,\r
+
+    \      \"name\": \"Mumbai Zone\"\r
+
+    \    }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"stafflocation\": {\r
+
+    \    \"latitude\": 19.0760,\r
+
+    \    \"longitude\": 72.8777,\r
+
+    \    \"address\": \"Mumbai, Maharashtra\"\r
+
+    \  },\r
+
+    \r
+
+    \  \"multipleStaffDtos\": [\r
+
+    \    {\r
+
+    \      \"staffName\": \"Assistant Staff 1\",\r
+
+    \      \"mobileNumber\": \"9876543211\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+settings: {}
+order: 4000

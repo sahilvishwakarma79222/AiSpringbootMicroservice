@@ -1,0 +1,46 @@
+$kind: http-request
+url: "{{sahilNeelamV2BaseUrl}}/company/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\":\"abc\",\r
+
+    \    \"companyname\":\"lnv\",\r
+
+    \    \"phoneno\":\"6764547882\",\r
+
+    \    \"email\":\"abc@gmail.com\",\r
+
+    \    \"gstno\":\"12233444\",\r
+
+    \    \"address\":\"address1\",\r
+
+    \    \"zipcode\":421502,\r
+
+    \    \"countries\":{\r
+
+    \        \"id\":1\r
+
+    \    },\r
+
+    \    \"states\":{\r
+
+    \        \"id\":1\r
+
+    \    },\r
+
+    \    \"cities\":{\r
+
+    \        \"id\":1\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

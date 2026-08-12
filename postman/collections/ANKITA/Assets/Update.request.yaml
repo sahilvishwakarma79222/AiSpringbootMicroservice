@@ -1,0 +1,36 @@
+$kind: http-request
+url: http://192.168.1.6:8080/api/v2/asset/updateById/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \     \"assetname\": \"Abc\",\r
+
+    \t \"serialno\":\"12745\",\r
+
+    \t \"remarks\":\"Asset filled\",\r
+
+    \t \"invoiceno\":\"6543439\",\r
+
+    \t \"insuranceprovider\":\"Def\",\r
+
+    \t \"policyno\":\"7353\",\r
+
+    \t \"mrp\":\"15000\",\r
+
+    \t \"warrantytill\":\"2030-03-02\",\r
+
+    \t \"invoicedate\":\"2026-03-02\",\r
+
+    \t \"ipnstart\":\"2026-03-02\",\r
+
+    \t \"ipnend\":\"2026-06-01\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 4000

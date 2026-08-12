@@ -1,0 +1,20 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/grade/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"gradecode\":\"Gr-D\",\r
+
+    \t\"gradename\":\"GradeD\",\r
+
+    \t\"status\":\"Active\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 1000

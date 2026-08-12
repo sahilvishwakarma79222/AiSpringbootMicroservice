@@ -1,0 +1,276 @@
+$kind: http-request
+url: http://192.168.1.7:8080/api/v2/deliverychallan/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"deliverynoteno\": \"DC-1\",\r
+
+    \    \"deliverynotedate\": \"2026-07-23\",\r
+
+    \    \"billtotradetype\": \"Internal\",\r
+
+    \    \"billtodealertype\": \"Distributor\",\r
+
+    \    \"billtoverticaltype\": null,\r
+
+    \    \"billtoplatform\": null,\r
+
+    \    \"salesorderid\": 5001,\r
+
+    \    \"termofpayment\": \"Net 30 Days\",\r
+
+    \    \"buyersorderno\": 7001,\r
+
+    \    \"otherreference\": \"REF-2026-001\",\r
+
+    \    \"freightterms\": \"FOB\",\r
+
+    \    \"deliverymode\": \"Road\",\r
+
+    \    \"salesorderdate\": \"2026-06-20\",\r
+
+    \    \"deliverydate\": \"2026-06-25\",\r
+
+    \    \"buyersorderdate\": \"2026-06-18\",\r
+
+    \    \"dispatchthrough\": \"Blue Dart\",\r
+
+    \    \"billoflanding\": \"BOL123456\",\r
+
+    \    \"agent\": \"ABC Logistics\",\r
+
+    \    \"totalnoofpkgs\": 25,\r
+
+    \    \"destination\": \"Mumbai\",\r
+
+    \    \"dispatchdate\": \"2026-06-24\",\r
+
+    \    \"vehicleno\": \"MH12AB1234\",\r
+
+    \    \"vendorcode\": \"VEND001\",\r
+
+    \    \"dispatchstate\": \"Maharashtra\",\r
+
+    \    \"dispatchwarehouse\": \"Central Warehouse\",\r
+
+    \    \"dispatchbranch\": \"Mumbai Branch\",\r
+
+    \    \"placeofreceiptbyshipper\": \"Pune\",\r
+
+    \    \"flightno\": \"AI202\",\r
+
+    \    \"portofloading\": \"JNPT\",\r
+
+    \    \"portofdischarge\": \"Dubai Port\",\r
+
+    \    \"countryto\": \"UAE\",\r
+
+    \    \"shippingbillno\": \"SB987654\",\r
+
+    \    \"shippingbilldate\": \"2026-06-24\",\r
+
+    \    \"portcode\": \"INNSA1\",\r
+
+    \    \"gstregistrationtype\": \"Regular\",\r
+
+    \    \"accessofotherterritory\": \"No\",\r
+
+    \    \"placeofsupply\": \"Maharashtra\",\r
+
+    \    \"shiptotradetype\": \"Internal\",\r
+
+    \    \"shiptoverticaltype\": null,\r
+
+    \    \"shiptodealertype\": \"Distributor\",\r
+
+    \    \"shiptoplatform\": null,\r
+
+    \    \"billto\": {\r
+
+    \        \"id\": 4\r
+
+    \    },\r
+
+    \    \"shipto\": {\r
+
+    \        \"id\": 24\r
+
+    \    },\r
+
+    \    \"branch\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"warehouse\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"pricelist\": 1,\r
+
+    \    \r
+
+    \    \"deliverychallanitems\": [\r
+
+    \        {\r
+
+    \            \"productid\": {\r
+
+    \                \"id\": 1\r
+
+    \            },\r
+
+    \            \"uom\": \"PCS\",\r
+
+    \            \"carton\": 5,\r
+
+    \            \"primary\": 120,\r
+
+    \            \"mode\": \"SALE\",\r
+
+    \            \"rate\": 250.50,\r
+
+    \            \"rateuom\": \"PCS\",\r
+
+    \            \"gstrate\": 18,\r
+
+    \            \"altuom\": \"BOX\",\r
+
+    \            \"altqty\": 10,\r
+
+    \            \"sq\": 1,\r
+
+    \            \"conversion\": 10,\r
+
+    \            \"hsn\": \"84713010\",\r
+
+    \            \"barcode\": \"8901234567890\",\r
+
+    \            \"tradediscamt\": 100.00,\r
+
+    \            \"standarddiscamt\": 50.00,\r
+
+    \            \"tradediscpct\": 150.00,\r
+
+    \            \"standarddiscpct\": \"5\",\r
+
+    \            \"remarks\": \"Sample item\",\r
+
+    \            \"cgstpct\": 9,\r
+
+    \            \"sgstpct\": 9,\r
+
+    \            \"igstpct\": 0,\r
+
+    \            \"amount\": 25050.00,\r
+
+    \            \"taxablevalue\": 24900.00,\r
+
+    \            \"cgstamt\": 2241.00,\r
+
+    \            \"sgstamt\": 2241.00,\r
+
+    \            \"igstamt\": 0.00,\r
+
+    \            \"total\": 29382.00,\r
+
+    \            \"allocationSource\": \"SALES_ORDER\",\r
+
+    \            \"salesOrderItemIds\": [\r
+
+    \                1,\r
+
+    \                3\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"productid\": {\r
+
+    \                \"id\": 2\r
+
+    \            },\r
+
+    \            \"uom\": \"PCS\",\r
+
+    \            \"carton\": 5,\r
+
+    \            \"primary\": 150,\r
+
+    \            \"mode\": \"SALE\",\r
+
+    \            \"rate\": 250.50,\r
+
+    \            \"rateuom\": \"PCS\",\r
+
+    \            \"gstrate\": 18,\r
+
+    \            \"altuom\": \"BOX\",\r
+
+    \            \"altqty\": 10,\r
+
+    \            \"sq\": 2,\r
+
+    \            \"conversion\": 10,\r
+
+    \            \"hsn\": \"84713010\",\r
+
+    \            \"barcode\": \"8901234567890\",\r
+
+    \            \"tradediscamt\": 100.00,\r
+
+    \            \"standarddiscamt\": 50.00,\r
+
+    \            \"tradediscpct\": 150.00,\r
+
+    \            \"standarddiscpct\": \"5\",\r
+
+    \            \"remarks\": \"Sample item\",\r
+
+    \            \"cgstpct\": 9,\r
+
+    \            \"sgstpct\": 9,\r
+
+    \            \"igstpct\": 0,\r
+
+    \            \"amount\": 25050.00,\r
+
+    \            \"taxablevalue\": 24900.00,\r
+
+    \            \"cgstamt\": 2241.00,\r
+
+    \            \"sgstamt\": 2241.00,\r
+
+    \            \"igstamt\": 0.00,\r
+
+    \            \"total\": 29382.00,\r
+
+    \            \"allocationSource\": \"MANUAL\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    \    //   ,\r
+
+    \    //   \"salesorder\":{\r
+
+    \    //     \"id\":7\r
+
+    \    //   }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 1000

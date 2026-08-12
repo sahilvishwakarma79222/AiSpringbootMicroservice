@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://192.168.1.8:8080/api/v2/company/page?field=id&dierction=asc&search=
+method: GET
+queryParams:
+  field: id
+  dierction: asc
+  search: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 5000

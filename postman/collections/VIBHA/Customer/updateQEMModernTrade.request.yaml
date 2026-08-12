@@ -1,0 +1,314 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/customer/updateById/16
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\": null,\r
+
+    \    \"password\": \"\",\r
+
+    \    \"fullname\": null,\r
+
+    \    \"phonenumber\": null,\r
+
+    \    \"email\": \"Ankita@gmail.com\",\r
+
+    \    \"gstnumber\": null,\r
+
+    \    \"pannumber\": \"ADHF0000A\",\r
+
+    \    \"otpbasedlogin\": null,\r
+
+    \    \"parententity\": null,\r
+
+    \    \"neelamentity\": null,\r
+
+    \    \"code\": \"653276535\",\r
+
+    \    \"tradename\": \"tradename01\",\r
+
+    \    \"roles\": [],\r
+
+    \    \"verticaltype\": {\r
+
+    \        \"id\": 5\r
+
+    \    },\r
+
+    \    \"reportto\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"reporting\": \"NEELAM\",\r
+
+    \    \"cities\": {\r
+
+    \        \"id\": 1845\r
+
+    \    },\r
+
+    \    \"states\": {\r
+
+    \        \"id\": 19\r
+
+    \    },\r
+
+    \    \"zone\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"countries\": {\r
+
+    \        \"id\": 101\r
+
+    \    },\r
+
+    \    \"customerinternaltrade\": null,\r
+
+    \    \"individualcustomermoderntrade\": null,\r
+
+    \    \"corporatemoderntrade\": null,\r
+
+    \    \"exportmoderntrade\": null,\r
+
+    \    \"createddate\": \"2026-05-01\",\r
+
+    \    \"createdtime\": \"15:06:50.364\",\r
+
+    \    \"createdby\": null,\r
+
+    \    \"createbyname\": \"admin\",\r
+
+    \    \"role\": \"ADMIN\",\r
+
+    \    \"updateddate\": null,\r
+
+    \    \"updatedtime\": null,\r
+
+    \    \"updatedby\": 0,\r
+
+    \    \"updatedbyname\": null,\r
+
+    \    \"updatedrole\": null,\r
+
+    \    \"verticaltype_label\": \"Q-commerce-Modern Trade\",\r
+
+    \    \"platformname_label\": \"q com platform\",\r
+
+    \    \"countries_label\": \"India\",\r
+
+    \    \"zone_label\": \"Southern Region\",\r
+
+    \    \"states_label\": \"Kerala\",\r
+
+    \    \"cities_label\": \"Adur\",\r
+
+    \    \"Reporting_manger_NEELAM_label\": \"neelam\",\r
+
+    \    \"qemmoderntrade\": {\r
+
+    \        \r
+
+    \        \"platformname\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"entityname\": \"Customer01\",\r
+
+    \        \"gstin\": \"76989937836\",\r
+
+    \        \"cinnumber\": \"89675654\",\r
+
+    \        \"msme\": \"97986275\",\r
+
+    \        \"website\": \"Abc\",\r
+
+    \        \"officeddress\": \"Abc ,def\",\r
+
+    \        \"chainname\": \"Def\",\r
+
+    \        \"storecode\": \"54321\",\r
+
+    \        \"storename\": \"Abc\",\r
+
+    \        \"storetype\": \"Def\",\r
+
+    \        \"location\": \"Badlapur\",\r
+
+    \        \"area\": \"Yadav Nagar\",\r
+
+    \        \"openingdate\": \"2026-05-05\",\r
+
+    \        \"storemanager\": \"Ghi\",\r
+
+    \        \"contactnumber\": \"9973263663\",\r
+
+    \        \"buyername\": \"Jkl\",\r
+
+    \        \"designation\": \"cdd\",\r
+
+    \        \"category\": \"eeff\",\r
+
+    \        \"mobile\": \"sasdd\",\r
+
+    \        \"listingstatus\": \"f\",\r
+
+    \        \"listingdate\": \"2026-05-09\",\r
+
+    \        \"listingfees\": 4354,\r
+
+    \        \"skuapprovedcount\": 646,\r
+
+    \        \"skurejectedcount\": 8909,\r
+
+    \        \"categoryapproval\": \"83498\",\r
+
+    \        \"skucode\": \"738628ABC\",\r
+
+    \        \"skuname\": \"cugt\",\r
+
+    \        \"productlistingcategory\": \"47879837afgvcgfcagvsgc\",\r
+
+    \        \"mrp\": 387477,\r
+
+    \        \"sellingprice\": 37,\r
+
+    \        \"barcode\": \"873563\",\r
+
+    \        \"shelflife\": \"738783686gsgvgvcdtdvtf ct\",\r
+
+    \        \"packagingtype\": null,\r
+
+    \        \"margin\": 566,\r
+
+    \        \"tradediscount\": 6777,\r
+
+    \        \"cashdiscount\": 34,\r
+
+    \        \"schemediscount\": 43,\r
+
+    \        \"commerciallistingfees\": 34,\r
+
+    \        \"slottingfees\": 34,\r
+
+    \        \"shelfrent\": 78,\r
+
+    \        \"backendmargin\": 66,\r
+
+    \        \"monthlyscheme\": \"dcc\",\r
+
+    \        \"festivalscheme\": \"ddd\",\r
+
+    \        \"buyxgety\": \"ss\",\r
+
+    \        \"displayscheme\": \"ww\",\r
+
+    \        \"visibilitycharges\": 56,\r
+
+    \        \"monthlytarget\": 578,\r
+
+    \        \"quarterlytarget\": 56,\r
+
+    \        \"businessplan\": 453,\r
+
+    \        \"storewisetarget\": \"fdgf\",\r
+
+    \        \"ordertype\": \"ref\",\r
+
+    \        \"orderfrequency\": \"45vdff\",\r
+
+    \        \"minorderqty\": 45566,\r
+
+    \        \"leadtime\": 66666,\r
+
+    \        \"childqemmoderntrade\": {\r
+
+    \            \"supplytype\": \"gvvc\",\r
+
+    \            \"centerdetails\": \"gvcccf\",\r
+
+    \            \"deliveryschedule\": \"cvcvcg\",\r
+
+    \            \"transporter\": \"cfvc\",\r
+
+    \            \"unloadingcondition\": \"vggbgtb\",\r
+
+    \            \"billingtype\": \"trfdc\",\r
+
+    \            \"paymentterms\": \"rttg\",\r
+
+    \            \"paymentmode\": \"defrv\",\r
+
+    \            \"notesystem\": \"dxwsdxscxd\",\r
+
+    \            \"damageclaims\": \"cdsdc\",\r
+
+    \            \"expiryclaims\": \"dcdsc\",\r
+
+    \            \"ratedifference\": \"cdsc\",\r
+
+    \            \"shortsupply\": \"v f\",\r
+
+    \            \"debitnoteadj\": \"jnjy\",\r
+
+    \            \"creditlimit\": 45,\r
+
+    \            \"outstandingamount\": 5,\r
+
+    \            \"overduedays\": 45,\r
+
+    \            \"interestpolicy\": \"645gbb\",\r
+
+    \            \"gondolaplacement\": \"bfvf\",\r
+
+    \            \"endcapdisplay\": \"fvf \",\r
+
+    \            \"promotionalstand\": \"vcdfvc\",\r
+
+    \            \"brandingspace\": \"dces\",\r
+
+    \            \"merchandiserassigned\": \"vcdcsc\",\r
+
+    \            \"visitfrequency\": \"vdsc\",\r
+
+    \            \"planogramcompliance\": \"mukm\",\r
+
+    \            \"shelfshare\": 325,\r
+
+    \            \"status\": \"AmnNXZKJAKJNHZ\",\r
+
+    \            \"blockreason\": \"GJSHGS\",\r
+
+    \            \"reactivationapproval\": \"TDSTRD\",\r
+
+    \            \"checkedby\": \"UHSIAU\",\r
+
+    \            \"approvedby\": \"SIJLKJMSKJQSUH\",\r
+
+    \            \"approvalstatus\": \"KJJj\",\r
+
+    \            \"internalnotes\": \"OKO\",\r
+
+    \            \"risknotes\": \"KOK\",\r
+
+    \            \"specialinstructions\": \"OK\"\r
+
+    \        }\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 16000

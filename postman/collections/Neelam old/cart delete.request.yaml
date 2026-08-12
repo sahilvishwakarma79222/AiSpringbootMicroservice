@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://192.168.1.16:8081/api/cart/delete/1
+method: DELETE
+settings: {}
+order: 2000

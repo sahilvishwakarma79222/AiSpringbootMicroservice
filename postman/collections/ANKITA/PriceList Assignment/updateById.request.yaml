@@ -1,0 +1,34 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/pricelistassignment/updateById/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"partytype\": \"Customer\",\r
+
+    \  \"tradetype\": \"Internam Trade\",\r
+
+    \  \"customertype\": \"Stockist\",\r
+
+    \  \"assignmentscope\": \"Customer Assignment\",\r
+
+    \  \"customer\":{\r
+
+    \    \"id\":6\r
+
+    \  },\r
+
+    \  \"pricelist\": {\r
+
+    \    \"id\":2\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 12000

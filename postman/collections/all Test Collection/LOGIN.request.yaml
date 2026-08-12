@@ -1,0 +1,28 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/auth/login
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"staffId\": \"admin\",\r
+
+    \  \"password\": \"password\"\r
+
+    }\r
+
+    \r
+
+    // http://66.116.234.202:8080/neelam/api/v2/auth/login"
+auth:
+  type: noauth
+scripts:
+  - type: afterResponse
+    code: "let response = pm.response.json();\r
+
+      \r
+
+      pm.environment.set(\"sahilNeelamV2Token\", response.accessToken);"
+    language: text/javascript
+settings: {}
+order: 1000

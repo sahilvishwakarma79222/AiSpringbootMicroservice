@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/ledger-group/page?pageNumber=0&pageSize=5&field=id&direction=asc&search=Assets
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "5"
+  field: id
+  direction: asc
+  search: Assets
+body:
+  type: json
+  content: "{\r
+
+    \  \"ledgertitle\": \"Bank Account\",\r
+
+    \  \"ledgernature\": \"Assets\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 5000

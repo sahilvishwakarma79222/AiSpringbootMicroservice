@@ -1,0 +1,199 @@
+$kind: http-request
+name: save product Copy
+url: http://192.168.1.220:8080/api/v2/product/updateById/3
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"producttype\": \"FINISHED\",\r
+
+    \    \"name\": \"11111111 1Bottle 1L\",\r
+
+    \    \"shortname\": \"Bottle1L\",\r
+
+    \    \"code\": \"PRD200141\",\r
+
+    \    \"brand\": {\r
+
+    \        \"id\": 24\r
+
+    \    },\r
+
+    \    \"eanCode\": \"1234567890123\",\r
+
+    \    \"productbarcodeapplicable\": true,\r
+
+    \    \"setbarcodeapplicable\": false,\r
+
+    \    \"mastercartonbarcodeapplicable\": true,\r
+
+    \    \"weddingsetbarcodelabel\": false,\r
+
+    \    \"catalogueapplicable\": true,\r
+
+    \    \"batchapplicable\": true,\r
+
+    \    \"bisapplicable\": false,\r
+
+    \    \"uomprimary\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"uomSecondary\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"conversion\": 1,\r
+
+    \    \"standardqtyperbox\": 12,\r
+
+    \    \"reportinguom\": \"PCS\",\r
+
+    \    \"capacityml\": 1000,\r
+
+    \    \"innerdiameter\": 5.5,\r
+
+    \    \"outerdiameter\": 6.2,\r
+
+    \    \"weight\": 0.45,\r
+
+    \    \"gauge\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"thickness\": {\r
+
+    \        \"id\": 4\r
+
+    \    },\r
+
+    \    \"lwhproduct\": \"10x10x25\",\r
+
+    \    \"lwhmastercarton\": \"50x40x30\",\r
+
+    \    \"grade\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"form\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"finishtype\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"mrp\": 599,\r
+
+    \    \"dlp\": 450,\r
+
+    \    \"standardcost\": 320,\r
+
+    \    \"cessvaluationtype\": \"NONE\",\r
+
+    \    \"valuationmethod\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"productiontype\": \"INHOUSE\",\r
+
+    \    \"timeforprocurement\": 5,\r
+
+    \    \"hsn\": {\r
+
+    \        \"id\": 6\r
+
+    \    },\r
+
+    \    \"hsndescription\": \"Steel Household Bottle\",\r
+
+    \    \"igst\": 18,\r
+
+    \    \"cgst\": 9,\r
+
+    \    \"sgst\": 9,\r
+
+    \    \"typeOfSupply\": \"GOODS\",\r
+
+    \    \"category\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"subcategory\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"group\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"subgroup\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"vertical\": {\r
+
+    \        \"id\": 6\r
+
+    \    },\r
+
+    \    \"country\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"zone\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"state\": {\r
+
+    \        \"id\": 5\r
+
+    \    },\r
+
+    \    \"status\": \"ACTIVE\",\r
+
+    \    \"standardprocesstime\":1,\r
+
+    \    \"wipcost\":10,\r
+
+    \    \"tradingpurchasecost\":70,\r
+
+    \    \"tradingsellingrate\":40,\r
+
+    \    \"grossmargin\":20\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 3000

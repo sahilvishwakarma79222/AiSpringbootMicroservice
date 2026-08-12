@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{sahilNeelamV2BaseUrl}}/subgroup/page/withGroupId?pageNumber=0&pageSize=10&field=id&direction=asc&groupId=3&search=Spare Parts"
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "10"
+  field: id
+  direction: asc
+  groupId: "3"
+  search: Spare Parts
+body:
+  type: json
+  content: "{\r\n    \"brandname\":\"hp1\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 5000

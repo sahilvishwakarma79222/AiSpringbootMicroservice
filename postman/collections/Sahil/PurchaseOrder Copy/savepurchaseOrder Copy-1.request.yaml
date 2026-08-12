@@ -1,0 +1,137 @@
+$kind: http-request
+name: savepurchaseOrder Copy
+url: http://192.168.1.206:8080/api/v2/purchaseorder/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"date\": \"2026-07-04\",\r
+
+    \    \"status\": \"Active\",\r
+
+    \    \"branch\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"warehouse\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"supplier\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"vouchertype\": \"Purchase Order\",\r
+
+    \    \"voucherno\": \"\",\r
+
+    \    \"termsofpayment\": \"\",\r
+
+    \    \"refernceno\": \"\",\r
+
+    \    \"referencedate\": \"\",\r
+
+    \    \"otherreference\": \"\",\r
+
+    \    \"dispatchthrough\": \"\",\r
+
+    \    \"destination\": \"\",\r
+
+    \    \"termsofdelivery\": \"\",\r
+
+    \    \"declaration\": \"\",\r
+
+    \    \"taxtype\": \"GST\",\r
+
+    \    \"remarks\": \"\",\r
+
+    \    \"billto\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"shipto\": 9,\r
+
+    \    \"shippartytype\":\"Customer\"\r
+
+    \    \"purchaseorderitems\": [\r
+
+    \        {\r
+
+    \            \"productid\": {\r
+
+    \                \"id\": 4\r
+
+    \            },\r
+
+    \            \"mode\": \"A\",\r
+
+    \            \"rate\": 55,\r
+
+    \            \"rateuom\": \"Primary\",\r
+
+    \            \"primary\": 10,\r
+
+    \            \"uom\": \"Cart\",\r
+
+    \            \"gstrate\": 5,\r
+
+    \            \"altuom\": \"\",\r
+
+    \            \"carton\": 10,\r
+
+    \            \"altqty\": 0,\r
+
+    \            \"sq\": \"1\",\r
+
+    \            \"conversion\": 1,\r
+
+    \            \"hsn\": \"666666\",\r
+
+    \            \"barcode\": \"4444444444444\",\r
+
+    \            \"tradediscpct\": 0,\r
+
+    \            \"schemediscpct\": 0,\r
+
+    \            \"cgstpct\": 2.5,\r
+
+    \            \"sgstpct\": 2.5,\r
+
+    \            \"igstpct\": 5,\r
+
+    \            \"amount\": \"550\",\r
+
+    \            \"tradediscamt\": 0,\r
+
+    \            \"schemediscamt\": 0,\r
+
+    \            \"taxablevalue\": \"550\",\r
+
+    \            \"cgstamt\": 13.75,\r
+
+    \            \"sgstamt\": 13.75,\r
+
+    \            \"igstamt\": 27.5,\r
+
+    \            \"total\": \"605\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 7000

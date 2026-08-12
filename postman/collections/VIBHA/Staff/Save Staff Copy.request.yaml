@@ -1,0 +1,250 @@
+$kind: http-request
+url: http://192.168.1.128:8080/api/v2/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"username\": \"vibha\",\r
+
+    \  \"staffname\": \"vibha\",\r
+
+    \  \"password\": \"pass\",\r
+
+    \  \"email\": \"vibha@gmail.com\",\r
+
+    \  \"pfno\": \"PF/2023/8847\",\r
+
+    \  \"phoneno\": \"+91-9872343210\",\r
+
+    \  \"address\": \"123 Main St, Apartment 4B\",\r
+
+    \  \"gender\": \"Male\",\r
+
+    \  \"dateofbirth\": \"1992-05-15\",\r
+
+    \  \"dateofjoining\": \"2023-01-10\",\r
+
+    \  \"staffrolename\":\"RSM\",\r
+
+    \  \"reporting\":\"NSM\",\r
+
+    \  \"reportsto\":{\r
+
+    \    \"id\":1\r
+
+    \  },\r
+
+    \   \"department\": {\r
+
+    \    \"id\":1\r
+
+    \  },\r
+
+    \  \"staffdetails\":{\r
+
+    \  \"code\": \"sujata-01\",\r
+
+    \  \"displayname\": \"sujata sdk\",\r
+
+    \  \"bloodgroup\": \"O+\",\r
+
+    \  \"maritalstatus\": \"Un-Married\",\r
+
+    \  \"nationality\": \"Indian\",\r
+
+    \  \"anniversarydate\": \"2018-11-20\",\r
+
+    \  \"mobilenumber\": \"9876543211\",\r
+
+    \  \"alternatemobile\": \"9123456789\",\r
+
+    \  \"workemailid\": \"vibha@gmail.com\",\r
+
+    \  \"personalemail\": \"sujata@gmail.com\",\r
+
+    \  \"emergencycontactperson\": \"Amit Doe\",\r
+
+    \  \"emergencycontactno\": \"9988776655\",\r
+
+    \  \"permanentaddress\": \"permanentAddress\",\r
+
+    \  \"address2\": \"address\",\r
+
+    \  \"pincode\": 400001,\r
+
+    \  \"cities\": { \r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"states\": { \r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"currentaddress\": \"123 Main St, Apartment 4B\",\r
+
+    \  \"currentpincode\": 400001,\r
+
+    \  \"currentcities\": { \r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"currentstates\": { \r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"location\": \"Mumbai North\",\r
+
+    \r
+
+    \  \"designation\": \"Senior Executive\",\r
+
+    \  \"employeetype\": \"Full-Time\",\r
+
+    \  \"reportingmanager\": \"Sarah Smith\",\r
+
+    \  \"worklocation\": \"Head Office\",\r
+
+    \  \"shifttiming\": \"09:00 AM - 06:00 PM\",\r
+
+    \  \"employmentstatus\": \"Active\",\r
+
+    \  \"assignedterritory\": \"West Zone\",\r
+
+    \  \"routeplan\": \"Route_A_Mumbai\",\r
+
+    \  \"dailytarget\": 5000,\r
+
+    \  \"reportingtime\": \"09:15:00\",\r
+
+    \  \"travelallowance\": 200,\r
+
+    \  \"bankname\": \"HDFC Bank\",\r
+
+    \  \"accountnumber\": 50100012345678,\r
+
+    \  \"ifsccode\": \"HDFC0001234\",\r
+
+    \  \"uannumber\": \"100122334455\",\r
+
+    \  \"pfnumber\": \"MH/BAN/12345/678\",\r
+
+    \  \"esicnumber\": \"31001234560011001\",\r
+
+    \  \"ctc\": 850000,\r
+
+    \  \"basicsalary\": 35000,\r
+
+    \  \"hra\": 14000,\r
+
+    \  \"allowances\": 5000,\r
+
+    \  \"attendancetype\": \"Biometric\",\r
+
+    \  \"annualleaves\": 21,\r
+
+    \  \"sickleaves\": 7,\r
+
+    \  \"weeklyoff\": \"Sunday\",\r
+
+    \  \"holidaycalendar\": \"Corporate_India_2024\",\r
+
+    \  \"monthlytarget\": 150000,\r
+
+    \  \"performancerating\": \"A\",\r
+
+    \  \"incentiveeligibility\": \"Yes\",\r
+
+    \  \"appraisalcycle\": \"Annual\",\r
+
+    \  \"kpimetrics\": \"Sales Conversion, Client Retention\",\r
+
+    \  \"roleaccess\": \"Standard_User\",\r
+
+    \  \"claimallowed\": \"Yes\",\r
+
+    \  \"expenselimit\": 15000,\r
+
+    \  \"approvalauthority\": \"Department Head\",\r
+
+    \  \"reimbursementcycle\": \"Monthly\",\r
+
+    \  \"createdby\": \"Admin_User\",\r
+
+    \  \"checkedby\": \"HR_Manager_1\",\r
+
+    \  \"approvedby\": \"Director_Sales\",\r
+
+    \  \"approvalstatus\": \"Approved\",\r
+
+    \  \"exitdate\": null,\r
+
+    \  \"exitreason\": null,\r
+
+    \  \"finalstatus\": \"In-Service\",\r
+
+    \  \"internalnotes\": \"High potential candidate for promotion.\",\r
+
+    \  \"hrremarks\": \"All documents verified.\",\r
+
+    \  \"risknotes\": \"Very Risky\",\r
+
+    \     \"addresscities\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"addressstates\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"currentcountry\":{\r
+
+    \            \"id\":1\r
+
+    \        },\r
+
+    \        \"addresscountry\":{\r
+
+    \            \"id\":1\r
+
+    \        },\r
+
+    \           \"zoneids\": [\r
+
+    \            1,\r
+
+    \            2\r
+
+    \        ],\r
+
+    \        \"stateids\":[\r
+
+    \            1\r
+
+    \        ],\r
+
+    \        \"cityids\":[2]\r
+
+    \  }\r
+
+    \  \r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 5000

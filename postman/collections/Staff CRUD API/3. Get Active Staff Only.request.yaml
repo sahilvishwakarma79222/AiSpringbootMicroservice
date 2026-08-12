@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8080/api/staff/active
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+settings: {}
+order: 3000

@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{sahilNeelamV2BaseUrl}}/valuation/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"code\":\"codeZ1\",\r
+
+    \t\"name\":\"Abc\",\r
+
+    \t\"status\":\"abc done\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

@@ -1,0 +1,34 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/productnew/page/byType?pageNumber=0&field=id&direction=desc&pageSize=15&search=pro&productType=Finished Goods
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+  - key: field
+    value: id
+  - key: direction
+    value: desc
+  - key: search
+    value: SEM1I-FINISHED
+    disabled: true
+  - key: pageSize
+    value: "15"
+  - key: search
+    value: pro
+  - key: productType
+    value: Finished Goods
+body:
+  type: text
+  content: "{\r
+
+    \  \"staffId\": \"STF001\",\r
+
+    \  \"password\": \"pass\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 3000

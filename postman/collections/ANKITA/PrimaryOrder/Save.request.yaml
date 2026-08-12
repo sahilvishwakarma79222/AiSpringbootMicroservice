@@ -1,0 +1,194 @@
+$kind: http-request
+url: http://192.168.1.167:8080/api/v2/primaryorder/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"orderdate\": \"2026-06-04\",\r
+
+    \    \"customertype\": \"Stockist\",\r
+
+    \    \"billto\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"billtocontactperson\": \"drt\",\r
+
+    \    \"suppliedby\": {\r
+
+    \        \"id\": 5\r
+
+    \    },\r
+
+    \    \"pricelist\":{\r
+
+    \        \"id\":1\r
+
+    \    },\r
+
+    \    \"suppliedbycontactperson\": \"drt\",\r
+
+    \    \"billtotradename\": \"Trade2\",\r
+
+    \    \"billtoaddress\": \"Address1\",\r
+
+    \    \"billtopincode\": 467530,\r
+
+    \    \"billtocity\": \"Bombuflat\",\r
+
+    \    \"billtogst\": \"65675\",\r
+
+    \    \"billtostate\": \"Andaman and Nicobar Islands\",\r
+
+    \    \"billtopan\": \"FRTE4346564R\",\r
+
+    \    \"billtocontactno\": \"9874256670\",\r
+
+    \    \"billtoemail\": \"email2@gmail.com\",\r
+
+    \    \"shiptocustomertype\": \"Distributor\",\r
+
+    \    \"shipto\": {\r
+
+    \        \"id\":6 \r
+
+    \    },\r
+
+    \    \"shiptocontactperson\": \"Parin \",\r
+
+    \    \"shiptotradename\": \"Vijay Thalapathy PVT LTD\",\r
+
+    \    \"shiptoaddress\": \"Country\\nIndia\\nZone\\nSouthern Region\\nState\\nTamil Nadu\\nCity\\nAbiramam\",\r
+
+    \    \"shiptopincode\": 421505,\r
+
+    \    \"shiptocity\": \"Abiramam\",\r
+
+    \    \"shiptogst\": \"1232334\",\r
+
+    \    \"shiptostate\": \"Tamil Nadu\",\r
+
+    \    \"shiptopan\": \"12323434\",\r
+
+    \    \"shiptocontactno\": \"4545765\",\r
+
+    \    \"shiptoemail\": \"p@gmail.com\",\r
+
+    \    \"sup_tradename\": \"neelamdefaultcustomer\",\r
+
+    \    \"sup_gst\": \"12345678\",\r
+
+    \    \"sup_pan\": \"12345678901\",\r
+
+    \    \"sup_city\": null,\r
+
+    \    \"sup_state\": null,\r
+
+    \    \"sup_address\": null,\r
+
+    \    \"sup_pincode\": null,\r
+
+    \    \"suppliedbycontactno\": \"9874256670\",\r
+
+    \    \"suppliedbyemail\": \"email2@gmail.com\",\r
+
+    \    \"fromdate\": \"2026-05-01\",\r
+
+    \    \"todate\": \"2026-05-31\",\r
+
+    \    \"primaryorderitems\": [\r
+
+    \        {\r
+
+    \            \"productName\": \"SDK fin1 yes\",\r
+
+    \            \"eancode\": \"8888888888888\",\r
+
+    \            \"hsncode\": \"009988\",\r
+
+    \            \"uom1\": \"SDK UOM\",\r
+
+    \            \"uom2\": \"SDK UOM 2\",\r
+
+    \            \"uom\": \"\",\r
+
+    \            \"rateUom\": \"\",\r
+
+    \            \"sq\": 88,\r
+
+    \            \"uomSecondary\": 8.6,\r
+
+    \            \"igst\": 8,\r
+
+    \            \"gstRate\": 8,\r
+
+    \            \"qtyCarton\": \"\",\r
+
+    \            \"qtyPcs\": \"\",\r
+
+    \            \"qtyKg\": \"\",\r
+
+    \            \"manualSecondary\": false,\r
+
+    \            \"rate\": 50,\r
+
+    \            \"tdDiscount\": 10,\r
+
+    \            \"discount\": 10,\r
+
+    \            \"grossAmount\": \"0.00\",\r
+
+    \            \"netAmount\": \"0.00\",\r
+
+    \            \"gstValue\": \"0.00\",\r
+
+    \            \"total\": \"0.00\",\r
+
+    \            \"productid\": {\r
+
+    \                \"id\": 1\r
+
+    \            },\r
+
+    \            \"rateuom\": \"\",\r
+
+    \            \"tradediscount\": 10,\r
+
+    \            \"schemediscount\": 10,\r
+
+    \            \"netamt\": \"0.00\",\r
+
+    \            \"primary\": \"\",\r
+
+    \            \"alternative\": \"\",\r
+
+    \            \"gstamount\": 0,\r
+
+    \            \"cartoon\": \"\",\r
+
+    \            \"primaryuom\": \"SDK UOM\",\r
+
+    \            \"alternateuom\": \"SDK UOM 2\",\r
+
+    \            \"mode\": \"AUTO\",\r
+
+    \            \"gross\": \"0.00\",\r
+
+    \            \"gst\": 8,\r
+
+    \            \"conversion\": 8.6\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 1000

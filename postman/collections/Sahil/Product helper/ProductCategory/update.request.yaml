@@ -1,0 +1,16 @@
+$kind: http-request
+url: http://192.168.1.176:8080/api/v2/category/updateById/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \        \"categoryname\" : \"Steel\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 4000

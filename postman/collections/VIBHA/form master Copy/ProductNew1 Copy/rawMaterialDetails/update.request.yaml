@@ -1,0 +1,116 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/productnew/updateById/14
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"producttype\": \"Raw Material\",\r
+
+    \    \"name\": \"Material1\",\r
+
+    \    \"code\": \"1234\",\r
+
+    \    \"status\": \"ACTIVE\",\r
+
+    \    \"uomprimary\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"uomsecondary\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"conversion\": \"999999\",\r
+
+    \    \"thickness\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"valuation\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"hsn\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"hsndescription\": \"hsn description\",\r
+
+    \    \"igst\": \"10\",\r
+
+    \    \"cgst\": \"5.00\",\r
+
+    \    \"sgst\": \"5.00\",\r
+
+    \    \"category\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"subcategory\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"group\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"subgroup\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"rawmaterialdetails\": {\r
+
+    \        \"businessusage\": \"MANUFACTURING\",\r
+
+    \        \"capacityml\": 354,\r
+
+    \        \"weight\": 35,\r
+
+    \        \"gauge\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"lwhproduct\": \"3546\",\r
+
+    \        \"grade\": {\r
+
+    \            \"id\": 1\r
+
+    \        },\r
+
+    \        \"width\": 34,\r
+
+    \        \"reorderlevel\": 3543\r
+
+    \    },\r
+
+    \    \"cost\": 3445\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 3000

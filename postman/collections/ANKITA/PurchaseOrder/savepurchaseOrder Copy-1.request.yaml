@@ -1,0 +1,175 @@
+$kind: http-request
+name: savepurchaseOrder Copy
+url: http://192.168.1.206:8080/api/v2/purchaseorder/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"date\": \"2026-07-13\",\r
+
+    \    \"status\": \"Active\",\r
+
+    \    \"branch\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"warehouse\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"supplier\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"shipto\":5,\r
+
+    \    \"pricelist\": 1 ,\r
+
+    \    \"vouchertype\": \"Purchase Order\",\r
+
+    \    \"voucherno\": \"13234\",\r
+
+    \    \"termsofpayment\": \"dfgftd\",\r
+
+    \    \"refernceno\": \"345456\",\r
+
+    \    \"referencedate\": \"2026-07-15\",\r
+
+    \    \"otherreference\": \"sfsrfr\",\r
+
+    \    \"dispatchthrough\": \"sfsfs\",\r
+
+    \    \"destination\": \"fewrew\",\r
+
+    \    \"termsofdelivery\": \"dvfdd\",\r
+
+    \     \"declaration\": \"\",\r
+
+    \    \"edd\": 432432,\r
+
+    \    \"deliverymode\": \"whgfdhfsaf\",\r
+
+    \    \"purchaseledger\": \"sfsef\",\r
+
+    \    \"dueon\": \"efwe\",\r
+
+    \    \"godown\": \"gsjfyTF\",\r
+
+    \    \"bisapplicable\": \"HASFR\",\r
+
+    \    \"purchasetype\": \"YFYRD\",\r
+
+    \    \"carriername\": \"IYAGSUFYG\",\r
+
+    \    \"billoflading\": \"GSDEYF\",\r
+
+    \    \"vehicleno\": 9878676,\r
+
+    \    \"dispatchdate\": \"2026-07-19\",\r
+
+    \    \"freightterms\": \"HGDGDGH\",\r
+
+    \    \"placeofreceipt\": \"ASFWQF\",\r
+
+    \    \"countryto\": \"India\",\r
+
+    \    \"vessel\": \"fjyt\",\r
+
+    \    \"shippingbillno\": 998,\r
+
+    \    \"shippingbilldate\": \"2026-07-20\",\r
+
+    \    \"portofloading\": \"fhg\",\r
+
+    \    \"portofdischarge\": \"gytf\",\r
+
+    \    \"portcode\": 98786,\r
+
+    \    \"remarks\": \"okkkk\",\r
+
+    \    \"billto\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"shippartytype\": \"Supplier\",\r
+
+    \    \"purchaseorderitems\": [\r
+
+    \        {\r
+
+    \            \"productid\": {\r
+
+    \                \"id\": 1\r
+
+    \            },\r
+
+    \            \"mode\": \"A\",\r
+
+    \            \"rate\": 165,\r
+
+    \            \"rateuom\": \"PCS\",\r
+
+    \            \"primary\": 1,\r
+
+    \            \"uom\": \"PCS\",\r
+
+    \            \"gstrate\": 18,\r
+
+    \            \"altuom\": \"KGS\",\r
+
+    \            \"carton\": null,\r
+
+    \            \"altqty\": 5,\r
+
+    \            \"sq\": null,\r
+
+    \            \"conversion\": 5,\r
+
+    \            \"hsn\": \"96180000\",\r
+
+    \            \"barcode\": \"8901234567890\",\r
+
+    \            \"discountpct\": 10,\r
+
+    \            \"discountamt\": 16.5,\r
+
+    \            \"remarks\": \"bsahf\",\r
+
+    \            \"cgstpct\": 9,\r
+
+    \            \"sgstpct\": 9,\r
+
+    \            \"igstpct\": 0,\r
+
+    \            \"amount\": \"165\",\r
+
+    \            \"taxablevalue\": \"148.5\",\r
+
+    \            \"cgstamt\": 13.365,\r
+
+    \            \"sgstamt\": 13.365,\r
+
+    \            \"igstamt\": 0,\r
+
+    \            \"total\": \"175.23000000000002\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 7000

@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/platform-name/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"platformname\": \"Amazon23\",\r
+
+    \  \"vertical\": \r
+
+    \  {\r
+
+    \    \"id\":1\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

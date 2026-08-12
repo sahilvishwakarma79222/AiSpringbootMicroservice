@@ -1,0 +1,38 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/primaryorder/updateEdd/30
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"orderid\": \"ORD-1001\",\r
+
+    \  \"orderdate\": \"2026-05-11\",\r
+
+    \  \"shiptocustomer\": {\r
+
+    \    \"id\": 10\r
+
+    \  },\r
+
+    \  \"billingtocustomer\": {\r
+
+    \    \"id\": 19\r
+
+    \  },\r
+
+    \  \"selectsuppliedby\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \  \"suppliedbyrole\": \"Distributor\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 3000

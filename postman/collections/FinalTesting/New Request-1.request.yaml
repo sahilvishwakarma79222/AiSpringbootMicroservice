@@ -1,0 +1,207 @@
+$kind: http-request
+name: New Request
+url: ""
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"staffname\": \"EmployeeFullName-1\",\r
+
+    \    \"dateofbirth\": \"2026-04-23\",\r
+
+    \    \"gender\": \"Female\",\r
+
+    \    \"mobilenumber\": \"MobileNumber-5\",\r
+
+    \    \"workemailid\": \"WorkEmailID-7\",\r
+
+    \    \"dateofjoining\": \"2026-04-23\",\r
+
+    \    \"pfno\": \"PFNumber-20\",\r
+
+    \    \"email\": \"UserEmailId-24\",\r
+
+    \    \"username\": \"Username-25\",\r
+
+    \    \"password\": \"Password-26\",\r
+
+    \    \"department\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"roles\": [\r
+
+    \        {\r
+
+    \            \"id\": 8\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"reporting\": \"NEELAM\",\r
+
+    \    \"staffdetails\": {\r
+
+    \        \"code\": \"EmployeeCode-2\",\r
+
+    \        \"displayname\": \"DisplayName-3\",\r
+
+    \        \"bloodgroup\": \"B+\",\r
+
+    \        \"maritalstatus\": \"Single\",\r
+
+    \        \"anniversarydate\": \"2026-04-23\",\r
+
+    \        \"nationality\": \"Nationality-4\",\r
+
+    \        \"alternatemobile\": \"AlternateMobile-6\",\r
+
+    \        \"personalemail\": \"PersonalEmail-8\",\r
+
+    \        \"emergencycontactperson\": \"EmergencyContactPerson-9\",\r
+
+    \        \"emergencycontactno\": \"EmergencyContactNumber-10\",\r
+
+    \        \"address\": \"PermanentAddressLine1-11\",\r
+
+    \        \"address2\": \"AddressLine2-12\",\r
+
+    \        \"addresscities\": {\r
+
+    \            \"id\": 3\r
+
+    \        },\r
+
+    \        \"addressstates\": {\r
+
+    \            \"id\": 2\r
+
+    \        },\r
+
+    \        \"pincode\": 12,\r
+
+    \        \"currentaddress\": \"CurrentAddressLine-13\",\r
+
+    \        \"currentcities\": {\r
+
+    \            \"id\": 5\r
+
+    \        },\r
+
+    \        \"currentstates\": {\r
+
+    \            \"id\": 4\r
+
+    \        },\r
+
+    \        \"currentpincode\": 24,\r
+
+    \        \"employeetype\": \"Permanent\",\r
+
+    \        \"worklocation\": \"WorkLocation-15\",\r
+
+    \        \"shifttiming\": \"9AM-6PM\",\r
+
+    \        \"employmentstatus\": \"Active\",\r
+
+    \        \"assignedterritory\": \"AssignedTerritory-16\",\r
+
+    \        \"routeplan\": \"RoutePlan-17\",\r
+
+    \        \"dailytarget\": 36,\r
+
+    \        \"reportingtime\": \"15:34\",\r
+
+    \        \"travelallowance\": 48,\r
+
+    \        \"bankname\": \"BankName-18\",\r
+
+    \        \"accountnumber\": 60,\r
+
+    \        \"ifsccode\": \"IFSCCode-19\",\r
+
+    \        \"uannumber\": \"UANNumber-21\",\r
+
+    \        \"esicnumber\": \"ESICNumber-22\",\r
+
+    \        \"ctc\": 72,\r
+
+    \        \"basicsalary\": 84,\r
+
+    \        \"hra\": 96,\r
+
+    \        \"allowances\": 108,\r
+
+    \        \"attendancetype\": \"Mobile App\",\r
+
+    \        \"annualleaves\": 120,\r
+
+    \        \"sickleaves\": 132,\r
+
+    \        \"weeklyoff\": \"Sunday\",\r
+
+    \        \"holidaycalendar\": \"India\",\r
+
+    \        \"monthlytarget\": 144,\r
+
+    \        \"performancerating\": \"4\",\r
+
+    \        \"incentiveeligibility\": \"Yes\",\r
+
+    \        \"appraisalcycle\": \"Yearly\",\r
+
+    \        \"kpimetrics\": \"KPIMetrics-23\",\r
+
+    \        \"roleaccess\": \"Employee\",\r
+
+    \        \"claimallowed\": \"Yes\",\r
+
+    \        \"expenselimit\": 156,\r
+
+    \        \"approvalauthority\": \"ApprovalAuthority-27\",\r
+
+    \        \"reimbursementcycle\": \"Weekly\",\r
+
+    \        \"createdby\": \"CreatedBy-28\",\r
+
+    \        \"checkedby\": \"CheckedBy-29\",\r
+
+    \        \"approvedby\": \"ApprovedBy-30\",\r
+
+    \        \"approvalstatus\": \"Approved\",\r
+
+    \        \"finalstatus\": \"Active\",\r
+
+    \        \"exitdate\": \"2026-04-23\",\r
+
+    \        \"exitreason\": \"ExitReason-31\",\r
+
+    \        \"internalnotes\": \"InternalNotes-32\",\r
+
+    \        \"hrremarks\": \"HRRemarks-33\",\r
+
+    \        \"risknotes\": \"RiskNotes-34\",\r
+
+    \        \"zoneids\": [\r
+
+    \            1,\r
+
+    \            2\r
+
+    \        ]\r
+
+    \    },\r
+
+    \    \"reportsto\": {\r
+
+    \        \"id\": 12\r
+
+    \    }\r
+
+    }"
+settings: {}
+order: 25000

@@ -1,0 +1,50 @@
+$kind: http-request
+url: http://192.168.1.16:8081/api/cart/deleteCartItems/1
+method: POST
+body:
+  type: text
+  content: "{\r
+
+    \  \"name\": \"Order 1\",\r
+
+    \  \"disid\":{\r
+
+    \    \"id\":  7\r
+
+    \  },\r
+
+    \  \"retid\":{\r
+
+    \    \"id\":  34\r
+
+    \  },\r
+
+    \  \"staffid\":{\r
+
+    \    \"id\":  1\r
+
+    \  },\r
+
+    \  \"cartItems\": [\r
+
+    \    {\r
+
+    \      \"unit\": \"kg\",\r
+
+    \      \"qtykg\": 5.5,\r
+
+    \      \"qty\": 2,\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 6\r
+
+    \      }\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+settings: {}
+order: 3000

@@ -1,0 +1,44 @@
+$kind: http-request
+url: http://192.168.1.13:8080/api/v2/supplier/updateById/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \         \"suppliername\": \"Nisha\",\r
+
+    \t\t \"phonenumber\":\"168463488776\",\r
+
+    \t\t \"gstnumber\":\"7645363\",\r
+
+    \         \"otplogin\":\"false\",\r
+
+    \         \"email\":\"nisha543@gmail.com\",\r
+
+    \t\t \"address\":\"Marathon nagari astha d win 401 yadav nagar badlapur east\",\r
+
+    \t\t \"statecode\":\"5438735\",\r
+
+    \t\t \"zipcode\":\"421503\",\r
+
+    \t\t \"accountnumber\":\"7635446387836553435543\",\r
+
+    \t\t  \"bankname\":\"Abhudaya co-operative bank\",\r
+
+    \t\t  \"openingbalance\":\"0\",\r
+
+    \t      \"ifsccode\":\"IF2655\",\r
+
+    \t      \"openingbalancedate\":\"2026-02-26\",\r
+
+    \t      \"termsofpayments\":\"End of Month\",\r
+
+    \t      \"password\":\"872543912\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 3000

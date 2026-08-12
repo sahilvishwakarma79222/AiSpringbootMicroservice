@@ -1,0 +1,36 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/productAvailability/updateById/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"countries\": {\r
+
+    \    \"id\": 6\r
+
+    \  },\r
+
+    \  \"zone\": {\r
+
+    \    \"id\": 9\r
+
+    \  },\r
+
+    \  \"deliverydays\": \"45\",\r
+
+    \  \"shippingcharges\": \"50.00\",\r
+
+    \  \"productavalability\": true,\r
+
+    \  \"serviceavailable\": true,\r
+
+    \  \"notes\": \"Express shipping available for this zone.\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 2000

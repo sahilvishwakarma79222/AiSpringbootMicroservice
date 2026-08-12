@@ -1,0 +1,194 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/customer/updateById/23
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"id\": 23,\r
+
+    \  \"username\": \"test11\",\r
+
+    \  \"password\": \"pass\",\r
+
+    \  \"fullname\": \"test11\",\r
+
+    \  \"email\": \"test11@gmail.com\",\r
+
+    \  \"pannumber\": \"ABCDE111239A\",\r
+
+    \  \"code\": \"test1401\",\r
+
+    \r
+
+    \  \"verticaltype\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"cities\": {\r
+
+    \    \"id\": 10\r
+
+    \  },\r
+
+    \  \"states\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \  \"countries\": {\r
+
+    \    \"id\": 3\r
+
+    \  },\r
+
+    \r
+
+    \  \"individualcustomermoderntrade\": {\r
+
+    \    \"id\": 5,\r
+
+    \    \"customertype\": \"Retailer\",\r
+
+    \    \"displayname\": \"Updated Name\",\r
+
+    \    \"gender\": \"Male\",\r
+
+    \    \"dateofbirth\": \"1985-05-15\",\r
+
+    \    \"anniversary\": \"2010-10-10\",\r
+
+    \    \"aadhaarnumber\": 123456789012,\r
+
+    \r
+
+    \    \"mobilenumber\": \"9876583210\",\r
+
+    \    \"alternativemobilenumber\": \"9123456789\",\r
+
+    \    \"whatsappnumber\": \"9896543210\",\r
+
+    \    \"communicationmode\": \"WhatsApp\",\r
+
+    \r
+
+    \    \"billingaddress1\": \"Updated Address\",\r
+
+    \    \"billingaddress2\": \"Flat 10\",\r
+
+    \    \"pincode\": 123456,\r
+
+    \    \"shippingsameasbilling\": \"Yes\",\r
+
+    \    \"shippingaddress\": \"Updated Address\",\r
+
+    \    \"landmark\": \"Near Mall\",\r
+
+    \    \"googlelocationlink\": \"https://google.com\",\r
+
+    \r
+
+    \    \"gstregistered\": \"Yes\",\r
+
+    \    \"gstin\": \"GSTIN123456\",\r
+
+    \    \"bussinessname\": \"JD Enterprises\",\r
+
+    \    \"bussinesstype\": \"Private Limited\",\r
+
+    \    \"gststate\": \"MH\",\r
+
+    \r
+
+    \    \"kycstatus\": \"Verified\",\r
+
+    \    \"verifiedby\": \"Admin\",\r
+
+    \    \"verificationdate\": \"2023-01-15\",\r
+
+    \r
+
+    \    \"creditallowed\": \"Yes\",\r
+
+    \    \"creditlimit\": 50000,\r
+
+    \    \"creditdays\": 30,\r
+
+    \    \"outstandingamount\": 20000,\r
+
+    \    \"paymentmode\": \"Credit\",\r
+
+    \r
+
+    \    \"productcategory\": \"Electronics\",\r
+
+    \    \"frequencyofpurchase\": \"Monthly\",\r
+
+    \    \"averageordervalue\": 1500,\r
+
+    \    \"favoritebrande\": \"Samsung\",\r
+
+    \r
+
+    \    \"customersegment\": \"Premium\",\r
+
+    \    \"loyaltypoints\": 500,\r
+
+    \    \"discounteligibility\": 10,\r
+
+    \    \"couponapplicable\": \"Yes\",\r
+
+    \r
+
+    \    \"deliveryslot\": \"Morning\",\r
+
+    \    \"deliverytype\": \"Home Delivery\",\r
+
+    \    \"deliveryinstructions\": \"Leave at Door\",\r
+
+    \    \"specialhandlingnotes\": \"Handle Carefully\",\r
+
+    \r
+
+    \    \"complainthistory\": \"None\",\r
+
+    \    \"returnhistory\": \"None\",\r
+
+    \    \"supportnotes\": \"VIP\",\r
+
+    \    \"escalationlevel\": \"Level 2\",\r
+
+    \r
+
+    \    \"lastlogindate\": \"2023-03-15\",\r
+
+    \    \"deviceinfo\": \"Android\",\r
+
+    \r
+
+    \    \"status\": \"Active\",\r
+
+    \    \"blockreason\": null,\r
+
+    \    \"reactivationapproval\": \"Pending\",\r
+
+    \r
+
+    \    \"internalnotes\": \"Updated\",\r
+
+    \    \"specialinstructions\": \"Updated\",\r
+
+    \    \"risknotes\": \"Low\"\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 11000

@@ -1,0 +1,70 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/pricelist/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"partytype\": \"Customer\",\r
+
+    \  \"pricelistname\": \"Distributor Price List\",\r
+
+    \  \"effectivedate\": \"2026-06-18\",\r
+
+    \  \"remarks\": \"Standard distribute pricing\",\r
+
+    \  \"status\": \"ACTIVE\",\r
+
+    \  \"group\": [\r
+
+    \      1\r
+
+    \  ],\r
+
+    \  \"pricelistproductitem\": [\r
+
+    \    {\r
+
+    \      \"productid\": {\r
+
+    \        \"id\": 11\r
+
+    \      },\r
+
+    \      \"ean\": \"8901234567890\",\r
+
+    \      \"primaryuom\": \"PIECES\",\r
+
+    \      \"alternateuom\": \"Ltr\",\r
+
+    \      \"rate\": 125.50\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"productid\": {\r
+
+    \        \"id\": 12\r
+
+    \      },\r
+
+    \      \"ean\": \"8901234567891\",\r
+
+    \      \"primaryuom\": \"PIECES\",\r
+
+    \      \"alternateuom\": \"Ltr\",\r
+
+    \      \"rate\": 250.75\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 2000

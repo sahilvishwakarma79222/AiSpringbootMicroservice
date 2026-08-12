@@ -1,9 +1,17 @@
-# Use this workspace to collaborate
 workspace:
   id: b1862f69-7ca3-4f34-9476-36bcbbe10f55
-
-# All resources in the `postman/` folder are automatically registered in Local View.
-# Point to additional files outside the `postman/` folder to register them individually. Example:
-#localResources:
-#  collections:
-#    - ../tests/E2E Test Collection/
+cloudResources:
+  collections:
+    ../postman/collections/TestsNeelam: 44609831-58a456d8-a5c7-467f-850a-bf42003a2ca1
+    ../postman/collections/Neelam old: 44609831-22e0ef21-c2af-4f26-8979-02f0157cf3fa
+    ../postman/collections/Revision System API: 44609831-e49f602b-d59e-4037-b0ab-b094774de59c
+    ../postman/collections/Staff CRUD API: 44609831-ca1010c2-a312-4576-b70f-aef88ec0c11a
+    ../postman/collections/Employee: 44609831-109287a1-4728-4556-83dc-3a876740030a
+    ../postman/collections/Vibha Test: 44609831-dd07d813-08cc-4f05-90a7-075ae3ca32d3
+    ../postman/collections/test: 44609831-d585ce42-5aa3-415f-bf73-30dd341b7697
+    ../postman/collections/all Test Collection: 44609831-9138bb5b-661a-4591-a3f8-6ff7f01e1627
+    ../postman/collections/synergy: 44609831-33192858-9ceb-4130-9696-2006dd34381b
+    ../postman/collections/FinalTesting: 44609831-b2d8e1c1-d2a5-41b2-8de9-713b3fbce194
+    ../postman/collections/ANKITA: 44609831-5d2c1d8c-fbcc-4261-9a45-2f79da00af9d
+    ../postman/collections/VIBHA: 44609831-32e867c6-9e8d-419a-ae47-ea15753e3043
+    ../postman/collections/Sahil: 44609831-e5e0c6d6-3dc4-41ba-aeac-7645ed71a0b9

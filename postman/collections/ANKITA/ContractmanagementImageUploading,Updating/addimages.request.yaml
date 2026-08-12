@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/contractimage/addimages/9
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: images
+      src: /C:/Users/LNV 118/Downloads/profilepic03.jfif
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 1000

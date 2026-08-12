@@ -1,0 +1,23 @@
+$kind: http-request
+name: today Copy
+url: "{{baseUrl}}/dashboard"
+method: GET
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+        "title": "Introduction to Java update",
+        "notes": "This topic update covers basics of Java programming including JVM, JRE, and JDK.",
+        "difficulty": "MEDIUM",
+        "completed": false,
+        "moduleId": 1
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 5000

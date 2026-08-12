@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://192.168.1.62:8080/api/v2/auth/login
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"username\": \"johndoe123\",\r
+
+    \  \"password\": \"hashed_password_string\"\r
+
+    }"
+settings: {}
+order: 3000

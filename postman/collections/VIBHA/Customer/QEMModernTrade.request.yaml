@@ -1,0 +1,236 @@
+$kind: http-request
+url: http://192.168.1.221:8080/api/v2/customer/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"email\": \"payal@gmail.com\",\r
+
+    \  \"pannumber\": \"ABCDE1239g\",\r
+
+    \  \"code\": \"CUST009\",\r
+
+    \  \"tradename\": \"Wholesaler Traders\",\r
+
+    \  \r
+
+    \  \"verticaltype\": { \r
+
+    \    \"id\": 1 \r
+
+    \    },\r
+
+    \r
+
+    \"qemmoderntrade\":{\r
+
+    \    \r
+
+    \  \"entityname\": \"Reliance Retail Limited\",\r
+
+    \  \"gstin\": \"27AAACR1234A1Z1\",\r
+
+    \  \"cinnumber\": \"U01234MH2006PLC123456\",\r
+
+    \  \"msme\": \"No\",\r
+
+    \  \"website\": \"://relianceretail.com\",\r
+
+    \  \"officeddress\": \"Reliance Corporate Park, Ghansoli, Navi Mumbai\",\r
+
+    \  \"chainname\": \"Reliance Fresh\",\r
+
+    \r
+
+    \  \"platformname\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \r
+
+    \  \"storecode\": \"RR-MUM-402\",\r
+
+    \  \"storename\": \"Reliance Fresh - Andheri East\",\r
+
+    \  \"storetype\": \"Supermarket\",\r
+
+    \  \"location\": \"Mumbai\",\r
+
+    \  \"area\": \"Andheri West\",\r
+
+    \  \"openingdate\": \"2021-05-15\",\r
+
+    \  \"storemanager\": \"Rajesh Kumar\",\r
+
+    \  \"contactnumber\": \"9876543210\",\r
+
+    \  \"buyername\": \"Amit Sharma\",\r
+
+    \  \"designation\": \"Category Manager\",\r
+
+    \  \"category\": \"FMCG - Staples\",\r
+
+    \  \"mobile\": \"9876543211\",\r
+
+    \  \"listingstatus\": \"Active\",\r
+
+    \  \"listingdate\": \"2023-12-01\",\r
+
+    \  \"listingfees\": 25000,\r
+
+    \  \"skuapprovedcount\": 10,\r
+
+    \  \"skurejectedcount\": 1,\r
+
+    \  \"categoryapproval\": \"Approved\",\r
+
+    \  \"skucode\": \"NS-SP-101\",\r
+
+    \  \"skuname\": \"Neelam Turmeric Powder 500g\",\r
+
+    \  \"productlistingcategory\": \"Spices\",\r
+
+    \  \"mrp\": 150,\r
+
+    \  \"sellingprice\": 135,\r
+
+    \  \"barcode\": \"890123456789\",\r
+
+    \  \"shelflife\": \"12 Months\",\r
+
+    \  \"packagingtype\": \"Pouch\",\r
+
+    \  \"margin\": 15,\r
+
+    \  \"tradediscount\": 5,\r
+
+    \  \"cashdiscount\": 2,\r
+
+    \  \"schemediscount\": 3,\r
+
+    \  \"commerciallistingfees\": 5000,\r
+
+    \  \"slottingfees\": 2000,\r
+
+    \  \"shelfrent\": 1500,\r
+
+    \  \"backendmargin\": 2,\r
+
+    \  \"monthlyscheme\": \"Buy 2 Get 5% Off\",\r
+
+    \  \"festivalscheme\": \"Diwali Offer 10%\",\r
+
+    \  \"buyxgety\": \"Buy 1 Get 1 Free\",\r
+
+    \  \"displayscheme\": \"End-cap Promo\",\r
+
+    \  \"visibilitycharges\": 1000,\r
+
+    \  \"monthlytarget\": 500000,\r
+
+    \  \"quarterlytarget\": 1500000,\r
+
+    \  \"businessplan\": 6000000,\r
+
+    \  \"storewisetarget\": \"Daily 15k\",\r
+
+    \  \"ordertype\": \"Centralized\",\r
+
+    \  \"orderfrequency\": \"Weekly\",\r
+
+    \  \"minorderqty\": 50,\r
+
+    \  \"leadtime\": 3,\r
+
+    \r
+
+    \  \"childqemmoderntrade\": {\r
+
+    \    \"supplytype\": \"Direct to Store\",\r
+
+    \    \"centerdetails\": \"Bhiwandi Warehouse DC-04\",\r
+
+    \    \"deliveryschedule\": \"Mon-Wed-Fri\",\r
+
+    \    \"transporter\": \"SafeXpress\",\r
+
+    \    \"unloadingcondition\": \"Palletized only\",\r
+
+    \    \"billingtype\": \"Centralized Billing\",\r
+
+    \    \"paymentterms\": \"30 Days Net\",\r
+
+    \    \"paymentmode\": \"RTGS\",\r
+
+    \    \"notesystem\": \"SAP Integrated\",\r
+
+    \    \"damageclaims\": \"On Delivery Only\",\r
+
+    \    \"expiryclaims\": \"60 Days Prior\",\r
+
+    \    \"ratedifference\": \"Adjust in next invoice\",\r
+
+    \    \"shortsupply\": \"Debit Note Immediate\",\r
+
+    \    \"debitnoteadj\": \"Monthly Reconciliation\",\r
+
+    \    \"creditlimit\": 1000000,\r
+
+    \    \"outstandingamount\": 250000,\r
+
+    \    \"overduedays\": 5,\r
+
+    \    \"interestpolicy\": \"18% PA after 45 days\",\r
+
+    \    \"gondolaplacement\": \"Aisle 4 Shelf 2\",\r
+
+    \    \"endcapdisplay\": \"Available\",\r
+
+    \    \"promotionalstand\": \"At Entrance\",\r
+
+    \    \"brandingspace\": \"Wall Wrap Area\",\r
+
+    \    \"merchandiserassigned\": \"Suresh Varma\",\r
+
+    \    \"visitfrequency\": \"Twice Weekly\",\r
+
+    \    \"planogramcompliance\": \"95%\",\r
+
+    \    \"shelfshare\": 25,\r
+
+    \    \"createdby\": \"System Admin\",\r
+
+    \    \"checkedby\": \"Operations Head\",\r
+
+    \    \"approvedby\": \"Director\",\r
+
+    \    \"approvalstatus\": \"Approved\",\r
+
+    \    \"status\": \"Active\",\r
+
+    \    \"blockreason\": \"N/A\",\r
+
+    \    \"reactivationapproval\": \"N/A\",\r
+
+    \    \"internalnotes\": \"High growth potential in Mumbai West\",\r
+
+    \    \"risknotes\": \"Check payment aging strictly\",\r
+
+    \    \"specialinstructions\": \"Deliver between 8 AM to 11 AM only\"\r
+
+    \  }\r
+
+    }\r
+
+    \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 15000

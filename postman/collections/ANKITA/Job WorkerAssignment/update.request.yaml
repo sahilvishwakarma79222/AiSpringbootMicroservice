@@ -1,0 +1,38 @@
+$kind: http-request
+url: http://192.168.1.206:8080/api/v2/jobworkerassignment/updateById/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"assignedqty\": \"10\",\r
+
+    \  \"purchaseorderitem\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"product\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"productname\":\"Fin 1\",\r
+
+    \  \"hsncode\":\"123123\",\r
+
+    \  \"supplier\": {\r
+
+    \    \"id\": 5\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 2000

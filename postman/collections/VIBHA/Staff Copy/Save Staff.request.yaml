@@ -1,0 +1,248 @@
+$kind: http-request
+url: http://192.168.1.128:8080/api/v2/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\": \"username123\",\r
+
+    \    \"password\":\"pass\",\r
+
+    \    \"staffname\": \"Employee1\",\r
+
+    \    \"email\": \"user22@gmail.com\",\r
+
+    \    \"phoneno\": null,\r
+
+    \    \"gender\": \"Female\",\r
+
+    \    \"dateofbirth\": \"2006-06-09\",\r
+
+    \    \"dateofjoining\": \"2025-07-04\",\r
+
+    \    \"reporting\": \"NEELAM\",\r
+
+    \    \"pfno\": \"6478\",\r
+
+    \    \"staffrolename\": \"NSM\",\r
+
+    \    \"department\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"reportsto\": null,\r
+
+    \    \"permanentaddress\": null,\r
+
+    \    \"location\": null,\r
+
+    \    \"employmentstatus\": null,\r
+
+    \    \"createdby\": null,\r
+
+    \    \"zoneids\": [\r
+
+    \        {\r
+
+    \            \"id\": 1,\r
+
+    \            \"zonename\": \"Northern Region\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": 2,\r
+
+    \            \"zonename\": \"Southern Region\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"stateids\": [],\r
+
+    \    \"Reporting_manger_NEELAM\": null,\r
+
+    \    \"addresscountry_label\": \"India\",\r
+
+    \    \"addressstates_label\": \"Andhra Pradesh\",\r
+
+    \    \"addresscities_label\": \"Addanki\",\r
+
+    \    \"currentcountry_label\": \"India\",\r
+
+    \    \"currentstates_label\": \"Andhra Pradesh\",\r
+
+    \    \"currentcities_label\": \"Addanki\",\r
+
+    \    \"department_label\": \"Sales\",\r
+
+    \    \"staffdetails\": {\r
+
+    \        \"code\": \"123\",\r
+
+    \        \"displayname\": \"Employee1\",\r
+
+    \        \"bloodgroup\": \"A+\",\r
+
+    \        \"maritalstatus\": \"Single\",\r
+
+    \        \"anniversarydate\": null,\r
+
+    \        \"nationality\": \"Indian\",\r
+
+    \        \"mobilenumber\": \"9758677458\",\r
+
+    \        \"alternatemobile\": \"9758677458\",\r
+
+    \        \"workemailid\": \"employee@gmail.com\",\r
+
+    \        \"personalemail\": \"personal@gmail.com\",\r
+
+    \        \"emergencycontactperson\": \"hgt\",\r
+
+    \        \"emergencycontactno\": \"7863757932\",\r
+
+    \        \"address\": null,\r
+
+    \        \"address2\": \"dwsdw\",\r
+
+    \        \"addresscountry\": {\r
+
+    \            \"id\": 101\r
+
+    \        },\r
+
+    \        \"addressstates\": {\r
+
+    \            \"id\": 2\r
+
+    \        },\r
+
+    \        \"addresscities\": {\r
+
+    \            \"id\": 5\r
+
+    \        },\r
+
+    \        \"pincode\": 565662,\r
+
+    \        \"currentaddress\": \"dgd\",\r
+
+    \        \"currentcountry\": {\r
+
+    \            \"id\": 101\r
+
+    \        },\r
+
+    \        \"currentstates\": {\r
+
+    \            \"id\": 2\r
+
+    \        },\r
+
+    \        \"currentcities\": {\r
+
+    \            \"id\": 5\r
+
+    \        },\r
+
+    \        \"currentpincode\": 565662,\r
+
+    \        \"employeetype\": \"Permanent\",\r
+
+    \        \"worklocation\": \"dvfv\",\r
+
+    \        \"shifttiming\": \"9AM-6PM\",\r
+
+    \        \"assignedterritory\": \"thtr\",\r
+
+    \        \"routeplan\": \"bthtr\",\r
+
+    \        \"dailytarget\": 45,\r
+
+    \        \"reportingtime\": \"14:00:00\",\r
+
+    \        \"travelallowance\": 21,\r
+
+    \        \"bankname\": \"tjr\",\r
+
+    \        \"accountnumber\": 667589090,\r
+
+    \        \"ifsccode\": \"bgnh\",\r
+
+    \        \"uannumber\": \"65869\",\r
+
+    \        \"esicnumber\": \"58698\",\r
+
+    \        \"ctc\": 778,\r
+
+    \        \"basicsalary\": 567,\r
+
+    \        \"hra\": 667,\r
+
+    \        \"allowances\": 878,\r
+
+    \        \"attendancetype\": \"Mobile App\",\r
+
+    \        \"annualleaves\": 5,\r
+
+    \        \"sickleaves\": 6,\r
+
+    \        \"weeklyoff\": \"Sunday\",\r
+
+    \        \"holidaycalendar\": \"India\",\r
+
+    \        \"monthlytarget\": 34,\r
+
+    \        \"performancerating\": \"2\",\r
+
+    \        \"incentiveeligibility\": \"Yes\",\r
+
+    \        \"appraisalcycle\": \"Half Yearly\",\r
+
+    \        \"kpimetrics\": \"ukui\",\r
+
+    \        \"roleaccess\": \"Employee\",\r
+
+    \        \"claimallowed\": \"Yes\",\r
+
+    \        \"expenselimit\": 54,\r
+
+    \        \"approvalauthority\": \"jj\",\r
+
+    \        \"reimbursementcycle\": \"Monthly\",\r
+
+    \        \"checkedby\": \"rhtyj\",\r
+
+    \        \"approvedby\": \"ntyjt\",\r
+
+    \        \"approvalstatus\": \"Pending\",\r
+
+    \        \"finalstatus\": \"Active\",\r
+
+    \        \"internalnotes\": \"fergtrh\",\r
+
+    \        \"hrremarks\": \"jtyj\",\r
+
+    \        \"risknotes\": \"jtyj\",\r
+
+    \        \"zoneids\": [\r
+
+    \            1,\r
+
+    \            2\r
+
+    \        ]\r
+
+    \    }\r
+
+    }"
+auth:
+  type: noauth
+settings: {}
+order: 4000

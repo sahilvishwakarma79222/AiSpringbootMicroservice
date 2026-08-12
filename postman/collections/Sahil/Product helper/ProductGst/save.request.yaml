@@ -1,0 +1,22 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/gst/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"gstcode\" : \"10\",\r
+
+    \t  \"gst\" :\"11\",\r
+
+    \t  \"gsttype\": \"CGST\",\r
+
+    \t \"description\":\"GSt for Goods And Service\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 1000

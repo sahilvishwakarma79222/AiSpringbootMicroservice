@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/platform-name/page?pageNumber=0&pageSize=5&field=id&direction=asc&search=mall
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "5"
+  field: id
+  direction: asc
+  search: mall
+body:
+  type: json
+  content: "{\r
+
+    \  \"ledgertitle\": \"Cash Account\",\r
+
+    \  \"ledgernature\": \"Assets\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 4000

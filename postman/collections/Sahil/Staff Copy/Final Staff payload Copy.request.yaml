@@ -1,0 +1,224 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"username\": \"vikasDUPLICATE11\",\r
+
+    \  \"staffname\": \"Vikas Mehta\",\r
+
+    \  \"password\": \"pass\",\r
+
+    \  \"email\": \"vikasduplicate11@gmail.com\",\r
+
+    \  \"pfno\": \"PF/2024/5621\",\r
+
+    \  \"phoneno\": \"+91-9812345678\",\r
+
+    \  \"address\": \"A-702, Green Heights, Baner Road, Pune\",\r
+
+    \  \"gender\": \"Male\",\r
+
+    \  \"dateofbirth\": \"1994-08-22\",\r
+
+    \  \"dateofjoining\": \"2024-02-15\",\r
+
+    \  \"staffrolename\": \"NSM\",\r
+
+    \r
+
+    \  \"staffdetails\": {\r
+
+    \    \"code\": \"VIKAS-01\",\r
+
+    \    \"displayname\": \"Vikas Mehta\",\r
+
+    \    \"bloodgroup\": \"B+\",\r
+
+    \    \"maritalstatus\": \"Married\",\r
+
+    \    \"nationality\": \"Indian\",\r
+
+    \    \"anniversarydate\": \"2021-12-10\",\r
+
+    \    \"mobilenumber\": \"9988123456\",\r
+
+    \    \"alternatemobile\": \"9876541230\",\r
+
+    \    \"workemailid\": \"vikas.mehta@company.com\",\r
+
+    \    \"personalemail\": \"vikas.personal@gmail.com\",\r
+
+    \    \"emergencycontactperson\": \"Neha Mehta\",\r
+
+    \    \"emergencycontactno\": \"9900112233\",\r
+
+    \    \"permanentaddress\": \"Plot No. 15, Model Colony, Pune\",\r
+
+    \    \"address2\": \"Near City Mall\",\r
+
+    \    \"pincode\": 411045,\r
+
+    \    \"cities\": {\r
+
+    \      \"id\": 1\r
+
+    \    },\r
+
+    \    \"states\": {\r
+
+    \      \"id\": 1\r
+
+    \    },\r
+
+    \    \"currentaddress\": \"A-702, Green Heights, Baner Road, Pune\",\r
+
+    \    \"currentpincode\": 411045,\r
+
+    \    \"currentcities\": {\r
+
+    \      \"id\": 1\r
+
+    \    },\r
+
+    \    \"currentstates\": {\r
+
+    \      \"id\": 1\r
+
+    \    },\r
+
+    \    \"location\": \"Pune West\",\r
+
+    \    \"designation\": \"Regional Manager\",\r
+
+    \    \"employeetype\": \"Full-Time\",\r
+
+    \    \"reportingmanager\": \"Sanjay Kulkarni\",\r
+
+    \    \"worklocation\": \"Pune Corporate Office\",\r
+
+    \    \"shifttiming\": \"10:00 AM - 07:00 PM\",\r
+
+    \    \"employmentstatus\": \"Active\",\r
+
+    \    \"assignedterritory\": \"Maharashtra\",\r
+
+    \    \"routeplan\": \"Route_Pune_01\",\r
+
+    \    \"dailytarget\": 7000,\r
+
+    \    \"reportingtime\": \"10:05:00\",\r
+
+    \    \"travelallowance\": 300,\r
+
+    \    \"bankname\": \"ICICI Bank\",\r
+
+    \    \"accountnumber\": 60100098765432,\r
+
+    \    \"ifsccode\": \"ICIC0004321\",\r
+
+    \    \"uannumber\": \"100998877665\",\r
+
+    \    \"pfnumber\": \"MH/PUN/54321/987\",\r
+
+    \    \"esicnumber\": \"31004567890022002\",\r
+
+    \    \"ctc\": 950000,\r
+
+    \    \"basicsalary\": 42000,\r
+
+    \    \"hra\": 18000,\r
+
+    \    \"allowances\": 7000,\r
+
+    \    \"attendancetype\": \"Biometric\",\r
+
+    \    \"annualleaves\": 24,\r
+
+    \    \"sickleaves\": 10,\r
+
+    \    \"weeklyoff\": \"Saturday\",\r
+
+    \    \"holidaycalendar\": \"Corporate_India_2025\",\r
+
+    \    \"monthlytarget\": 200000,\r
+
+    \    \"performancerating\": \"A+\",\r
+
+    \    \"incentiveeligibility\": \"Yes\",\r
+
+    \    \"appraisalcycle\": \"Annual\",\r
+
+    \    \"kpimetrics\": \"Revenue Growth, Team Performance\",\r
+
+    \    \"roleaccess\": \"Administrator\",\r
+
+    \    \"claimallowed\": \"Yes\",\r
+
+    \    \"expenselimit\": 25000,\r
+
+    \    \"approvalauthority\": \"Regional Director\",\r
+
+    \    \"reimbursementcycle\": \"Monthly\",\r
+
+    \    \"createdby\": \"System_Admin\",\r
+
+    \    \"checkedby\": \"HR_Admin\",\r
+
+    \    \"approvedby\": \"Managing_Director\",\r
+
+    \    \"approvalstatus\": \"Approved\",\r
+
+    \    \"exitdate\": null,\r
+
+    \    \"exitreason\": null,\r
+
+    \    \"finalstatus\": \"In-Service\",\r
+
+    \    \"internalnotes\": \"Excellent leadership skills.\",\r
+
+    \    \"hrremarks\": \"Background verification completed.\",\r
+
+    \    \"risknotes\": \"Low Risk\",\r
+
+    \    \"addresscities\": {\r
+
+    \      \"id\": 1\r
+
+    \    },\r
+
+    \    \"addressstates\": {\r
+
+    \      \"id\": 1\r
+
+    \    },\r
+
+    \    \"currentcountry\": {\r
+
+    \      \"id\": 1\r
+
+    \    },\r
+
+    \    \"addresscountry\": {\r
+
+    \      \"id\": 1\r
+
+    \    },\r
+
+    \    \"zoneids\": [1, 2],\r
+
+    \    \"stateids\": [1, 2],\r
+
+    \    \"cityids\": [2]\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 7000

@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{baseUrl}}/revisionsScheduler/5/complete"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+        "sequenceNo": 4,
+        "dayOffset": 21,
+        "patternId": 1
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 1000

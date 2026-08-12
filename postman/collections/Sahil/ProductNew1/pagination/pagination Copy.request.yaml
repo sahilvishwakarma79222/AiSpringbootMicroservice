@@ -1,0 +1,34 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/productnew/getAllProductsByVerticalType/page?pageNumber=0&pageSize=10&field=id&direction=desc&tradetype=INTERNAL&producttype=Finished Goods
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+  - key: pageSize
+    value: "10"
+  - key: field
+    value: id
+  - key: direction
+    value: desc
+  - key: search
+    value: SEM1I-FINISHED
+    disabled: true
+  - key: tradetype
+    value: INTERNAL
+  - key: producttype
+    value: Finished Goods
+body:
+  type: text
+  content: "{\r
+
+    \  \"staffId\": \"STF001\",\r
+
+    \  \"password\": \"pass\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 2000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://192.168.1.16:8081/api/auth/signin
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\": \"test@123gmail.com\",\r
+
+    \    \"password\": \"ankita921\"\r
+
+    \ }"
+settings: {}
+order: 5000

@@ -1,0 +1,43 @@
+$kind: http-request
+url: http://192.168.1.143:8080/api/v2/contract/updateById/9
+method: PUT
+body:
+  type: formdata
+  content:
+    - type: text
+      key: ContractManagement
+      value: |
+        {
+          "suppliername": {
+            "id": 1
+          },
+          "fromdate": "2026-05-01",
+          "todate": "2026-05-31",
+          "taxableamount": 50000.00,
+          "taxamount": 9000.00,
+          "totalamount": 59000.00,
+          "contracttype": "Annual",
+          "contracttitle": "Renovation Project Contracts",
+          "remarks": "Monthly supply contract"
+        }
+    - type: text
+      key: imageIds
+      value: "7"
+    - type: file
+      key: images
+      src:
+        - /C:/Users/LNV 118/Downloads/images 10.jfif
+        - /C:/Users/LNV 118/Downloads/image11.jpg
+    - type: file
+      key: newImages
+      src: ""
+    - type: text
+      key: imageIds
+      value: "8"
+      disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 4000

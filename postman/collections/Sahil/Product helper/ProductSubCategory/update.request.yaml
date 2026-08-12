@@ -1,0 +1,30 @@
+$kind: http-request
+url: http://192.168.1.16:8080/api/v2/subcategory/updateById/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"productCategory\":{\r
+
+    \      \"id\": 3\r
+
+    \    },\r
+
+    \t \"code\":\"pl-004\",\r
+
+    \t \"name\":\"Spoons\",\r
+
+    \t  \"description\":\"All types of Spoon\",\r
+
+    \t  \"status\":\"true\"\r
+
+    \t\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 4000

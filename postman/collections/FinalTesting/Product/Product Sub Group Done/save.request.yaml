@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{Neelamv2BaseUrl}}subgroup/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"subgroupcode\":\"652585\",\r
+
+    \t\"subgroupname\":\"Abc\",\r
+
+    \t\"description\"\t:\"abc done\",\r
+
+    \    \"productGroup\":{\r
+
+    \        \"id\":1\r
+
+    \      }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 1000

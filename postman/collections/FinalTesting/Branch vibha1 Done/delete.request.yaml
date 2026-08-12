@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{vibhaBaseUrl}}/branch/deleteById/1"
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 3000

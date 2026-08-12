@@ -1,0 +1,52 @@
+$kind: http-request
+url: http://192.168.1.206:8080/api/v2/jobworkerassignment/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"assignedqty\": \"5\",\r
+
+    \    \"unit\": \"primary\",\r
+
+    \    \"purchaseorder\": {\r
+
+    \        \"id\": 5\r
+
+    \    },\r
+
+    \    \"purchaseorderitem\": {\r
+
+    \        \"id\": 5\r
+
+    \    },\r
+
+    \    \"product\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"productname\": \"Stainless Steel Dinner Thali 12 Inch\",\r
+
+    \    \"hsncode\": \"96180000\",\r
+
+    \    \"supplier\": {\r
+
+    \        \"id\": 4\r
+
+    \    },\r
+
+    \    \"planneddispatchdate\": \"2026-07-16\",\r
+
+    \    \"remarks\": \"okk\",\r
+
+    \    \"status\": \"Pending\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 1000

@@ -1,0 +1,136 @@
+$kind: http-request
+url: http://192.168.1.221:8080/api/v2/customer/updateById/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"roles\": [\r
+
+    \    {\r
+
+    \      \"id\": 1\r
+
+    \    }\r
+
+    \  ],\r
+
+    \  \"verticleType\": {\r
+
+    \       \"id\":1\r
+
+    \  },\r
+
+    \  \"dealerType\": \"Authorized Dealer\",\r
+
+    \  \"parententity\": \"Global Corp\",\r
+
+    \  \"neelamentity\": \"Neelam North\",\r
+
+    \  \"code\": \"CUST-101\",\r
+
+    \  \"linkedwith\": \"Retail\",\r
+
+    \  \"legalentityname\": \"Acme Trading Pvt Ltd\",\r
+
+    \  \"tradename\": \"Acme Solutions\",\r
+
+    \  \"owenershiptype\": \"Partnership\",\r
+
+    \  \"category\": \"Gold\",\r
+
+    \  \"yearofestablishment\": 2010,\r
+
+    \  \"turnover\": 5000000,\r
+
+    \  \"gstregistrationtype\": \"Regular\",\r
+
+    \  \"distributionchannel\": \"Wholesale\",\r
+
+    \  \"division\": \"Pharma\",\r
+
+    \  \"registeredaddress\": \"123 Business Park, Main Street\",\r
+
+    \  \"warehouseaddress\": \"Plot 45, Industrial Area\",\r
+
+    \  \"pincode\": 400001,\r
+
+    \  \"territorycovered\": \"Maharashtra and Goa\",\r
+
+    \  \"deliveryradius\": 50,\r
+
+    \  \"cities\": { \r
+
+    \    \"id\": 1 \r
+
+    \    },\r
+
+    \  \"states\": { \r
+
+    \    \"id\": 5 \r
+
+    \    },\r
+
+    \  \"zone\": { \r
+
+    \    \"id\": 2 \r
+
+    \    },\r
+
+    \  \"primarysupplyplant\": { \r
+
+    \    \"id\": 4 \r
+
+    \    },\r
+
+    \  \"loginid\": \"username\",\r
+
+    \  \"password\": \"password\",\r
+
+    \  \"backlistflag\": \"N\",\r
+
+    \  \"stdcode\": \"022\",\r
+
+    \  \"telephonenumber\": \"28475632\",\r
+
+    \  \"headofficeaddress\": \"Corporate Tower, Suite 200\",\r
+
+    \  \"deliveryaddress\": \"Warehouse Gate 2\",\r
+
+    \  \"cinno\": \"U12345MH2010PTC123456\",\r
+
+    \  \"fullname\": \"John Doe\",\r
+
+    \  \"dateofbirth\": \"1985-05-20\",\r
+
+    \  \"anniversarydate\": \"2012-12-15\",\r
+
+    \  \"maritalstatus\": \"Married\",\r
+
+    \  \"spousename\": \"Jane Doe\",\r
+
+    \  \"aadharnumber\": 123456789012,\r
+
+    \  \"whatsappnumber\": \"9876543210\",\r
+
+    \  \"email\": \"contact@acme.com\",\r
+
+    \  \"homeaddress\": \"Apt 4B, Residency Road\",\r
+
+    \  \"height\": 175,\r
+
+    \  \"weight\": 70,\r
+
+    \  \"shirtsize\": \"XL\",\r
+
+    \  \"pantsize\": 34\r
+
+    \  \r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 2000

@@ -1,0 +1,42 @@
+$kind: http-request
+url: "{{baseUrl}}/revision-pattern/save"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "name": "Default",
+      "description": "Default Pattern",
+      "steps": [
+        {
+          "dayOffset": 0
+        },
+        {
+          "dayOffset": 1
+        },
+        {
+          "dayOffset": 3
+        },
+        {
+          "dayOffset": 7
+        },
+        {
+          "dayOffset": 14
+        },
+        {
+          "dayOffset": 30
+        },
+        {
+          "dayOffset": 90
+        }
+      ]
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 1000

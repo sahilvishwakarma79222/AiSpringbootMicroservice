@@ -1,0 +1,206 @@
+$kind: http-request
+url: http://192.168.1.31:8080/api/v2/supplier/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"suppliercode\": \"001\",\r
+
+    \    \"suppliername\": \"AY-AMIT\",\r
+
+    \    \"gstnumber\": \"29ABCDE1234F1Z5 \",\r
+
+    \    \"pannumber\": \"AXVPY3395G\",\r
+
+    \    \"countries\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"states\": {\r
+
+    \        \"id\": 42\r
+
+    \    },\r
+
+    \    \"cities\": {\r
+
+    \        \"id\": 5909\r
+
+    \    },\r
+
+    \    \"msmestatus\": \"NOT_REGISTERED\",\r
+
+    \    \"msmenumber\": \"\",\r
+
+    \    \"activitytype\": \"\",\r
+
+    \    \"suppliertype\": {\r
+
+    \        \"id\" :1\r
+
+    \        },\r
+
+    \    \"status\": \"ACTIVE\",\r
+
+    \    \"billingpartyname\": \"ASV-DIGITAL-SYSTEM\",\r
+
+    \    \"billingcountries\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"billingstates\": {\r
+
+    \        \"id\": 42\r
+
+    \    },\r
+
+    \    \"billingcities\": {\r
+
+    \        \"id\": 5909\r
+
+    \    },\r
+
+    \    \"billingaddress\": \"12\",\r
+
+    \    \"billingpincode\": \"12\",\r
+
+    \    \"sameasbilling\": \"YES\",\r
+
+    \    \"shippingpartyname\": \"ASV-DIGITAL-SYSTEM\",\r
+
+    \    \"shippingcountries\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"shippingstate\": {\r
+
+    \        \"id\": 42\r
+
+    \    },\r
+
+    \    \"shippingcity\": {\r
+
+    \        \"id\": 5909\r
+
+    \    },\r
+
+    \    \"shippingaddress\": \"12\",\r
+
+    \    \"shippingpincode\": \"12\",\r
+
+    \    \"ownername\": \"12\",\r
+
+    \    \"ownermobile\": \"12\",\r
+
+    \    \"owneremail\": \"12\",\r
+
+    \    \"dispatchcontactperson\": \"12\",\r
+
+    \    \"dispatchmobile\": \"12\",\r
+
+    \    \"dispatchemail\": \"12\",\r
+
+    \    \"accountcontactperson\": \"12\",\r
+
+    \    \"accountmobile\": \"12\",\r
+
+    \    \"accountemailid\": \"12\",\r
+
+    \    \"transportbasis\": \"PAID\",\r
+
+    \    \"preferredtransportername\": \"12\",\r
+
+    \    \"deliverydays\": \"12\",\r
+
+    \    \"gstapplicable\": \"YES\",\r
+
+    \    \"gst\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"tdsapplicable\": \"NO\",\r
+
+    \    \"tdssection\": \"\",\r
+
+    \    \"tdsrate\": \"\",\r
+
+    \    \"tcsapplicable\": \"NO\",\r
+
+    \    \"creditdays\": \"12\",\r
+
+    \    \"creditlimit\": \"12\",\r
+
+    \    \"paymentterms\": \"ADVANCE\",\r
+
+    \    \"bankname\": \"12\",\r
+
+    \    \"accountnumber\": \"12\",\r
+
+    \    \"ifsccode\": \"12\",\r
+
+    \    \"upiid\": \"a@gmail.com\",\r
+
+    \    \"portalaccess\": \"ENABLE\",\r
+
+    \    \"allowedmodule\": \"PURCHASE\",\r
+
+    \    \"username\": \"avm@gmail.com\",\r
+
+    \    \"sendlogincredentialsto\": \"avm1@gmail.com\",\r
+
+    \    \"email\": \"ert@gmail.com\",\r
+
+    \    \"password\": \"passwor\",\r
+
+    \    \"roles\": [\r
+
+    \        {\r
+
+    \            \"id\": 2\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"vendorauditrequired\": \"NO\",\r
+
+    \    \"lastauditdate\": \"\",\r
+
+    \    \"nextauditdate\": \"\",\r
+
+    \    \"auditfrequency\": \"\",\r
+
+    \    \"blacklistflag\": \"NO\",\r
+
+    \    \"reasonforblacklist\": \"\",\r
+
+    \    \"blacklistdate\": \"\",\r
+
+    \    \"ontimedelivery\": \"12\",\r
+
+    \    \"qualityrejection\": \"12\",\r
+
+    \    \"vendorrating\": \"\",\r
+
+    \    \"performanceremarks\": \"12\",\r
+
+    \    \"notes\": \"12\",\r
+
+    \    \"internalremarks\": \"12\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 1000

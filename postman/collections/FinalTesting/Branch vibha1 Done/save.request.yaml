@@ -1,0 +1,64 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/branch/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"branchname\": \"11 Branch\",\r
+
+    \  \"phoneno\": \"9876543210\",\r
+
+    \  \"gstno\": \"29ABCDE1234F1Z5\",\r
+
+    \  \"email\": \"mainbranch@example.com\",\r
+
+    \  \"address1\": \"123, Business Street\",\r
+
+    \  \"address2\": \"Industrial Area\",\r
+
+    \  \"pincode\": 560001,\r
+
+    \  \"accountno\": 123456789012,\r
+
+    \  \"bankname\": \"State Bank of Example\",\r
+
+    \  \"bankbranchname\": \"Main Branch\",\r
+
+    \  \"ifsccode\": \"SBIN0001234\",\r
+
+    \  \r
+
+    \  \"countries\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \r
+
+    \  \"states\": {\r
+
+    \    \"id\": 1\r
+
+    \   \r
+
+    \  },\r
+
+    \  \r
+
+    \  \"cities\": {\r
+
+    \    \"id\": 1\r
+
+    \   \r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

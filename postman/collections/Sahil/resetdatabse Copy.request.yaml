@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://192.168.1.220:8080/admin/reset-db?key=RESET123
+method: POST
+queryParams:
+  key: RESET123
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 37000

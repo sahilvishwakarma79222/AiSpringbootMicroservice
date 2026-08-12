@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{sahilNeelamV2BaseUrl}}/branch/getById/1"
+method: GET
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 2000

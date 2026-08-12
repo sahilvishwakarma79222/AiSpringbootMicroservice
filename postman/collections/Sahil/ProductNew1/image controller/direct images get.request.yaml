@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://192.168.1.220:8081/productimages/8ce6d352-43c3-46d8-b872-a9f00eb7faa8.jpeg
+method: GET
+settings: {}
+order: 5000

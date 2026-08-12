@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{sahilNeelamV2BaseUrl}}/uom/page?pageNumber=0&pageSize=10&field=id&direction=asc&search=Weight"
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "10"
+  field: id
+  direction: asc
+  search: Weight
+body:
+  type: json
+  content: "{\r\n    \"brandname\":\"hp1\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 7000

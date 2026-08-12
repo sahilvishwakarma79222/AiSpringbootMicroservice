@@ -1,0 +1,262 @@
+$kind: http-request
+url: http://192.168.1.221:8080/api/v2/customer/updateById/15
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"loginid\": \"cus12\",\r
+
+    \  \"password\": \"pass\",\r
+
+    \  \"email\": \"Customer@gmail.com\",\r
+
+    \  \"code\": \"CUST12\",\r
+
+    \  \"tradename\": \"Wholesaler Traders\",\r
+
+    \r
+
+    \  \"verticaltype\": { \r
+
+    \    \"id\": 1 \r
+
+    \    },\r
+
+    \r
+
+    \  \"staff\": { \r
+
+    \    \"id\": 1\r
+
+    \     },\r
+
+    \  \"cities\": { \r
+
+    \    \"id\": 10\r
+
+    \     },\r
+
+    \  \"states\": { \r
+
+    \    \"id\": 2 \r
+
+    \    },\r
+
+    \  \"countries\": { \r
+
+    \    \"id\": 3 \r
+
+    \    },\r
+
+    \r
+
+    \ \"exportmoderntrade\":{\r
+
+    \    \r
+
+    \  \"id\":1,\r
+
+    \  \"importername\": \"Global Trade Solutions Ltd\",\r
+
+    \  \"clienttype\": \"Wholesaler\",\r
+
+    \  \"languagepreference\": \"English\",\r
+
+    \  \"region\": \"Middle East\",\r
+
+    \  \"timezone\": \"GST (UTC+4)\",\r
+
+    \  \"clientcountries\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \  \"registrationnumber\": \"REG-882910\",\r
+
+    \  \"taxid\": \"TX-9920112\",\r
+
+    \  \"importercode\": \"IMP4432\",\r
+
+    \  \"businesslicenseno\": \"BL-55678\",\r
+
+    \  \"yearofestablishment\": 2010,\r
+
+    \  \"natureofbusiness\": \"Export and Distribution\",\r
+
+    \  \"officeaddress\": \"123 Business Bay, Downtown Tower, Dubai\",\r
+
+    \  \"postalcode\": 110022,\r
+
+    \  \"deliveryaddress\": \"Warehouse 4B, Industrial Area 5, Sharjah\",\r
+
+    \  \"portofdelivery\": \"Jebel Ali Port\",\r
+
+    \  \"contactperson\": \"John Doe\",\r
+
+    \  \"primarycontactname\": \"Alice Smith\",\r
+
+    \  \"designation\": \"Procurement Manager\",\r
+
+    \  \"phoneno\": \"+971501234567\",\r
+
+    \  \"whatsappno\": \"+971501234567\",\r
+
+    \  \"purchaseheadname\": \"Robert Brown\",\r
+
+    \  \"purchaseheademail\": \"robert.b@globaltrade.com\",\r
+
+    \  \"financemanagername\": \"Sarah Khan\",\r
+
+    \  \"financemanageremail\": \"sarah.k@globaltrade.com\",\r
+
+    \  \"logisticscoordinator\": \"Michael Chang\",\r
+
+    \  \"bankname\": \"International Merchant Bank\",\r
+
+    \  \"accountnumber\": 987654321012,\r
+
+    \  \"accountholder\": \"Global Trade Solutions Ltd\",\r
+
+    \  \"swiftcode\": \"IMBKAEADXXX\",\r
+
+    \  \"bankaddress\": \"Financial District, Building 10, Dubai\",\r
+
+    \  \"iban\": \"AE001234567890123456789\",\r
+
+    \  \"paymentterm\": \"Net 30\",\r
+
+    \  \"creditdays\": 30,\r
+
+    \  \"currency\": \"USD\",\r
+
+    \  \"paymentmode\": \"Wire Transfer\",\r
+
+    \  \"incoterms\": \"FOB\",\r
+
+    \  \"portofloading\": \"Nhava Sheva\",\r
+
+    \  \"portofdischarge\": \"Jebel Ali\",\r
+
+    \  \"finaldestination\": \"Dubai, UAE\",\r
+
+    \  \"shipmentmode\": \"Sea\",\r
+
+    \  \"productcategories\": \"Organic Grains, Spices\",\r
+
+    \  \"hscode\": \"1006.30\",\r
+
+    \  \"annualpurchasevolume\": \"500 Metric Tons\",\r
+
+    \  \"packagingrequirement\": \"Vacuum Sealed 25kg Bags\",\r
+
+    \  \"labelingrequirement\": \"Bilingual (English/Arabic)\",\r
+
+    \  \"qualitystandards\": \"ISO 22000, HACCP\",\r
+
+    \  \"roleaccess\": \"Admin\",\r
+
+    \  \"lastlogindate\": \"2024-03-20\",\r
+
+    \  \r
+
+    \  \"childexportmoderntrade\": {\r
+
+    \    \"id\":1,\r
+
+    \    \"invoiceformat\": \"PDF-Standard\",\r
+
+    \    \"packinglistformat\": \"Excel-Detailed\",\r
+
+    \    \"certificateoforiginreq\": \"Chamber of Commerce Certified\",\r
+
+    \    \"inspectioncertificate\": \"SGS Inspection\",\r
+
+    \    \"thirdpartyagency\": \"SGS Global\",\r
+
+    \    \"documentationinstructions\": \"Originals via DHL, Scans via Email\",\r
+
+    \    \"freightforwardername\": \"Blue Ocean Logistics\",\r
+
+    \    \"customhouseagent\": \"Swift Clearances Ltd\",\r
+
+    \    \"shippingline\": \"Maersk\",\r
+
+    \    \"containertype\": \"20ft High Cube\",\r
+
+    \    \"stuffinglocation\": \"Factory Premises\",\r
+
+    \    \"insurancerequired\": \"Yes\",\r
+
+    \    \"insurancetype\": \"Marine Cargo Insurance\",\r
+
+    \    \"insurancecompany\": \"Allianz Global\",\r
+
+    \    \"currencyexposurelimit\": \"50000\",\r
+
+    \    \"exchangeratetype\": \"Spot Rate\",\r
+
+    \    \"hedgingrequired\": \"No\",\r
+
+    \    \"compliancestatus\": \"Verified\",\r
+
+    \    \"creditlimit\": 100000,\r
+
+    \    \"riskcategory\": \"Low Risk\",\r
+
+    \    \"paymenthistory\": \"Good - No Delays\",\r
+
+    \    \"outstandingamount\": 15000,\r
+
+    \    \"monthlyexporttarget\": 40000,\r
+
+    \    \"annualcommitment\": 500000,\r
+
+    \    \"productwisetarget\": \"Spices: 200k, Grains: 300k\",\r
+
+    \    \"countrywisetarget\": \"UAE: 100%\",\r
+
+    \    \"createdby\": \"System Admin\",\r
+
+    \    \"checkedby\": \"Operations Head\",\r
+
+    \    \"approvedby\": \"Finance Director\",\r
+
+    \    \"status\": \"Approved\",\r
+
+    \    \"approvaldate\": \"2024-03-15\",\r
+
+    \    \"activationstatus\": \"Active\",\r
+
+    \    \"blockreason\": \"N/A\",\r
+
+    \    \"reactivationapproval\": \"N/A\",\r
+
+    \    \"internalnotes\": \"VVIP client, prioritize shipping slots\",\r
+
+    \    \"specialinstructions\": \"Handle glass jars with extra care\",\r
+
+    \    \"risknotes\": \"Credit limit review every 6 months\",\r
+
+    \    \"lcexpiryalert\": \"30 Days Prior\",\r
+
+    \    \"shipmentdelayalert\": \"Real-time Email\",\r
+
+    \    \"paymentduealert\": \"5 Days Before Due Date\"\r
+
+    \  }\r
+
+    }\r
+
+    \r
+
+    \  }\r
+
+    \r
+
+    \r
+
+    \r\n"
+settings: {}
+order: 14000

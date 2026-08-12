@@ -1,0 +1,122 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/productnew/save
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: product
+      value: |-
+        {
+            "producttype": "Finished Goods",
+            "name": "Coc1 Soft Drink",
+            "eancode": "ea1n-117",
+            "code": "code6111B66",
+            "status": "ACTIVE",
+            "uomprimary": {
+                "id": 1
+            },
+            "uomsecondary": {
+                "id": 1
+            },
+            "conversion": 1.0,
+            "thickness": {
+                "id": 1
+            },
+            "hsn": {
+                "id": 1
+            },
+            "hsndescription": "Soft Drink Beverage",
+            "igst": 12.00,
+            "cgst": 6.00,
+            "sgst": 6.00,
+            "category": {
+                "id": 1
+            },
+            "subcategory": {
+                "id": 1
+            },
+            "group": {
+                "id": 1
+            },
+            "subgroup": {
+                "id": 1
+            },
+            "brand": {
+                "id": 3
+            },
+            "cost": 35.00,
+            "valuation": {
+                "id": 1
+            },
+            "notes": "notes",
+            "finisheddetails": {
+                "shortname": "Coke 500ml",
+                "eancode": "EAN-0987",
+                "productbarcodeapplicable": true,
+                "setbarcodeapplicable": true,
+                "mastercartonbarcodeapplicable": true,
+                "weddingsetbarcodelabel": false,
+                "catalogueapplicable": true,
+                "batchapplicable": true,
+                "bisapplicable": true,
+                "standardqtyperbox": 24,
+                "reportinguom": "PCS",
+                "packagingtype": {
+                    "id": 1
+                },
+                "capacityml": 500.00,
+                "innerdiameter": 60.00,
+                "outerdiameter": 65.00,
+                "weight": 20.00,
+                "gauge": {
+                    "id": 1
+                },
+                "lwhproduct": "10x5x5",
+                "lwhmastercarton": "40x30x25",
+                "grade": {
+                    "id": 1
+                },
+                "form": {
+                    "id": 1
+                },
+                "finishtype": {
+                    "id": 1
+                },
+                "mrp": 50.00,
+                "dlp": 45.00,
+                "standardcost": 30.00,
+                "cessvaluationtype": "NONE",
+                "productiontype": "IN-HOUSE",
+                "timeforprocurement": 5,
+                "typeofsupply": "GOODS",
+                "country": {
+                    "id": 1
+                },
+                "zone": {
+                    "id": 1
+                },
+                "state": {
+                    "id": 1
+                },
+                "city": {
+                    "id": 1
+                },
+                "verticaltypes": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        }
+    - type: file
+      key: images
+      src:
+        - /C:/Users/LNV/Pictures/neelam/product/glass.jpg
+        - /C:/Users/LNV/Pictures/neelam/product/glass2.jpg
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 1000

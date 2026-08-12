@@ -1,0 +1,434 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/deliverychallan/updateById/9
+method: PUT
+body:
+  type: json
+  content: "// {\r
+
+    //   \"deliverynoteno\": 1001,\r
+
+    //   \"deliverynotedate\": \"2026-06-25\",\r
+
+    \r
+
+    //   \"salesorderid\": 5001,\r
+
+    //   \"termofpayment\": \"Net 30 Days\",\r
+
+    //   \"buyersorderno\": 7001,\r
+
+    //   \"otherreference\": \"REF-2026-001\",\r
+
+    //   \"freightterms\": \"FOB\",\r
+
+    //   \"deliverymode\": \"Road\",\r
+
+    //   \"salesorderdate\": \"2026-06-20\",\r
+
+    //   \"deliverydate\": \"2026-06-25\",\r
+
+    //   \"buyersorderdate\": \"2026-06-18\",\r
+
+    \r
+
+    //   \"dispatchthrough\": \"Blue Dart\",\r
+
+    //   \"billoflanding\": \"BOL123456\",\r
+
+    //   \"agent\": \"ABC Logistics\",\r
+
+    //   \"totalnoofpkgs\": 25,\r
+
+    //   \"destination\": \"Mumbai\",\r
+
+    //   \"dispatchdate\": \"2026-06-24\",\r
+
+    //   \"vehicleno\": \"MH12AB1234\",\r
+
+    //   \"vendorcode\": \"VEND001\",\r
+
+    //   \"dispatchstate\": \"Maharashtra\",\r
+
+    //   \"dispatchwarehouse\": \"Central Warehouse\",\r
+
+    //   \"dispatchbranch\": \"Mumbai Branch\",\r
+
+    \r
+
+    //   \"placeofreceiptbyshipper\": \"Pune\",\r
+
+    //   \"flightno\": \"AI202\",\r
+
+    //   \"portofloading\": \"JNPT\",\r
+
+    //   \"portofdischarge\": \"Dubai Port\",\r
+
+    //   \"countryto\": \"UAE\",\r
+
+    //   \"shippingbillno\": \"SB987654\",\r
+
+    //   \"shippingbilldate\": \"2026-06-24\",\r
+
+    //   \"portcode\": \"INNSA1\",\r
+
+    \r
+
+    //   \"gstregistrationtype\": \"Regular\",\r
+
+    //   \"accessofotherterritory\": \"No\",\r
+
+    //   \"placeofsupply\": \"Maharashtra\",\r
+
+    \r
+
+    //   \"billto\":{\r
+
+    //     \"id\":24\r
+
+    //   },\r
+
+    \r
+
+    //   \"shipto\":{\r
+
+    //     \"id\":25\r
+
+    //   },\r
+
+    \r
+
+    //   \"branch\": {\r
+
+    //     \"id\": 1\r
+
+    //   },\r
+
+    \r
+
+    //   \"warehouse\": {\r
+
+    //     \"id\": 2\r
+
+    //   },\r
+
+    \r
+
+    //   \"pricelist\":{\r
+
+    //     \"id\":1\r
+
+    //   },\r
+
+    //   \"deliverychallanitems\":[\r
+
+    //     {\r
+
+    //       \"id\":2,\r
+
+    //       \"productid\": {\r
+
+    //         \"id\": 1\r
+
+    //       },\r
+
+    //       \"uom\": \"BOX\",\r
+
+    //       \"cartoon\": 11,\r
+
+    //       \"primary\": 100,\r
+
+    //       \"alternative\": 10,\r
+
+    //       \"mode\": \"PCS\",\r
+
+    //       \"rate\": 250.00,\r
+
+    //       \"rateuom\": \"PCS\",\r
+
+    //       \"amount\": 25000.00,\r
+
+    //       \"tradediscount\": 500.00,\r
+
+    //       \"schemediscount\": 250.00,\r
+
+    //       \"taxablevalue\": 24250.00,\r
+
+    //       \"cgst\": 2182.50,\r
+
+    //       \"sgst\": 2182.50,\r
+
+    //       \"igst\": 0,\r
+
+    //       \"total\": 28615.00,\r
+
+    //        \"netamt\":0.00,\r
+
+    //       \"conversion\":0.00,\r
+
+    //       \"primaryuom\": \"SDK UOM\",\r
+
+    //       \"alternateuom\": \"SDK UOM 2\",\r
+
+    //       \"sq\":34\r
+
+    //     }\r
+
+    //   ]\r
+
+    // }\r
+
+    \r
+
+    \r
+
+    {\r
+
+    \  \"deliverynoteno\": 1001,\r
+
+    \  \"deliverynotedate\": \"2026-07-24\",\r
+
+    \r
+
+    \  \"salesorderid\": 5001,\r
+
+    \  \"termofpayment\": \"Net 30 Days\",\r
+
+    \  \"buyersorderno\": 7001,\r
+
+    \  \"otherreference\": \"REF-2026-001\",\r
+
+    \  \"freightterms\": \"FOB\",\r
+
+    \  \"deliverymode\": \"Road\",\r
+
+    \  \"salesorderdate\": \"2026-06-20\",\r
+
+    \  \"deliverydate\": \"2026-06-25\",\r
+
+    \  \"buyersorderdate\": \"2026-06-18\",\r
+
+    \r
+
+    \  \"dispatchthrough\": \"Blue Dart\",\r
+
+    \  \"billoflanding\": \"BOL123456\",\r
+
+    \  \"agent\": \"ABC Logistics\",\r
+
+    \  \"totalnoofpkgs\": 25,\r
+
+    \  \"destination\": \"Mumbai\",\r
+
+    \  \"dispatchdate\": \"2026-06-24\",\r
+
+    \  \"vehicleno\": \"MH12AB1234\",\r
+
+    \  \"vendorcode\": \"VEND001\",\r
+
+    \  \"dispatchstate\": \"Maharashtra\",\r
+
+    \  \"dispatchwarehouse\": \"Central Warehouse\",\r
+
+    \  \"dispatchbranch\": \"Mumbai Branch\",\r
+
+    \r
+
+    \  \"placeofreceiptbyshipper\": \"Pune\",\r
+
+    \  \"flightno\": \"AI202\",\r
+
+    \  \"portofloading\": \"JNPT\",\r
+
+    \  \"portofdischarge\": \"Dubai Port\",\r
+
+    \  \"countryto\": \"UAE\",\r
+
+    \  \"shippingbillno\": \"SB987654\",\r
+
+    \  \"shippingbilldate\": \"2026-06-24\",\r
+
+    \  \"portcode\": \"INNSA1\",\r
+
+    \r
+
+    \  \"gstregistrationtype\": \"Regular\",\r
+
+    \  \"accessofotherterritory\": \"No\",\r
+
+    \  \"placeofsupply\": \"Maharashtra\",\r
+
+    \r
+
+    \  \"billto\":{\r
+
+    \    \"id\":4\r
+
+    \  },\r
+
+    \r
+
+    \  \"shipto\":{\r
+
+    \    \"id\":2\r
+
+    \  },\r
+
+    \r
+
+    \  \"branch\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \r
+
+    \  \"warehouse\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \r
+
+    \  \"pricelist\":{\r
+
+    \    \"id\":1\r
+
+    \  },\r
+
+    \r
+
+    \  \"deliverychallanitems\":[\r
+
+    \    {\r
+
+    \        \"id\":42,\r
+
+    \      \"productid\": {\r
+
+    \        \"id\": 1\r
+
+    \      },\r
+
+    \      \"uom\": \"BOX\",\r
+
+    \      \"cartoon\": 10,\r
+
+    \      \"primary\": 90,\r
+
+    \      \"alternative\": 10,\r
+
+    \      \"mode\": \"PCS\",\r
+
+    \      \"rate\": 250.00,\r
+
+    \      \"rateuom\": \"PCS\",\r
+
+    \      \"amount\": 25000.00,\r
+
+    \      \"tradediscount\": 500.00,\r
+
+    \      \"schemediscount\": 250.00,\r
+
+    \      \"taxablevalue\": 24250.00,\r
+
+    \      \"cgst\": 2182.50,\r
+
+    \      \"sgst\": 2182.50,\r
+
+    \      \"igst\": 0,\r
+
+    \      \"total\": 28615.00,\r
+
+    \       \"netamt\":0.00,\r
+
+    \      \"conversion\":0.00,\r
+
+    \      \"primaryuom\": \"SDK UOM\",\r
+
+    \      \"alternateuom\": \"SDK UOM 2\",\r
+
+    \      \"sq\":34,\r
+
+    \      \"allocationSource\": \"SALES_ORDER\",\r
+
+    \      \"salesOrderItemIds\": [18]\r
+
+    \    },\r
+
+    \    {\r
+
+    \        \"id\":43,\r
+
+    \      \"productid\": {\r
+
+    \        \"id\": 2\r
+
+    \      },\r
+
+    \      \"uom\": \"BOX\",\r
+
+    \      \"cartoon\": 10,\r
+
+    \      \"primary\": 150,\r
+
+    \      \"alternative\": 10,\r
+
+    \      \"mode\": \"PCS\",\r
+
+    \      \"rate\": 250.00,\r
+
+    \      \"rateuom\": \"PCS\",\r
+
+    \      \"amount\": 25000.00,\r
+
+    \      \"tradediscount\": 500.00,\r
+
+    \      \"schemediscount\": 250.00,\r
+
+    \      \"taxablevalue\": 24250.00,\r
+
+    \      \"cgst\": 2182.50,\r
+
+    \      \"sgst\": 2182.50,\r
+
+    \      \"igst\": 0,\r
+
+    \      \"total\": 28615.00,\r
+
+    \       \"netamt\":0.00,\r
+
+    \      \"conversion\":0.00,\r
+
+    \      \"primaryuom\": \"SDK UOM\",\r
+
+    \      \"alternateuom\": \"SDK UOM 2\",\r
+
+    \      \"sq\":35,\r
+
+    \      \"allocationSource\": \"MANUAL\"\r
+
+    \r
+
+    \    }\r
+
+    \  ]\r
+
+    //   ,\r
+
+    \r
+
+    //   \"salesorder\":{\r
+
+    //     \"id\":7\r
+
+    //   }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{NeelamV2}}"
+settings: {}
+order: 3000

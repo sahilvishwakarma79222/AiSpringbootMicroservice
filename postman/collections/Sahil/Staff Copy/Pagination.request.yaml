@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/staff/page?field=id&dierction=asc&pageNumber=0&pageSize=10
+method: GET
+queryParams:
+  - key: field
+    value: id
+  - key: dierction
+    value: asc
+  - key: pageNumber
+    value: "0"
+  - key: pageSize
+    value: "10"
+  - key: search
+    value: ""
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 13000

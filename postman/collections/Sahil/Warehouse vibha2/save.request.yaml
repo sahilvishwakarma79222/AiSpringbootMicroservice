@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{sahilNeelamV2BaseUrl}}/warehouse/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"warehousename\":\"warehouse21\",\r
+
+    \    \"location\":\"thane\",\r
+
+    \    \"type\":\"secondary\",\r
+
+    \    \"branch\":{\r
+
+    \        \"id\":2\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

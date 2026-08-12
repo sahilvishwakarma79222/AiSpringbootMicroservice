@@ -1,0 +1,28 @@
+$kind: http-request
+url: "{{vibhaBaseUrl}}/warehouse/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"warehousename\":\"warehouse1\",\r
+
+    \    \"location\":\"thane\",\r
+
+    \    \"type\":\"primary\",\r
+
+    \    \r
+
+    \    \"branch\":{\r
+
+    \        \"id\":2\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 1000

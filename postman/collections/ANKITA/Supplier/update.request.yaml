@@ -1,0 +1,198 @@
+$kind: http-request
+url: http://192.168.1.135:8080/api/v2/supplier/updateById/13
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \   \"username\":\"\",\r
+
+    \   \"suppliercode\":\"SUP-2026-0017\",\r
+
+    \   \"email\":\"\",\r
+
+    \   \"password\":\"\",\r
+
+    \   \"gst\":{\r
+
+    \   \"id\":1\r
+
+    \    },\r
+
+    \   \"roles\":[\r
+
+    \    {\r
+
+    \        \"id\":2\r
+
+    \    }\r
+
+    \   ],\r
+
+    \   \"gstnumber\":\"73BAYHC0000A1K8\",\r
+
+    \   \"suppliername\":\"Global5\",\r
+
+    \   \"pannumber\":\"ANPAN28849H\",\r
+
+    \   \"states\":{\r
+
+    \    \"id\":22\r
+
+    \    },\r
+
+    \   \"cities\":{\r
+
+    \    \"id\":2836\r
+
+    \    },\r
+
+    \   \"msmestatus\":\"REGISTERED\",\r
+
+    \   \"msmenumber\":\"UDYAM-MH-00-000043\",\r
+
+    \   \"suppliertype\":\"RAW_MATERIAL\",\r
+
+    \   \"status\":\"BLACKLISTED\",\r
+
+    \   \"shippingpartyname\":\"Global Manufacturing HQ\",\r
+
+    \   \"shippingcountries\":{\r
+
+    \    \"id\":101\r
+
+    \    },\r
+
+    \   \"shippingstate\":{\r
+
+    \    \"id\":22\r
+
+    \    },\r
+
+    \   \"shippingcity\":{\r
+
+    \    \"id\":2836\r
+
+    \    },\r
+
+    \   \"shippingaddress\":\"LNV\",\r
+
+    \   \"shippingpincode\":\"421306\",\r
+
+    \   \"billingpartyname\":\"Global Manufacturing HQ\",\r
+
+    \   \"billingcountries\":{\r
+
+    \    \"id\":101\r
+
+    \    },\r
+
+    \   \"billingstates\":{\r
+
+    \    \"id\":22\r
+
+    \    },\r
+
+    \   \"billingcities\":{\r
+
+    \    \"id\":2836\r
+
+    \    },\r
+
+    \   \"billingaddress\":\"LNV\",\r
+
+    \   \"materialcategory\":\"raw\",\r
+
+    \   \"billingpincode\":\"421306\",\r
+
+    \   \"ownername\":\"Rajesh\",\r
+
+    \   \"ownermobile\":\"9967535842\",\r
+
+    \   \"owneremail\":\"rverma125@gmail.com\",\r
+
+    \   \"dispatchcontactperson\":\"B\",\r
+
+    \   \"dispatchmobile\":\"9892062215\",\r
+
+    \   \"dispatchemail\":\"rverma125@gmail.com\",\r
+
+    \   \"accountemailid\":\"rverma125@gmail.com\",\r
+
+    \   \"accountmobile\":\"9654321890\",\r
+
+    \   \"accountcontactperson\":\"A\",\r
+
+    \   \"transportbasis\":\"PAID\",\r
+
+    \   \"preferredtransportername\":\"Swift Logistics Pvt Ltd\",\r
+
+    \   \"deliverydays\":1,\r
+
+    \   \"gstapplicable\":\"YES\",\r
+
+    \   \"tdsapplicable\":\"YES\",\r
+
+    \   \"tdssection\":\"194AC\",\r
+
+    \   \"tdsrate\":12,\r
+
+    \   \"tcsapplicable\":\"YES\",\r
+
+    \   \"creditdays\":1,\r
+
+    \   \"creditlimit\":100,\r
+
+    \   \"paymentterms\":\"ADVANCE\",\r
+
+    \   \"bankname\":\"HDFC\",\r
+
+    \   \"accountnumber\":\"10011100008367\",\r
+
+    \   \"ifsccode\":\"HDFC00010\",\r
+
+    \   \"upiid\":\"testHDFC@bank\",\r
+
+    \   \"portalaccess\":\"ENABLE\",\r
+
+    \   \"allowedmodule\":\"PURCHASE\",\r
+
+    \   \"vendorauditrequired\":\"YES\",\r
+
+    \   \"lastauditdate\":\"2026-03-23\",\r
+
+    \   \"nextauditdate\":\"2026-03-23\",\r
+
+    \   \"blacklistdate\": \"2026-03-10\",\r
+
+    \   \"branchname\":\"BADLAPUR\",\r
+
+    \   \"accounttype\":\"SAVINGS\",\r
+
+    \   \"reasonforblacklist\":\"allowed\",\r
+
+    \   \"auditfrequency\":12,\r
+
+    \   \"blacklistflag\":\"NO\",\r
+
+    \   \"ontimedelivery\":12,\r
+
+    \   \"qualityrejection\":12,\r
+
+    \   \"vendorrating\":\"B\",\r
+
+    \   \"performanceremarks\":\"12\",\r
+
+    \   \"notes\":\"12\",\r
+
+    \   \"internalremarks\":\"12\",\r
+
+    \   \"sendlogincredentialsto\":\"neelam123@gmail.com\"\r
+
+    \   }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 3000

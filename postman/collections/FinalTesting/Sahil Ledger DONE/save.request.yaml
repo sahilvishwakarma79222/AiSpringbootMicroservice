@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{Neelamv2BaseUrl}}/ledger/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Online Ledger2\",\r
+
+    \  \"ledgergroup\": 4,\r
+
+    \  \"verticaltype\":1,\r
+
+    \  \"openingbalance\": 15000.00,\r
+
+    \  \"drcr\": \"DR\",\r
+
+    \  \"openingbalancedate\": \"2026-02-27\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

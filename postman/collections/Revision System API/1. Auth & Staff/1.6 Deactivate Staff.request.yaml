@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{baseUrl}}/api/staff/1/deactivate"
+method: PUT
+headers:
+  Authorization: Bearer {{token}}
+settings: {}
+order: 9000

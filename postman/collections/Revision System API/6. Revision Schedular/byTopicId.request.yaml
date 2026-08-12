@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{baseUrl}}/revisionsScheduler/getByTopicId/20"
+method: GET
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+        "name": "Spaced Repetition update",
+        "description": "Review after update 1 day, 3 days, 7 days, 21 days"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{helper token}}"
+settings: {}
+order: 3000

@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://192.168.1.138:8080/api/v2/ledger/page?pageNumber=0&pageSize=5&field=id&direction=asc&search=Online
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "5"
+  field: id
+  direction: asc
+  search: Online
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 5000

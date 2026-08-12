@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://192.168.1.220:8080/api/v2/city/byState/1
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{sahilNeelamV2Token}}"
+settings: {}
+order: 1000

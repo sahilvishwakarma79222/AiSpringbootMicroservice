@@ -1,0 +1,238 @@
+$kind: http-request
+url: http://192.168.1.19:8080/api/v2/salesorder/save
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"salesorderid\": 1002,\r
+
+    \    \"salesorderdate\": \"2026-07-23\",\r
+
+    \    \"verticaltype\": \"Dealer-Internal Trade\",\r
+
+    \    \"customertype\": \"Stockist\",\r
+
+    \    \"platformname\": null,\r
+
+    \    \"branch\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"warehouse\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"pricelist\": 1,\r
+
+    \    \"primaryorderid\": 5001,\r
+
+    \    \"modeofpayment\": \"Credit\",\r
+
+    \    \"buyerorderno\": 123456,\r
+
+    \    \"otherreference\": \"REF-001\",\r
+
+    \    \"freightterms\": \"FOB\",\r
+
+    \    \"deliverymode\": \"Air\",\r
+
+    \    \"orderdate\": \"2026-05-20\",\r
+
+    \    \"paymentduedate\": \"2026-07-18\",\r
+
+    \    \"buyerorderdate\": \"2026-05-21\",\r
+
+    \    \"dispatchthrough\": \"DHL\",\r
+
+    \    \"destination\": \"Mumbai\",\r
+
+    \    \"agent\": \"ABC Logistics\",\r
+
+    \    \"billoflading\": \"BL123456\",\r
+
+    \    \"dispatchdate\": \"2026-06-20\",\r
+
+    \    \"placeofreceiptbyshipper\": \"Mumbai Warehouse\",\r
+
+    \    \"flightno\": \"AI203\",\r
+
+    \    \"portofloading\": \"JNPT\",\r
+
+    \    \"portofdischarge\": \"Dubai Port\",\r
+
+    \    \"countryto\": \"UAE\",\r
+
+    \    \"shippingbillno\": \"SB789456\",\r
+
+    \    \"shippingbilldate\": \"2026-06-19\",\r
+
+    \    \"portcode\": \"INNSA1\",\r
+
+    \    \"gstregistrationtype\": \"Regular\",\r
+
+    \    \"accessofotherterritory\": \"No\",\r
+
+    \    \"placeofsupply\": \"Maharashtra\",\r
+
+    \    \"billto\": {\r
+
+    \        \"id\": 4\r
+
+    \    },\r
+
+    \    \"shipto\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"shiptoverticaltype\": \"Dealer-Internal Trade\",\r
+
+    \    \"shiptocustomertype\": \"Stockist\",\r
+
+    \    \"shiptoplatformname\": null,\r
+
+    \    \"salesorderitems\": [\r
+
+    \        {\r
+
+    \            \"productid\": {\r
+
+    \                \"id\": 1\r
+
+    \            },\r
+
+    \            \"uom\": \"PCS\",\r
+
+    \            \"carton\": 5,\r
+
+    \            \"primary\": 100,\r
+
+    \            \"mode\": \"SALE\",\r
+
+    \            \"rate\": 250.50,\r
+
+    \            \"rateuom\": \"PCS\",\r
+
+    \            \"gstrate\": 18,\r
+
+    \            \"altuom\": \"BOX\",\r
+
+    \            \"altqty\": 10,\r
+
+    \            \"sq\": 1,\r
+
+    \            \"conversion\": 10,\r
+
+    \            \"hsn\": \"84713010\",\r
+
+    \            \"barcode\": \"8901234567890\",\r
+
+    \            \"tradediscountamt\": 100.00,\r
+
+    \            \"schemediscountamt\": 50.00,\r
+
+    \            \"tradediscountpct\": 150.00,\r
+
+    \            \"schemediscountpct\": \"5\",\r
+
+    \            \"remarks\": \"Sample item\",\r
+
+    \            \"cgstpct\": 9,\r
+
+    \            \"sgstpct\": 9,\r
+
+    \            \"igstpct\": 0,\r
+
+    \            \"amount\": 25050.00,\r
+
+    \            \"taxablevalue\": 24900.00,\r
+
+    \            \"cgstamt\": 2241.00,\r
+
+    \            \"sgstamt\": 2241.00,\r
+
+    \            \"igstamt\": 0.00,\r
+
+    \            \"total\": 29382.00\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"productid\": {\r
+
+    \                \"id\": 2\r
+
+    \            },\r
+
+    \            \"uom\": \"PCS\",\r
+
+    \            \"carton\": 5,\r
+
+    \            \"primary\": 200,\r
+
+    \            \"mode\": \"SALE\",\r
+
+    \            \"rate\": 250.50,\r
+
+    \            \"rateuom\": \"PCS\",\r
+
+    \            \"gstrate\": 18,\r
+
+    \            \"altuom\": \"BOX\",\r
+
+    \            \"altqty\": 10,\r
+
+    \            \"sq\": 1,\r
+
+    \            \"conversion\": 10,\r
+
+    \            \"hsn\": \"84713010\",\r
+
+    \            \"barcode\": \"8901234567890\",\r
+
+    \            \"tradediscountamt\": 100.00,\r
+
+    \            \"schemediscountamt\": 50.00,\r
+
+    \            \"tradediscountpct\": 150.00,\r
+
+    \            \"schemediscountpct\": \"5\",\r
+
+    \            \"remarks\": \"Sample item\",\r
+
+    \            \"cgstpct\": 9,\r
+
+    \            \"sgstpct\": 9,\r
+
+    \            \"igstpct\": 0,\r
+
+    \            \"amount\": 25050.00,\r
+
+    \            \"taxablevalue\": 24900.00,\r
+
+    \            \"cgstamt\": 2241.00,\r
+
+    \            \"sgstamt\": 2241.00,\r
+
+    \            \"igstamt\": 0.00,\r
+
+    \            \"total\": 29382.00\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{vibhatoken}}"
+settings: {}
+order: 1000

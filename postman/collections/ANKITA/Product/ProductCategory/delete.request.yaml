@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://192.168.1.15:8080/api/v2/productcategory/deleteById/7
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{ankitatoken}}"
+settings: {}
+order: 3000
