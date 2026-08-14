@@ -6,6 +6,7 @@ import com.quizmongoservice.dto.CategoryDto;
 import com.quizmongoservice.dto.QuizDto;
 import com.quizmongoservice.repository.QuizRepository;
 import com.quizmongoservice.service.QuizWithFeignClientService;
+import feign.FeignException;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -22,8 +23,13 @@ public class QuizWithFeignClientServiceImpl implements QuizWithFeignClientServic
     @Override
     public QuizDto saveQuiz(QuizDto quizDto) {
         String categoryId = quizDto.getCategoryId();
-        CategoryDto categoryDto = categoryFeignClient.getCategory(categoryId);
-        Quiz quiz = toEntity(quizDto);
+        CategoryDto categoryDto;
+
+        try {
+            categoryDto = categoryFeignClient.getCategory(categoryId);
+        } catch (FeignException.NotFound e) {
+            throw new RuntimeException("Category not found with id: " + categoryId);
+        }        Quiz quiz = toEntity(quizDto);
         Quiz savedEntity = quizRepository.save(quiz);
         return toDto(savedEntity);
     }
