@@ -8,12 +8,10 @@ import com.quizmongoservice.service.QuizWithRestTemplateService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.RestTemplate;
-
 import java.util.List;
 
 @Service
@@ -23,7 +21,6 @@ public class QuizWithRestTemplate implements QuizWithRestTemplateService {
 
 
         final QuizRepository quizRepository;
-        final MongoTemplate mongoTemplate;
         final RestTemplate restTemplate;
 
         @Override
