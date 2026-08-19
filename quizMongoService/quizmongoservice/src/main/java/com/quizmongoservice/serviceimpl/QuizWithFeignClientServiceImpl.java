@@ -35,6 +35,19 @@ public class QuizWithFeignClientServiceImpl implements QuizWithFeignClientServic
         return toDto(savedEntity);
     }
 
+    @Override
+    public QuizDto getQuizById(String quizId) {
+        Quiz quiz = quizRepository.findById(quizId).orElseThrow(() -> new RuntimeException("QuizNotFoundWithId " + quizId));
+        CategoryDto categoryDto=null;
+        CategoryDto category = categoryFeignClient.getCategory(quiz.getCategoryId());
+        if(category!=null){
+            categoryDto=category;
+        }
+        QuizDto dto = toDto(quiz);
+        dto.setCategoryDto(category);
+        return dto;
+    }
+
 
 
     // ==================== CONVERSION METHODS ====================
@@ -43,6 +56,7 @@ public class QuizWithFeignClientServiceImpl implements QuizWithFeignClientServic
 
         QuizDto dto = new QuizDto();
 
+        dto.setId(quiz.getId());
         dto.setTitle(quiz.getTitle());
         dto.setDescription(quiz.getDescription());
         dto.setMaxMarks(quiz.getMaxMarks());

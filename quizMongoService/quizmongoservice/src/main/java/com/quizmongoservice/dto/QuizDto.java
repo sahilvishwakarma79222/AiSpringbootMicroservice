@@ -7,6 +7,7 @@ import lombok.Setter;
 @Getter
 public class QuizDto {
 
+    private String id;
     private  String title;
     private  String description;
     private  Integer maxMarks;
@@ -17,4 +18,5 @@ public class QuizDto {
     private  Boolean live;
     private  Integer passingMarks;
     private  String categoryId;
+    private CategoryDto categoryDto;
 }
