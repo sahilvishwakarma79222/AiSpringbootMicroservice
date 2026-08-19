@@ -8,10 +8,11 @@ import com.quizmongoservice.repository.QuizRepository;
 import com.quizmongoservice.service.QuizWithFeignClientService;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Service;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Service
 public class QuizWithFeignClientServiceImpl implements QuizWithFeignClientService {
