@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(
         name = "category-service",
-        url = "http://192.168.1.220:9091"
+        url = "http://CATEGORYPOSTGRESH:9091"
 )
 public interface CategoryClient {
 
