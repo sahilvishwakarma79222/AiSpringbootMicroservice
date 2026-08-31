@@ -2,3 +2,5 @@ name: New Environment
 values:
   - key: neelamV2
     value: ''
+  - key: supabase_service_role_api_key_051x
+    secret: true

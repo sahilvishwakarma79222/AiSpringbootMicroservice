@@ -1,5 +1,6 @@
 $kind: http-request
-url: "{{baseUrl}}/topic/module/1/page?pageNumber=0&pageSize=10&field=title&direction=asc"
+url: "{{baseUrl}}/topic/module/1/page?pageNumber=0&pageSize=10&field=title&dire\
+  ction=asc"
 method: GET
 headers:
   Content-Type: application/json
@@ -32,4 +33,4 @@ auth:
   credentials:
     token: "{{helper token}}"
 settings: {}
-order: 6000
+order: 7000

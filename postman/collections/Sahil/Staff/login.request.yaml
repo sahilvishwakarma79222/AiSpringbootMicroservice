@@ -12,8 +12,6 @@ body:
 
     }\r
 
-    \r
-
     // http://66.116.234.202:8080/neelam/api/v2/auth/login"
 auth:
   type: noauth

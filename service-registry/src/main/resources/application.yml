@@ -1,6 +1,9 @@
 spring:
   application:
     name: service-registry
+  output:
+    ansi:
+      enabled: ALWAYS
 server:
   port: 8761
 eureka:

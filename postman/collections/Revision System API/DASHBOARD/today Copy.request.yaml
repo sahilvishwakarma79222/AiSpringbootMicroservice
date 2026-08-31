@@ -1,5 +1,6 @@
 $kind: http-request
-url: "{{baseUrl}}/dashboard/today/pending"
+name: today Copy
+url: http://192.168.1.220:8081/api/v1/topic/page
 method: GET
 headers:
   Content-Type: application/json

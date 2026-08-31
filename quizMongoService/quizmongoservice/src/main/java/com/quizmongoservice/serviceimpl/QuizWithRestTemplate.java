@@ -29,7 +29,7 @@ public class QuizWithRestTemplate implements QuizWithRestTemplateService {
             try {
 
                 CategoryDto categoryDto = restTemplate.getForObject(
-                        "http://192.168.1.220:9091/api/v1/category/get/{catId}",
+                        "http://CATEGORYPOSTGRESH/api/v1/category/get/{catId}",
                         CategoryDto.class,
                         catId
                 );
@@ -94,7 +94,7 @@ public class QuizWithRestTemplate implements QuizWithRestTemplateService {
         private QuizDto toDto(Quiz quiz) {
 
         QuizDto dto = new QuizDto();
-
+        dto.setId(quiz.getId());
         dto.setTitle(quiz.getTitle());
         dto.setDescription(quiz.getDescription());
         dto.setMaxMarks(quiz.getMaxMarks());

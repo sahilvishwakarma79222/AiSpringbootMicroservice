@@ -1,5 +1,6 @@
 $kind: http-request
-url: "{{baseUrl}}/topic/page"
+name: get topic
+url: http://192.168.1.220:8081/api/v1/topic/page
 method: GET
 headers:
   Content-Type: application/json
@@ -18,6 +19,6 @@ body:
 auth:
   type: bearer
   credentials:
-    token: "{{helper token}}"
+    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWJoYSIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTc4NzU3NDMyMCwiZXhwIjoxNzg4NDM4MzIwfQ.yj_c-HlV-GU0aDuqLoA_KwrRHT2_-T7TN7W-eyuZ2Uc4clO7IhUx39bLis8LNu7_tqCB-Zmu9ULFceONDQDDXQ
 settings: {}
-order: 4000
+order: 5000

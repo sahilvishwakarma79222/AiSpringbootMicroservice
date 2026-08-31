@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/categorypostgresh/pom.xml" />
         <option value="$PROJECT_DIR$/../quizMongoService/quizmongoservice/pom.xml" />
         <option value="$PROJECT_DIR$/../service-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/../apigateway/pom.xml" />
       </list>
     </option>
   </component>
