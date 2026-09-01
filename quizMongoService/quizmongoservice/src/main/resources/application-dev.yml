@@ -1,0 +1,10 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://192.168.1.220:8761/eureka/

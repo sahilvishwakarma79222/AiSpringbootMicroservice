@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: quizmongoservice
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/quizdb
+  output:
+    ansi:
+      enabled: ALWAYS
+server:
+  port: 9092
+  address: 192.168.1.220
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://192.168.1.220:8761/eureka/

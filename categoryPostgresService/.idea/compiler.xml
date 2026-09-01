@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apigateway" />
+        <module name="springconfiguration" />
         <module name="service-registry" />
       </profile>
       <profile name="Annotation profile for quizmongoservice" enabled="true">
@@ -28,6 +29,7 @@
       <module name="categorypostgresh" options="-parameters" />
       <module name="quizmongoservice" options="-parameters" />
       <module name="service-registry" options="-parameters" />
+      <module name="springconfiguration" options="-parameters" />
     </option>
   </component>
 </project>
