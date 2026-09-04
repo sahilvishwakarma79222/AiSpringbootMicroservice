@@ -1,4 +1,4 @@
-package com.categorypostgresservice.controller;
+package com.quizmongoservice.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -11,14 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class Test {
 
+
     @Value("${config.value}")
-    private String config;
+    public String config;
 
     @GetMapping
-    public String getConfig(){
-        return  config;
+    public String get(){
+    return config;
     }
 
 
-}
 
+}

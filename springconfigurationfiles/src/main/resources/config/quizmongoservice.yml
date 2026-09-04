@@ -2,12 +2,6 @@ spring:
   application:
     name: quizmongoservice
 
-  config:
-    import: "configserver:http://localhost:9094"
-
-  profiles:
-    active: prod
-
   data:
     mongodb:
       uri: mongodb://localhost:27017/quizdb
@@ -15,11 +9,6 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
 
 server:
   port: 9092
