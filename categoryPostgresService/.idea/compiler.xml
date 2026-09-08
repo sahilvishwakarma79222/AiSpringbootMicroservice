@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apigateway" />
+        <module name="_01Patterns" />
         <module name="springconfiguration" />
         <module name="springconfigurationfiles" />
         <module name="service-registry" />
