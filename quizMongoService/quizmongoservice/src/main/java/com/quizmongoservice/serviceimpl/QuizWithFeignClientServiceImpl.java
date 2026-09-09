@@ -7,6 +7,7 @@ import com.quizmongoservice.dto.QuizDto;
 import com.quizmongoservice.repository.QuizRepository;
 import com.quizmongoservice.service.QuizWithFeignClientService;
 import feign.FeignException;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
@@ -36,6 +37,7 @@ public class QuizWithFeignClientServiceImpl implements QuizWithFeignClientServic
     }
 
     @Override
+    @CircuitBreaker(name = "quizCB", fallbackMethod = "quizFallback")
     public QuizDto getQuizById(String quizId) {
         Quiz quiz = quizRepository.findById(quizId).orElseThrow(() -> new RuntimeException("QuizNotFoundWithId " + quizId));
         CategoryDto categoryDto=null;
@@ -48,6 +50,12 @@ public class QuizWithFeignClientServiceImpl implements QuizWithFeignClientServic
         return dto;
     }
 
+    public QuizDto quizFallback(String quizId, Throwable t) {
+        System.out.println("Category not found");
+        CategoryDto categoryDto = new CategoryDto();
+        categoryDto.setTitle("Fallback category");
+        return new QuizDto();
+    }
 
 
     // ==================== CONVERSION METHODS ====================

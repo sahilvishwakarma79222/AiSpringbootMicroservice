@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/categoryPostgresService.iml" filepath="$PROJECT_DIR$/.idea/categoryPostgresService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../quizMongoService/quizmongoservice/quizmongoservice.iml" filepath="$PROJECT_DIR$/../quizMongoService/quizmongoservice/quizmongoservice.iml" />
     </modules>
   </component>
 </project>
