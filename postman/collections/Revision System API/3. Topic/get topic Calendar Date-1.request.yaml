@@ -1,10 +1,12 @@
 $kind: http-request
-name: get topic
-url: http://192.168.1.220:8081/api/v1/topic/page
+name: get topic Calendar Date
+url: http://192.168.1.220:8081/api/v1/topic/page?date=2026-09-11
 method: GET
 headers:
   Content-Type: application/json
   Authorization: Bearer {{token}}
+queryParams:
+  date: 2026-09-11
 body:
   type: text
   content: |-
@@ -19,6 +21,6 @@ body:
 auth:
   type: bearer
   credentials:
-    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWJoYSIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTc4NzU3NDMyMCwiZXhwIjoxNzg4NDM4MzIwfQ.yj_c-HlV-GU0aDuqLoA_KwrRHT2_-T7TN7W-eyuZ2Uc4clO7IhUx39bLis8LNu7_tqCB-Zmu9ULFceONDQDDXQ
+    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaXNoaSIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTc4OTEwOTM1NCwiZXhwIjoxNzg5OTczMzU0fQ.xB2Z_qDOdbcUPBFL7fUBuVUgxR8rbwrwiRE_wygM00Wf-S43C-8rEoRkEej5F9p0kuSurcdV4OEe_36Y9oCEMA
 settings: {}
-order: 5000
+order: 5253

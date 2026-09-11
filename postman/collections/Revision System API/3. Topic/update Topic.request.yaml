@@ -1,23 +1,25 @@
 $kind: http-request
-url: "{{baseUrl}}/topic/updateById/1"
+url: "{{baseUrl}}/topic/updateById/10"
 method: PUT
 headers:
   Content-Type: application/json
   Authorization: Bearer {{token}}
 body:
-  type: text
+  type: json
   content: |-
     {
-        "title": "Introduction to Java update",
-        "notes": "This topic update covers basics of Java programming including JVM, JRE, and JDK.",
+        "title": "decccccccccc",
+        "notes": "decccccccccc topic update covers basic",
         "difficulty": "MEDIUM",
-        "completed": false,
-        "moduleId": 1
+        "completed":true,
+        "moduleId": 8
         // ,
         // "revisionPatternId": 1
 
     }
 auth:
-  type: noauth
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbWFpbCIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTc4OTEyMjIxNiwiZXhwIjoxNzg5OTg2MjE2fQ.Pgm2YuHUqXgivMjCE4nQ1CT3HAUsT3hTaUGFDJ71_CJlxpV86DCBJCF3Xg404A0J2R6KAPoblbPgGsMWUaSC3A
 settings: {}
 order: 2000

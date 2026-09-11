@@ -8,4 +8,4 @@ auth:
   credentials:
     token: "{{helper token}}"
 settings: {}
-order: 5000
+order: 7000

@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{baseUrl}}/topic/module/1/page?pageNumber=0&pageSize=10&field=title&dire\
+url: "{{baseUrl}}/topic/module/7/page?pageNumber=0&pageSize=10&field=title&dire\
   ction=asc"
 method: GET
 headers:
@@ -8,12 +8,20 @@ headers:
 queryParams:
   - key: pageNumber
     value: "0"
+    disabled: false
+    description: ""
   - key: pageSize
     value: "10"
+    disabled: false
+    description: ""
   - key: field
     value: title
+    disabled: false
+    description: ""
   - key: direction
     value: asc
+    disabled: false
+    description: ""
   - key: search
     value: java
     disabled: true
@@ -33,4 +41,4 @@ auth:
   credentials:
     token: "{{helper token}}"
 settings: {}
-order: 7000
+order: 9000

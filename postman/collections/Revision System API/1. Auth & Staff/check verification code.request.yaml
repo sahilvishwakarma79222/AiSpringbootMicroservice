@@ -1,15 +1,18 @@
 $kind: http-request
-url: "{{baseUrl}}/topic/10/complete"
-method: PUT
+url: http://192.168.1.220:8081/api/v1/auth/verifyEmailWithOtp
+method: POST
 headers:
   Content-Type: application/json
-  Authorization: Bearer {{token}}
 body:
-  type: text
-  content: ""
+  type: json
+  content: |-
+    {
+      "email":"cihes26448@daugr.com",
+      "otp":907686
+    }
 auth:
   type: bearer
   credentials:
     token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbWFpbCIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTc4OTEyMjIxNiwiZXhwIjoxNzg5OTg2MjE2fQ.Pgm2YuHUqXgivMjCE4nQ1CT3HAUsT3hTaUGFDJ71_CJlxpV86DCBJCF3Xg404A0J2R6KAPoblbPgGsMWUaSC3A
 settings: {}
-order: 3000
+order: 3506

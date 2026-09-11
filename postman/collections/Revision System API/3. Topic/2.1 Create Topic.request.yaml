@@ -9,11 +9,11 @@ body:
   content: |-
     
     {
-        "title": "Java Basics",
-        "notes": "Core Java Fundamentals",
+        "title": "html tags",
+        "notes": "htmls tags informations",
         "difficulty": "MEDIUM",
         "completed": false,
-        "moduleId": 3,
+        "moduleId": 7,
         "revisionPatternId": 1,
         "link":"abc.notion.com"
 

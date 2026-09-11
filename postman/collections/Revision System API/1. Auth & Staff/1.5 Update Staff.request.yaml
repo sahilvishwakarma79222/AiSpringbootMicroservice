@@ -12,4 +12,4 @@ body:
       "email": "test_updated@test.com"
     }
 settings: {}
-order: 7000
+order: 9000

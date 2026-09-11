@@ -7,8 +7,8 @@ body:
   type: text
   content: |-
     {
-      "username": "sahil",
-      "email": "sahil@gmail.com",
+      "username": "rishi",
+      "email": "rishi@gmail.com",
       "password": "pass"
       
     }
