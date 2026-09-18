@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{baseUrl}}/topic/10/complete"
+url: "{{baseUrl}}/topic/12/complete"
 method: PUT
 headers:
   Content-Type: application/json
@@ -10,6 +10,6 @@ body:
 auth:
   type: bearer
   credentials:
-    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbWFpbCIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTc4OTEyMjIxNiwiZXhwIjoxNzg5OTg2MjE2fQ.Pgm2YuHUqXgivMjCE4nQ1CT3HAUsT3hTaUGFDJ71_CJlxpV86DCBJCF3Xg404A0J2R6KAPoblbPgGsMWUaSC3A
+    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MSIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTc4OTE5MDI5NCwiZXhwIjoxNzkwMDU0Mjk0fQ.nVl6shDQ9AfhU7CTy4MQ92si6fiVxjF7YR-RZK0ojTUwwkMeB4A8BmHapDcIG6mbbR3jZC63ICOIoyav9Fe32Q
 settings: {}
 order: 3000

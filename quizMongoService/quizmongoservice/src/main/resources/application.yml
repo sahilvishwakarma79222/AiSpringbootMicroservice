@@ -20,6 +20,12 @@ spring:
     port: 5672
     username: guest
     password: guest
+  cloud:
+    stream:
+      bindings:
+        quizCreatedBinding-out-0:
+          destination: quiz-Created
+          group: ${spring.application.name}
 
 server:
   port: 9092

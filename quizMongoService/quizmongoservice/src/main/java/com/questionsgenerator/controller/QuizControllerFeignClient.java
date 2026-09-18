@@ -1,0 +1,33 @@
+package com.questionsgenerator.controller;
+
+import com.questionsgenerator.dto.QuizDto;
+import com.questionsgenerator.service.QuizWithFeignClientService;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.experimental.FieldDefaults;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/v1/quiz/feign")
+@AllArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE,makeFinal = true)
+public class QuizControllerFeignClient {
+
+    QuizWithFeignClientService service;
+
+    @PostMapping("/save")
+    public ResponseEntity<?> saveQuiz(@RequestBody QuizDto quiz){
+        QuizDto quiz1 = service.saveQuiz(quiz);
+        return new ResponseEntity<>(quiz1, HttpStatus.OK);
+    }
+
+    @GetMapping("/getByQuizId/{quizId}")
+    public ResponseEntity<?> getByQuizId(@PathVariable String quizId){
+        QuizDto quiz1 = service.getQuizById(quizId);
+        return new ResponseEntity<>(quiz1, HttpStatus.OK);
+    }
+
+
+}

@@ -13,7 +13,7 @@
         <module name="springconfigurationfiles" />
         <module name="service-registry" />
       </profile>
-      <profile name="Annotation profile for quizmongoservice" enabled="true">
+      <profile name="Annotation profile for questionsgenerator" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -21,6 +21,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="categorypostgresh" />
+        <module name="questionsgenerator" />
         <module name="quizmongoservice" />
       </profile>
     </annotationProcessing>
@@ -29,6 +30,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="apigateway" options="-parameters" />
       <module name="categorypostgresh" options="-parameters" />
+      <module name="questionsgenerator" options="-parameters" />
       <module name="quizmongoservice" options="-parameters" />
       <module name="service-registry" options="-parameters" />
       <module name="springconfiguration" options="-parameters" />
