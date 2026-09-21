@@ -5,15 +5,15 @@ headers:
   Content-Type: application/json
   Authorization: Bearer {{token}}
 body:
-  type: text
+  type: json
   content: |-
     
     {
-        "title": "html tags",
-        "notes": "htmls tags informations",
+        "title": "test1 spring ai",
+        "notes": "spring ai informations",
         "difficulty": "MEDIUM",
         "completed": false,
-        "moduleId": 7,
+        "moduleId": 9,
         "revisionPatternId": 1,
         "link":"abc.notion.com"
 
@@ -21,6 +21,6 @@ body:
 auth:
   type: bearer
   credentials:
-    token: "{{helper token}}"
+    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MSIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTc4OTE5MDI5NCwiZXhwIjoxNzkwMDU0Mjk0fQ.nVl6shDQ9AfhU7CTy4MQ92si6fiVxjF7YR-RZK0ojTUwwkMeB4A8BmHapDcIG6mbbR3jZC63ICOIoyav9Fe32Q
 settings: {}
 order: 1000

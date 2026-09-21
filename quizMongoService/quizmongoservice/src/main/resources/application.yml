@@ -20,7 +20,17 @@ spring:
     port: 5672
     username: guest
     password: guest
-
+  cloud:
+    function:
+      definition: questionsCreatedBinding
+    stream:
+      bindings:
+        quizCreatedBinding-out-0:
+          destination: quiz-Created
+          group: ${spring.application.name}
+        questionsCreatedBinding-in-0":
+          destination: questions-Created
+          group: ${spring.application.name}
 server:
   port: 9092
   address: 192.168.1.220

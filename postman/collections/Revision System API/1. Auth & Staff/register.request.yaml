@@ -4,13 +4,13 @@ method: POST
 headers:
   Content-Type: application/json
 body:
-  type: text
+  type: json
   content: |-
     {
-      "username": "rishi",
-      "email": "rishi@gmail.com",
-      "password": "pass"
-      
+      "username": "test1",
+      "email": "bimawe8339@fidhost.com",
+      "password": "pass",
+      "notificationEnabled":true
     }
 settings: {}
 order: 1000

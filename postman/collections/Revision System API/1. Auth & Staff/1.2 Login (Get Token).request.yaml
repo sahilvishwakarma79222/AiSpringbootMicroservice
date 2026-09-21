@@ -4,10 +4,10 @@ method: POST
 headers:
   Content-Type: application/json
 body:
-  type: text
+  type: json
   content: |-
     {
-      "staffId": "admin",
+      "staffId": "sahil",
       "password": "pass"
     }
 settings: {}

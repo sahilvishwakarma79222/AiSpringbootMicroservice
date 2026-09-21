@@ -1,0 +1,68 @@
+spring:
+  application:
+    name: questionsgenerator
+
+  config:
+    import: "configserver:http://localhost:9094"
+
+  profiles:
+    active: prod
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/questionsdb
+
+  output:
+    ansi:
+      enabled: ALWAYS
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        getQuizBinding-in-0":
+          destination: quiz-Created
+          group: ${spring.application.name}
+        getQuizBinding-out-0":
+          destination: questions-Created
+          group: ${spring.application.name}
+    function:
+      definition: getQuizBinding
+
+
+server:
+  port: 9095
+  address: 192.168.1.220
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://192.168.1.220:8761/eureka/
+    refresh:
+      enable: false
+
+  instance:
+    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#  endpoint:
+#    refresh:
+#      enabled: true
+#resilience4j:
+#  circuitbreaker:
+#    configs:
+#      default:
+#        slidingWindowSize: 5
+#        failureRateThreshold: 50
+#        waitDurationInOpenState: 5s
+#        permittedNumberOfCallsInHalfOpenState: 1
