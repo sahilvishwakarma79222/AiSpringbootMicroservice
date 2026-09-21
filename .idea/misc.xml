@@ -6,6 +6,10 @@
       <list>
         <option value="$PROJECT_DIR$/quizMongoService/quizmongoservice/pom.xml" />
         <option value="$PROJECT_DIR$/categoryPostgresService/categorypostgresh/pom.xml" />
+        <option value="$PROJECT_DIR$/apigateway/pom.xml" />
+        <option value="$PROJECT_DIR$/service-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/springconfiguration/pom.xml" />
+        <option value="$PROJECT_DIR$/springconfigurationfiles/pom.xml" />
       </list>
     </option>
   </component>

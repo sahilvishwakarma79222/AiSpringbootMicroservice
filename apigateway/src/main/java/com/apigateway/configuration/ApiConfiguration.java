@@ -26,8 +26,8 @@ public class ApiConfiguration {
                 ).
                 route("categorypostgres-service", route -> route.path("/categorypostgres/**")
                         .filters(f -> f.rewritePath("/categorypostgres/?(?<remaining>.*)", "/${remaining}")
-                                .circuitBreaker(c->c.setName("categoryCB").setFallbackUri("forward:/categoryfallback"))
-                                .requestRateLimiter(c->c.setRateLimiter(redisRateLimiter()).setKeyResolver(userKeyResolver()))
+//                                .circuitBreaker(c->c.setName("categoryCB").setFallbackUri("forward:/categoryfallback"))
+//                                .requestRateLimiter(c->c.setRateLimiter(redisRateLimiter()).setKeyResolver(userKeyResolver()))
                         )
                         .uri("lb://CATEGORYPOSTGRESH")
                 ).
