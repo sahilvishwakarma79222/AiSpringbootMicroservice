@@ -32,12 +32,10 @@ spring:
     function:
       definition: getQuizBinding
   ai:
-    google:
-      genai:
-        api-key: ${API_KEY}
-        chat:
-          model: gemini-3.6-flash
-
+    openai:
+      api-key: ${API_KEY}
+      chat:
+        model: gpt-6-luna
 
 server:
   port: 9095
